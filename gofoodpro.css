@@ -1,0 +1,24 @@
+nav {
+    background-color: #BBD646;
+    font-size: 1.5rem;
+}
+
+.navbar-nav {
+    text-align: center;
+}
+
+.firsth{
+    margin-top: 6rem;
+}
+.card-body {
+    margin-bottom: 1rem;
+}
+
+.fa-shopping-cart {
+color: white;
+text-align: end;
+}
+
+span{
+    font-size: 0.8rem;
+}

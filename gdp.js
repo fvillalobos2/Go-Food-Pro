@@ -29,13 +29,17 @@ let products = [
     name:'ZanaBana Muffin',
     description:'6 unidades de galletas Gluten free.',
     idProduct: 1,
-    idCategory:1
+    idCategory:1,
+    price:2000,
+    quantity:1
   },
   {
     name:'Choco ZanaBana Muffin',
     description:'6 unidades de galletas Gluten free.',
     idProduct: 2,
-    idCategory:1
+    idCategory:1,
+    price:2000,
+    quantity:1
   },
 ]
   let categories = [
@@ -109,7 +113,7 @@ function getData(){
               <img src="gfpimg/galletas-almendra.jpg" class="card-img-top" alt="...">
               <div class= "card-body">
                 <h4 id = 'title-card' class="card-title">${item.name}</h4>
-                <h5 id ='price-card' class="card-title">&#8353; 2,000</h5>
+                <h5 id ='price-card' class="card-title">&#8353; ${item.price}</h5>
                 <p>
                   <a class="btn btn-info" data-toggle="collapse" href="#cart1desc" role="button" aria-expanded="false" aria-controls="collapseExample">
                     Descripcion del Producto
@@ -120,7 +124,9 @@ function getData(){
                     6 unidades de galletas Gluten free.
                   </div>
                 </div>
-                <a id="${item.idProduct}" onclick="addCart(${item.idProduct})" class="btn btn-success add-cart cart1">Añadir al Carrito</a>
+                <div id="${item.idProduct}">
+                  <a onclick="addCart(${item.idProduct})" class="btn btn-success add-cart cart1">Añadir al Carrito</a>
+                </div>
               </div>
             </div>
           </div>
@@ -131,20 +137,47 @@ function getData(){
 }
 getData()
 let temp2 = ''
-  let numberCart = 0
-  document.getElementById("numberCart").innerHTML = numberCart;
-  function cart(){
+var numberCart = 0
+var total = 0
+  function cartInit(){
+    let cart = document.getElementById('product-card')
     let temp = products
     let data = JSON.parse(localStorage.getItem('cart'))
-    data.forEach(item => {
-      temp.forEach(product => {
-        if(item.idProduct == product.idProduct){
-          document.getElementById(item.idProduct).innerHTML = 'Añadido al carrito!'
-        }
+    if(data){
+      numberCart = data.length
+      data.forEach(item => {
+        temp.forEach(product => {
+          if(item.idProduct == product.idProduct){
+            document.getElementById(item.idProduct).innerHTML = `
+            <a style='color:white;' class="btn btn-success add-cart cart1">Añadido al carrito</a>
+          `
+          }
+        });
       });
-    });
+    }
+    document.getElementById("numberCart").innerHTML = numberCart;
+    cart.innerHTML = ''
+    if(data){
+      data.forEach(dato => {
+        let suma = parseFloat(dato.price) * dato.quantity
+        total += parseFloat(suma)
+      });
+      for (const product of data) {
+        cart.innerHTML += `
+        <div class='d-flex'>
+          <h5>${product.name}</h5>
+          <p>${product.description}</p>
+          <p class='mr-3'><b>&#8353;${product.price}</b></p>
+          <p><b>${product.quantity}</b></p>
+        </div>
+        `
+      }
+      document.getElementById('total').innerHTML=`
+        <h5>Total:&#8353;${total}</h5>
+      `
+    }
   }
-cart()
+  cartInit()
 function addCart(id){
   let data;
   let cart = []
@@ -159,8 +192,12 @@ function addCart(id){
   });
   localStorage.setItem('cart', JSON.stringify(cart))
   numberCart = numberCart + 1
-  document.getElementById("numberCart").innerHTML = numberCart;
-  document.getElementById(id).innerHTML = 'Añadido al carrito!'
+  let iconCart = document.getElementById("numberCart")
+  iconCart.innerHTML = numberCart
+  document.getElementById(id).innerHTML = `
+  <a style='color:white;' class="btn btn-success add-cart cart1">Añadido al carrito</a>
+  `
+  cartInit()
 }
 {/* <style>
 #section1 {

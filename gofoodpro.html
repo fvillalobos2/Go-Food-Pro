@@ -24,7 +24,32 @@
     <title>Go Food Pro</title>
   </head>
   <body>
-   
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Carrito</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div id="modal" class="modal-body">
+        <a href="https://web.whatsapp.com/send?text=textToshare" target="_blank">Share via Whatsapp</a>
+        <div class="container">
+          <div class="row">
+            <div id="product-card" class="col-12">
+            </div>
+            <div id='total'></div>
+          </div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
     <!-- Start Nav Bar -->
     <!-- Image and text -->
 <nav class="navbar navbar-dark navbar-expand-md bg-#BBD646 sticky-top">
@@ -63,7 +88,7 @@
         <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
       </li>
       <li class="cart">
-        <a href="#">
+        <a href="#" data-toggle="modal" data-target="#exampleModal">
           <i class="fas fa-shopping-cart"></i><span id = 'numberCart'>0</span>
         </a>
       </li>
@@ -76,7 +101,7 @@
       <div class="container">
         <div class="row mt-2">
           <section id="Galletas"></section>
-          <div id = 'categories' class="col-12 mt-5"><h1 class="display-4 text-center">-Galletas-</h1></div>
+          <div id ='categories' class="col-12 mt-5"><h1 class="display-4 text-center">-Galletas-</h1></div>
         </div>
           <div id='cards' class="row d-flex justify-content-center">
             <!-- Start Product-1 -->

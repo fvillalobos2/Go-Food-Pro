@@ -1,0 +1,46 @@
+[
+    {
+      "name":"Galletas",
+      "id":0
+    },
+    {
+      "name":"Muffins",
+      "description":"prueba",
+      "id":1
+    },
+    {
+      "name":"Mantequillas",
+      "description":"prueba",
+      "id":2
+    },
+    {
+      "name":"Choco Cocadas",
+      "description":"prueba",
+      "id":3
+    },
+    {
+      "name":"Nutcracker Bread",
+      "description":"prueba",
+      "id":4
+    },
+    {
+      "name":"Proballs",
+      "description":"prueba",
+      "id":5
+    },
+    {
+      "name":"Crunch Bars",
+      "description":"prueba",
+      "id":6
+    },
+    {
+      "name":"Donas",
+      "description":"prueba",
+      "id":7
+    },
+    {
+      "name":"Queques",
+      "description":"prueba",
+      "id":8
+    }
+  ]

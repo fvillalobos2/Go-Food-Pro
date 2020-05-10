@@ -25,3 +25,7 @@ text-align: end;
 span{
     font-size: 0.8rem;
 }
+
+.add-cart {
+    color: #ffffff !important;
+}

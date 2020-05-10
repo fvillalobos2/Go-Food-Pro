@@ -1,7 +1,27 @@
-[{
+[
+    {
+      "name": "Galletas de Almendra",
+      "description": "6 unidades de galletas Gluten free.",
+      "idProduct": 5,
+      "image":"gfpimg/galletas-almendra.jpg",
+      "idCategory": 0,
+      "price": 2000,
+      "quantity": 1
+    },
+    {
+      "name": "Galletas de Cacao",
+      "description": "6 unidades de galletas Gluten free.",
+      "idProduct": 6,
+      "image":"gfpimg/galletas-cacao.jpg",
+      "idCategory": 0,
+      "price": 2000,
+      "quantity": 1
+    },
+    {
     "name": "ZanaBana Muffin",
     "description": "6 unidades de galletas Gluten free.",
     "idProduct": 1,
+    "image":"gfpimg/zanabana-muffin.jpg",
     "idCategory": 1,
     "price": 2000,
     "quantity": 1
@@ -10,6 +30,7 @@
     "name": "Choco ZanaBana Muffin",
     "description": "6 unidades de galletas Gluten free.",
     "idProduct": 2,
+    "image":"gfpimg/choco-muffin.jpg",
     "idCategory": 1,
     "price": 2000,
     "quantity": 1
@@ -18,6 +39,7 @@
     "name": "Mantequilla de Almendras",
     "description": "6 unidades de galletas Gluten free.",
     "idProduct": 3,
+    "image": "gfpimg/mantequillam.jpg",
     "idCategory": 2,
     "price": 2000,
     "quantity": 1
@@ -26,6 +48,7 @@
     "name": "Mantequilla de Maní",
     "description": "6 unidades de galletas Gluten free.",
     "idProduct": 4,
+    "image":"gfpimg/mantequillaa.jpg",
     "idCategory": 2,
     "price": 2000,
     "quantity": 1

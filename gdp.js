@@ -27,36 +27,130 @@
   </script> */
 }
 let products = [{
-    name: 'ZanaBana Muffin',
-    description: '6 unidades de galletas Gluten free.',
-    idProduct: 1,
-    idCategory: 1,
+    name: "Galletas de Almendra",
+    description: "6 unidades de galletas Gluten free.",
+    idProduct: 5,
+    image:"gfpimg/galletas-almendra.jpg",
+    idCategory: 0,
     price: 2000,
     quantity: 1
   },
   {
-    name: 'Choco ZanaBana Muffin',
-    description: '6 unidades de galletas Gluten free.',
-    idProduct: 2,
-    idCategory: 1,
+    name: "Galletas de Cacao",
+    description: "6 unidades de galletas Gluten free.",
+    idProduct: 6,
+    image:"gfpimg/galletas-cacao.jpg",
+    idCategory: 0,
     price: 2000,
     quantity: 1
   },
   {
-    name: 'Mantequilla de Almendras',
-    description: '6 unidades de galletas Gluten free.',
-    idProduct: 3,
-    idCategory: 2,
-    price: 2000,
-    quantity: 1
+  name: "ZanaBana Muffin",
+  description: "6 unidades de galletas Gluten free.",
+  idProduct: 1,
+  image:"gfpimg/zanabana-muffin.jpg",
+  idCategory: 1,
+  price: 2000,
+  quantity: 1
   },
   {
-    name: 'Mantequilla de Maní',
-    description: '6 unidades de galletas Gluten free.',
-    idProduct: 4,
-    idCategory: 2,
-    price: 2000,
-    quantity: 1
+  name: "Choco ZanaBana Muffin",
+  description: "6 unidades de galletas Gluten free.",
+  idProduct: 2,
+  image:"gfpimg/choco-muffin.jpg",
+  idCategory: 1,
+  price: 2000,
+  quantity: 1
+  },
+  {
+  name: "Mantequilla de Almendras",
+  description: "6 unidades de galletas Gluten free.",
+  idProduct: 3,
+  image: "gfpimg/mantequillam.jpg",
+  idCategory: 2,
+  price: 2000,
+  quantity: 1
+  },
+  {
+  name: "Mantequilla de Maní",
+  description: "6 unidades de galletas Gluten free.",
+  idProduct: 4,
+  image:"gfpimg/mantequillaa.jpg",
+  idCategory: 2,
+  price: 2000,
+  quantity: 1
+  },
+  {
+  name: "Choco Cocadas",
+  description: "6 unidades de galletas Gluten free.",
+  idProduct: 7,
+  image:"gfpimg/chocococadas.jpg",
+  idCategory: 3,
+  price: 2000,
+  quantity: 1
+  },
+  {
+  name: "Nutcracker Bread",
+  description: "6 unidades de galletas Gluten free.",
+  idProduct: 8,
+  image:"gfpimg/nutcrackerbread.jpg",
+  idCategory: 4,
+  price: 2000,
+  quantity: 1
+  },
+    {
+  name: "Keto Nutcracker Bread",
+  description: "6 unidades de galletas Gluten free.",
+  idProduct: 9,
+  image:"gfpimg/ketonutcracker.jpg",
+  idCategory: 4,
+  price: 2000,
+  quantity: 1
+  },
+    {
+  name: "Proballs",
+  description: "6 unidades de galletas Gluten free.",
+  idProduct: 10,
+  image:"gfpimg/proballs.jpg",
+  idCategory: 5,
+  price: 2000,
+  quantity: 1
+  },
+    {
+  name: "Crunch Bars",
+  description: "6 unidades de galletas Gluten free.",
+  idProduct: 11,
+  image:"gfpimg/Crunchbars.jpg",
+  idCategory: 6,
+  price: 2000,
+  quantity: 1
+  },
+    {
+  name: "Donas",
+  description: "6 unidades de galletas Gluten free.",
+  idProduct: 12,
+  image:"gfpimg/donas.jpg",
+  idCategory: 7,
+  price: 2000,
+  quantity: 1
+  },
+  {
+  name: "Queque de Camote y Cacao",
+  description: "6 unidades de galletas Gluten free.",
+  idProduct: 13,
+  image:"gfpimg/quequecamote.jpg",
+  idCategory: 8,
+  price: 2000,
+  quantity: 1
+  },
+  {
+  name: "Queque de Limón",
+  description: "6 unidades de galletas Gluten free.",
+  idProduct: 14,
+  image:"gfpimg/quequecamote.jpg",
+  idCategory: 8,
+  price: 2000,
+  quantity: 1
   },
 ]
 let categories = [{
@@ -111,7 +205,6 @@ function getData() {
   response.send();
   response.onreadystatechange = function () {
     if (this.readyState == 4 && this.status == 200) {
-      console.log(JSON.parse(this.responseText))
       categories = JSON.parse(this.responseText)
     }
   }
@@ -120,7 +213,6 @@ function getData() {
   resProducts.send();
   resProducts.onreadystatechange = function (){
     if (this.readyState == 4 && this.status == 200) {
-      console.log(JSON.parse(this.responseText))
       products = JSON.parse(this.responseText)
     }
   }
@@ -137,7 +229,7 @@ function getData() {
         cards.innerHTML += `
         <div class="col-lg-4 col-md-6 col-sm-12 mt-lg-2 mt-2">
           <div id = 'card-id' class="card">
-            <img src="gfpimg/galletas-almendra.jpg" class="card-img-top" alt="...">
+            <img src=${item.image} class="card-img-top" alt="...">
             <div class= "card-body">
               <h4 id = 'title-card' class="card-title">${item.name}</h4>
               <h5 id ='price-card' class="card-title">&#8353; ${item.price}</h5>

@@ -30,7 +30,7 @@ let products = [{
     name: "Galletas de Almendra",
     description: "6 unidades de galletas Gluten free.",
     idProduct: 5,
-    image:"gfpimg/galletas-almendra.jpg",
+    image: "gfpimg/galletas-almendra.jpg",
     idCategory: 0,
     price: 2000,
     quantity: 1
@@ -39,118 +39,118 @@ let products = [{
     name: "Galletas de Cacao",
     description: "6 unidades de galletas Gluten free.",
     idProduct: 6,
-    image:"gfpimg/galletas-cacao.jpg",
+    image: "gfpimg/galletas-cacao.jpg",
     idCategory: 0,
     price: 2000,
     quantity: 1
   },
   {
-  name: "ZanaBana Muffin",
-  description: "6 unidades de galletas Gluten free.",
-  idProduct: 1,
-  image:"gfpimg/zanabana-muffin.jpg",
-  idCategory: 1,
-  price: 2000,
-  quantity: 1
+    name: "ZanaBana Muffin",
+    description: "6 unidades de galletas Gluten free.",
+    idProduct: 1,
+    image: "gfpimg/zanabana-muffin.jpg",
+    idCategory: 1,
+    price: 2000,
+    quantity: 1
   },
   {
-  name: "Choco ZanaBana Muffin",
-  description: "6 unidades de galletas Gluten free.",
-  idProduct: 2,
-  image:"gfpimg/choco-muffin.jpg",
-  idCategory: 1,
-  price: 2000,
-  quantity: 1
+    name: "Choco ZanaBana Muffin",
+    description: "6 unidades de galletas Gluten free.",
+    idProduct: 2,
+    image: "gfpimg/choco-muffin.jpg",
+    idCategory: 1,
+    price: 2000,
+    quantity: 1
   },
   {
-  name: "Mantequilla de Almendras",
-  description: "6 unidades de galletas Gluten free.",
-  idProduct: 3,
-  image: "gfpimg/mantequillam.jpg",
-  idCategory: 2,
-  price: 2000,
-  quantity: 1
+    name: "Mantequilla de Almendras",
+    description: "6 unidades de galletas Gluten free.",
+    idProduct: 3,
+    image: "gfpimg/mantequillam.jpg",
+    idCategory: 2,
+    price: 2000,
+    quantity: 1
   },
   {
-  name: "Mantequilla de Maní",
-  description: "6 unidades de galletas Gluten free.",
-  idProduct: 4,
-  image:"gfpimg/mantequillaa.jpg",
-  idCategory: 2,
-  price: 2000,
-  quantity: 1
+    name: "Mantequilla de Maní",
+    description: "6 unidades de galletas Gluten free.",
+    idProduct: 4,
+    image: "gfpimg/mantequillaa.jpg",
+    idCategory: 2,
+    price: 2000,
+    quantity: 1
   },
   {
-  name: "Choco Cocadas",
-  description: "6 unidades de galletas Gluten free.",
-  idProduct: 7,
-  image:"gfpimg/chocococadas.jpg",
-  idCategory: 3,
-  price: 2000,
-  quantity: 1
+    name: "Choco Cocadas",
+    description: "6 unidades de galletas Gluten free.",
+    idProduct: 7,
+    image: "gfpimg/chocococadas.jpg",
+    idCategory: 3,
+    price: 2000,
+    quantity: 1
   },
   {
-  name: "Nutcracker Bread",
-  description: "6 unidades de galletas Gluten free.",
-  idProduct: 8,
-  image:"gfpimg/nutcrackerbread.jpg",
-  idCategory: 4,
-  price: 2000,
-  quantity: 1
-  },
-    {
-  name: "Keto Nutcracker Bread",
-  description: "6 unidades de galletas Gluten free.",
-  idProduct: 9,
-  image:"gfpimg/ketonutcracker.jpg",
-  idCategory: 4,
-  price: 2000,
-  quantity: 1
-  },
-    {
-  name: "Proballs",
-  description: "6 unidades de galletas Gluten free.",
-  idProduct: 10,
-  image:"gfpimg/proballs.jpg",
-  idCategory: 5,
-  price: 2000,
-  quantity: 1
-  },
-    {
-  name: "Crunch Bars",
-  description: "6 unidades de galletas Gluten free.",
-  idProduct: 11,
-  image:"gfpimg/Crunchbars.jpg",
-  idCategory: 6,
-  price: 2000,
-  quantity: 1
-  },
-    {
-  name: "Donas",
-  description: "6 unidades de galletas Gluten free.",
-  idProduct: 12,
-  image:"gfpimg/donas.jpg",
-  idCategory: 7,
-  price: 2000,
-  quantity: 1
+    name: "Nutcracker Bread",
+    description: "6 unidades de galletas Gluten free.",
+    idProduct: 8,
+    image: "gfpimg/nutcrackerbread.jpg",
+    idCategory: 4,
+    price: 2000,
+    quantity: 1
   },
   {
-  name: "Queque de Camote y Cacao",
-  description: "6 unidades de galletas Gluten free.",
-  idProduct: 13,
-  image:"gfpimg/quequecamote.jpg",
-  idCategory: 8,
-  price: 2000,
-  quantity: 1
+    name: "Keto Nutcracker Bread",
+    description: "6 unidades de galletas Gluten free.",
+    idProduct: 9,
+    image: "gfpimg/ketonutcracker.jpg",
+    idCategory: 4,
+    price: 2000,
+    quantity: 1
   },
   {
-  name: "Queque de Limón",
-  description: "6 unidades de galletas Gluten free.",
-  idProduct: 14,
-  image:"gfpimg/quequecamote.jpg",
-  idCategory: 8,
-  price: 2000,
-  quantity: 1
+    name: "Proballs",
+    description: "6 unidades de galletas Gluten free.",
+    idProduct: 10,
+    image: "gfpimg/proballs.jpg",
+    idCategory: 5,
+    price: 2000,
+    quantity: 1
+  },
+  {
+    name: "Crunch Bars",
+    description: "6 unidades de galletas Gluten free.",
+    idProduct: 11,
+    image: "gfpimg/Crunchbars.jpg",
+    idCategory: 6,
+    price: 2000,
+    quantity: 1
+  },
+  {
+    name: "Donas",
+    description: "6 unidades de galletas Gluten free.",
+    idProduct: 12,
+    image: "gfpimg/donas.jpg",
+    idCategory: 7,
+    price: 2000,
+    quantity: 1
+  },
+  {
+    name: "Queque de Camote y Cacao",
+    description: "6 unidades de galletas Gluten free.",
+    idProduct: 13,
+    image: "gfpimg/quequecamote.jpg",
+    idCategory: 8,
+    price: 2000,
+    quantity: 1
+  },
+  {
+    name: "Queque de Limón",
+    description: "6 unidades de galletas Gluten free.",
+    idProduct: 14,
+    image: "gfpimg/quequecamote.jpg",
+    idCategory: 8,
+    price: 2000,
+    quantity: 1
   },
 ]
 let categories = [{
@@ -211,7 +211,7 @@ function getData() {
   const resProducts = new XMLHttpRequest()
   resProducts.open('GET', 'products.json', true)
   resProducts.send();
-  resProducts.onreadystatechange = function (){
+  resProducts.onreadystatechange = function () {
     if (this.readyState == 4 && this.status == 200) {
       products = JSON.parse(this.responseText)
     }
@@ -314,59 +314,62 @@ function cartInit() {
     document.getElementById('whatsapp').innerHTML = `
       <a class="btn btn-primary" href="https://web.whatsapp.com/send?phone=50685860314&text=Lista de productos:%0D%0A${name} %0D%0ATotal:&#8353;${total}" target="_blank">Share via Whatsapp</a>
       `
-      paypal.Buttons({
-        createOrder: function(data, actions) {
-          // This function sets up the details of the transaction, including the amount and line item details.
-          return actions.order.create({
-            purchase_units: [{
-              amount: {
-                value: total
-              }
-            }]
-          });
-        },
-        onApprove: function(data, actions) {
-          // This function captures the funds from the transaction.
-          return actions.order.capture().then(function(details) {
-            // This function shows a transaction success message to your buyer.
-            localStorage.clear()
-            total = 0
-            document.getElementById('total').innerHTML = `
+    paypal.Buttons({
+      createOrder: function (data, actions) {
+        // This function sets up the details of the transaction, including the amount and line item details.
+        return actions.order.create({
+          purchase_units: [{
+            amount: {
+              value: total
+            }
+          }]
+        });
+      },
+      onApprove: function (data, actions) {
+        // This function captures the funds from the transaction.
+        return actions.order.capture().then(function (details) {
+          // This function shows a transaction success message to your buyer.
+          localStorage.clear()
+          total = 0
+          document.getElementById('total').innerHTML = `
             <h5>Total:&#8353;${total}</h5>
             `
-            document.getElementById("numberCart").innerHTML = 0
-            alert('Transaction completed by ' + details.payer.name.given_name);
-            products.forEach((product, index) => {
-                document.getElementById(product.idProduct).innerHTML = `
+          document.getElementById("numberCart").innerHTML = 0
+          alert('Transaction completed by ' + details.payer.name.given_name);
+          products.forEach((product, index) => {
+            document.getElementById(product.idProduct).innerHTML = `
                   <a onclick="addCart(${product.idProduct})" class="btn btn-success add-cart cart1">Añadir al Carrito</a>
                 `
-            });
-            cartInit()
           });
-        }
-      }).render('#paypal-button-container');
-    }
+          cartInit()
+        });
+      }
+    }).render('#paypal-button-container');
+  }
 }
-  function moreProduct(id){
-    let data = JSON.parse(localStorage.getItem('cart'))
-    data.forEach(product => {
-      if(product.idProduct == id){
-        product.quantity = product.quantity + 1 
-      }
-    });
-    localStorage.setItem('cart', JSON.stringify(data))
-    cartInit()
-  }
-  function lessItems(id){
-    let data = JSON.parse(localStorage.getItem('cart'))
-    data.forEach(product => {
-      if(product.idProduct == id && product.quantity > 1){
-        product.quantity = product.quantity - 1 
-      }
-    });
-    localStorage.setItem('cart', JSON.stringify(data))
-    cartInit()
-  }
+
+function moreProduct(id) {
+  let data = JSON.parse(localStorage.getItem('cart'))
+  data.forEach(product => {
+    if (product.idProduct == id) {
+      product.quantity = product.quantity + 1
+    }
+  });
+  localStorage.setItem('cart', JSON.stringify(data))
+  cartInit()
+}
+
+function lessItems(id) {
+  let data = JSON.parse(localStorage.getItem('cart'))
+  data.forEach(product => {
+    if (product.idProduct == id && product.quantity > 1) {
+      product.quantity = product.quantity - 1
+    }
+  });
+  localStorage.setItem('cart', JSON.stringify(data))
+  cartInit()
+}
+
 function deleteProduct(id) {
   let cart = JSON.parse(localStorage.getItem('cart'))
   cart.forEach((product, index) => {

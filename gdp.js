@@ -41,6 +41,22 @@ let products = [
     price:2000,
     quantity:1
   },
+  {
+    name:'Mantequilla de Almendras',
+    description:'6 unidades de galletas Gluten free.',
+    idProduct: 3,
+    idCategory:2,
+    price:2000,
+    quantity:1
+  },
+  {
+    name:'Mantequilla de Maní',
+    description:'6 unidades de galletas Gluten free.',
+    idProduct: 4,
+    idCategory:2,
+    price:2000,
+    quantity:1
+  },
 ]
   let categories = [
   {
@@ -140,6 +156,7 @@ let temp2 = ''
 var numberCart = 0
 var total = 0
   function cartInit(){
+    total = 0
     let cart = document.getElementById('product-card')
     let temp = products
     let data = JSON.parse(localStorage.getItem('cart'))
@@ -165,6 +182,7 @@ var total = 0
       for (const product of data) {
         cart.innerHTML += `
         <div class='d-flex'>
+        <span onclick="deleteProduct(${product.idProduct})">x</span>
           <h5>${product.name}</h5>
           <p>${product.description}</p>
           <p class='mr-3'><b>&#8353;${product.price}</b></p>
@@ -175,7 +193,29 @@ var total = 0
       document.getElementById('total').innerHTML=`
         <h5>Total:&#8353;${total}</h5>
       `
+      let name= ''
+      let quantity = ''
+      data.forEach(product => {
+        name += product.name + ', precio: ' + product.price + ', cantidad: ' + product.quantity + '%0D%0A'
+        console.log(name)
+      });
+      document.getElementById('whatsapp').innerHTML=`
+      <a class="btn btn-primary" href="https://web.whatsapp.com/send?text=Lista de productos:%0D%0A${name} %0D%0ATotal:&#8353;${total}" target="_blank">Share via Whatsapp</a>
+      ` 
     }
+  }
+  function deleteProduct(id){
+    let cart = JSON.parse(localStorage.getItem('cart'))
+    cart.forEach((product, index) => {
+      if(id == product.idProduct){
+        cart.splice(index, 1)
+        document.getElementById(product.idProduct).innerHTML = `
+        <a onclick="addCart(${product.idProduct})" class="btn btn-success add-cart cart1">Añadir al Carrito</a>
+      `
+      }
+    });
+    localStorage.setItem('cart', JSON.stringify(cart))
+    cartInit()
   }
   cartInit()
 function addCart(id){

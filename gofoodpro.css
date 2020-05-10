@@ -10,6 +10,9 @@ nav {
 .firsth{
     margin-top: 6rem;
 }
+.delete-product{
+    cursor: pointer;
+}
 .card-body {
     margin-bottom: 1rem;
 }

@@ -1,0 +1,33 @@
+[{
+    "name": "ZanaBana Muffin",
+    "description": "6 unidades de galletas Gluten free.",
+    "idProduct": 1,
+    "idCategory": 1,
+    "price": 2000,
+    "quantity": 1
+  },
+  {
+    "name": "Choco ZanaBana Muffin",
+    "description": "6 unidades de galletas Gluten free.",
+    "idProduct": 2,
+    "idCategory": 1,
+    "price": 2000,
+    "quantity": 1
+  },
+  {
+    "name": "Mantequilla de Almendras",
+    "description": "6 unidades de galletas Gluten free.",
+    "idProduct": 3,
+    "idCategory": 2,
+    "price": 2000,
+    "quantity": 1
+  },
+  {
+    "name": "Mantequilla de Maní",
+    "description": "6 unidades de galletas Gluten free.",
+    "idProduct": 4,
+    "idCategory": 2,
+    "price": 2000,
+    "quantity": 1
+  }
+]

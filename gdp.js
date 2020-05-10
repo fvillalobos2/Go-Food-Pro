@@ -106,14 +106,24 @@ let categories = [{
 ]
 
 function getData() {
-  // const response = new XMLHttpRequest()
-  // response.open('GET', 'gdp.json', true)
-  // response.send();
-  // response.onreadystatechange = function(){
-  //   if(this.readyState == 4 && this.status == 200){
-  //     console.log(this.responseText)
-  //   }
-  // }
+  const response = new XMLHttpRequest()
+  response.open('GET', 'gdp.json', true)
+  response.send();
+  response.onreadystatechange = function () {
+    if (this.readyState == 4 && this.status == 200) {
+      console.log(JSON.parse(this.responseText))
+      categories = JSON.parse(this.responseText)
+    }
+  }
+  const resProducts = new XMLHttpRequest()
+  resProducts.open('GET', 'products.json', true)
+  resProducts.send();
+  resProducts.onreadystatechange = function (){
+    if (this.readyState == 4 && this.status == 200) {
+      console.log(JSON.parse(this.responseText))
+      products = JSON.parse(this.responseText)
+    }
+  }
   let section = document.querySelector('#products');
   for (let category of categories) {
     section.innerHTML += `

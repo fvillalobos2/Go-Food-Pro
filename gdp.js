@@ -261,12 +261,13 @@ var total = 0
 
 function cartInit() {
   total = 0
+  numberCart = 0
   let cart = document.getElementById('product-card')
   let temp = products
   let data = JSON.parse(localStorage.getItem('cart'))
   if (data) {
-    numberCart = data.length
     data.forEach(item => {
+       numberCart += item.quantity
       temp.forEach(product => {
         if (item.idProduct == product.idProduct) {
           document.getElementById(item.idProduct).innerHTML = `

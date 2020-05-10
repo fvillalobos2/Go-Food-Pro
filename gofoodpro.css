@@ -42,7 +42,10 @@ span{
 .add-cart {
     color: #ffffff !important;
 }
-
+.modal-body{
+    max-height: 20rem;
+    overflow: auto;
+}
 @media (min-width: 768px) {
     .navbar-nav {
         width: 100%;

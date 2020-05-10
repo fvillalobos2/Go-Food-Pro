@@ -184,7 +184,7 @@ function cartInit() {
     for (const product of data) {
       cart.innerHTML += `
         <div class='d-flex'>
-        <span onclick="deleteProduct(${product.idProduct})">x</span>
+        <span class='delete-product' onclick="deleteProduct(${product.idProduct})">x</span>
           <h5>${product.name}</h5>
           <p>${product.description}</p>
           <p class='mr-3'><b>&#8353;${product.price}</b></p>

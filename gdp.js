@@ -1,31 +1,48 @@
-{
-  /* <script>
-   $(document).ready(function(){
-    // Add smooth scrolling to all links
-    $("a").on('click', function(event) {
-      console.log('hola')
-      // Make sure this.hash has a value before overriding default behavior
-      if (this.hash !== "") {
-        // Prevent default anchor click behavior
-        event.preventDefault();
-
-        // Store hash
-        var hash = this.galletas;
-
-        // Using jQuery's animate() method to add smooth page scroll
-        // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
-        $('html, body').animate({
-          scrollTop: $(hash).offset().top
-        }, 800, function(){
-     
-          // Add hash (#) to URL when done scrolling (default click behavior)
-          window.location.hash = hash;
-        });
-      } // End if
-    })
-  }); 
-  </script> */
-}
+let categories = [{
+    name: 'Galletas',
+    id: 0
+  },
+  {
+    name: 'Muffins',
+    description: 'prueba',
+    id: 1
+  },
+  {
+    name: 'Mantequillas',
+    description: 'prueba',
+    id: 2
+  },
+  {
+    name: 'Choco Cocadas',
+    description: 'prueba',
+    id: 3
+  },
+  {
+    name: 'Nutcracker Bread',
+    description: 'prueba',
+    id: 4
+  },
+  {
+    name: 'Proballs',
+    description: 'prueba',
+    id: 5
+  },
+  {
+    name: 'Crunch Bars',
+    description: 'prueba',
+    id: 6
+  },
+  {
+    name: 'Donas',
+    description: 'prueba',
+    id: 7
+  },
+  {
+    name: 'Queques',
+    description: 'prueba',
+    id: 8
+  },
+]
 let products = [{
     name: "Galletas de Almendra",
     description: "6 unidades de galletas Gluten free.",
@@ -153,51 +170,7 @@ let products = [{
     quantity: 1
   },
 ]
-let categories = [{
-    name: 'Galletas',
-    id: 0
-  },
-  {
-    name: 'Muffins',
-    description: 'prueba',
-    id: 1
-  },
-  {
-    name: 'Mantequillas',
-    description: 'prueba',
-    id: 2
-  },
-  {
-    name: 'Choco Cocadas',
-    description: 'prueba',
-    id: 3
-  },
-  {
-    name: 'Nutcracker Bread',
-    description: 'prueba',
-    id: 4
-  },
-  {
-    name: 'Proballs',
-    description: 'prueba',
-    id: 5
-  },
-  {
-    name: 'Crunch Bars',
-    description: 'prueba',
-    id: 6
-  },
-  {
-    name: 'Donas',
-    description: 'prueba',
-    id: 7
-  },
-  {
-    name: 'Queques',
-    description: 'prueba',
-    id: 8
-  },
-]
+
 
 function getData() {
   const response = new XMLHttpRequest()
@@ -205,7 +178,7 @@ function getData() {
   response.send();
   response.onreadystatechange = function () {
     if (this.readyState == 4 && this.status == 200) {
-      categories = JSON.parse(this.responseText)
+      //categories = JSON.parse(this.responseText)
     }
   }
   const resProducts = new XMLHttpRequest()
@@ -318,6 +291,9 @@ function cartInit() {
   }
 }
 function payPal(){
+  let data = JSON.parse(localStorage.getItem('cart'))
+  console.log(data)
+  document.getElementById('')
   paypal.Buttons({
     createOrder: function (data, actions) {
       

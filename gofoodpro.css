@@ -29,3 +29,31 @@ span{
 .add-cart {
     color: #ffffff !important;
 }
+
+@media (min-width: 768px) {
+    .navbar-nav {
+        width: 100%;
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .cart {
+        display: flex;
+        align-items: center;
+    }
+}
+
+@media (max-width: 767px) {
+    .navbar-brand {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin: 0px;
+    }
+
+    .navbar-toggler {
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+}

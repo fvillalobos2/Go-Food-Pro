@@ -114,17 +114,17 @@ function getData() {
   //     console.log(this.responseText)
   //   }
   // }
-  let res = document.querySelector('#cards');
-  let section = document.querySelector('#categories');
-  // res.innerHTML = '';
-  // section.innerHTML = '';
+  let res = document.querySelector('#cards')
+  let section = document.querySelector('#categories')
+  res.innerHTML = ''
+  section.innerHTML = ''
   for (let category of categories) {
     section.innerHTML += `
     <h1 class="display-4 text-center">-${category.name}-</h1>
     `
     for (let item of products) {
       if (item.idCategory == category.id) {
-        res.innerHTML += `
+        section.innerHTML += `
         <div class="col-lg-4 col-md-6 col-sm-12 mt-lg-2 mt-2">
           <div id = 'card-id' class="card">
             <img src="gfpimg/galletas-almendra.jpg" class="card-img-top" alt="...">

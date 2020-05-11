@@ -10,8 +10,11 @@ nav {
 .firsth{
     margin-top: 6rem;
 }
+
 .delete-product{
     cursor: pointer;
+    position: absolute;
+    left: 0;
 }
 .lessProduct{
     cursor: pointer;
@@ -46,6 +49,9 @@ span{
     max-height: 20rem;
     overflow: auto;
 }
+.div-buttons{
+    display: flex;
+}
 @media (min-width: 768px) {
     .navbar-nav {
         width: 100%;
@@ -61,6 +67,24 @@ span{
 @media (max-width:350px){
     .display-4{
         font-size: 2.5rem;
+    }
+    .cart-page{
+     flex-direction: column;
+     align-items: center;
+    }
+    .delete-product {
+        left: 1rem;
+    }
+    .div-buttons{
+        -ms-flex: 0 0 100%;
+        flex: 0 0 100%;
+        max-width: 100%;
+        display: unset;
+    }
+    #whatsapp{
+        display: flex;
+        justify-content: center;
+        margin-left: 1rem;
     }
 }
 

@@ -59,7 +59,6 @@ function cartInit() {
   let cart = document.getElementById('product-card');
   let temp = products;
   let data = JSON.parse(localStorage.getItem('cart'));
-  let td = document.getElementById('td-products')
   if (data) {
     data.forEach(item => {
       numberCart += item.quantity;
@@ -83,41 +82,25 @@ function cartInit() {
     document.getElementById("numberCart").innerHTML = numberCart;
   }
   cart.innerHTML = '';
-  td.innerHTML = '';
   if (data) {
     data.forEach(dato => {
       let suma = parseFloat(dato.price) * dato.quantity;
       total += parseFloat(suma);
     });
     for (const product of data) {
-      td.innerHTML += `
-      <tr>
-          <th ><img class='img-td-home' src=${product.image}></th>
-          <td>${product.name}</td>
-          <td>${product.description}</td>
-          <td>
-          <div class="d-flex">
-          <span class='lessProduct' onclick = "lessItems(${product.idProduct})">-</span>
-            <p><b>${product.quantity}</b></p>
-          <span class='moreProduct' onclick="moreProduct(${product.idProduct})"><i class="fas fa-plus"></i></span>
+      cart.innerHTML += `
+        <div class='d-flex'>
+        <span class='delete-product' onclick="deleteProduct(${product.idProduct})"><i class="fas fa-trash-alt"></i></span>
+          <h5>${product.name}</h5>
+          <p>${product.description}</p>
+          <p class='mr-3'><b>&#8353;${product.price}</b></p>
+            <div class="d-flex">
+            <span class='lessProduct' onclick = "lessItems(${product.idProduct})">-</span>
+              <p><b>${product.quantity}</b></p>
+            <span class='moreProduct' onclick="moreProduct(${product.idProduct})"><i class="fas fa-plus"></i></span>
+            </div>
           </div>
-          </td>
-          <td><span class='delete-table' onclick="deleteProduct(${product.idProduct})"><i class="fas fa-trash-alt"></i></span></td>
-      </tr>
-      `
-      // cart.innerHTML += `
-      //   <div class='d-flex'>
-      //   <span class='delete-product' onclick="deleteProduct(${product.idProduct})"><i class="fas fa-trash-alt"></i></span>
-      //     <h5>${product.name}</h5>
-      //     <p>${product.description}</p>
-      //     <p class='mr-3'><b>&#8353;${product.price}</b></p>
-      //       <div class="d-flex">
-      //       <span class='lessProduct' onclick = "lessItems(${product.idProduct})">-</span>
-      //         <p><b>${product.quantity}</b></p>
-      //       <span class='moreProduct' onclick="moreProduct(${product.idProduct})"><i class="fas fa-plus"></i></span>
-      //       </div>
-      //     </div>
-      //   `
+        `
     }
     document.getElementById('total').innerHTML = `
       <h5>Total:&#8353;${total}</h5>

@@ -1,6 +1,25 @@
 body {
     font-family: 'Lato', sans-serif;
-    background-color: transparent;
+    background-color: #FAFFE3;
+}
+.container {
+    background-color: #FFFFFC;
+}
+
+#description-card {
+    border: 1px solid;
+    border-radius: .25rem;
+}
+.modal-header {
+    background-color: black;
+    color: white;
+}
+
+.modal-content .close{
+    color: white;
+}
+.card {
+    border: none;
 }
 
 .jumbotron{
@@ -57,7 +76,8 @@ body {
 }
 
 .header {
-    background-color: #BBD646;
+    background-color: #FAFFE3;
+    color: black;
     font-size: 1.5rem;
 }
 .dropdown-menu a:active{
@@ -100,7 +120,7 @@ color: #ffffff;
 }
 
 .fa-shopping-cart {
-color: white;
+color: black;
 text-align: end;
 }
 
@@ -123,7 +143,7 @@ text-align: end;
 
 @media (min-width: 768px) {
     .img-td{
-        width: 40%
+        width:100%
     }
     .img-td-home{
         width: 100%;
@@ -192,6 +212,10 @@ text-align: end;
         left: 0;
     }
 
+    .img-td-home{
+        width: 100%;
+    }
+    
     .cart {
         position: absolute;
         top: 0;

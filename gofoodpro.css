@@ -63,6 +63,9 @@ span{
     .img-td{
         width: 40%
     }
+    .img-td-home{
+        width: 100%;
+    }
     .paypal-buttons{
         width: 19rem!important;
     }

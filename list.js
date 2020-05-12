@@ -18,7 +18,7 @@ let products = [{
     },
     {
         name: "ZanaBana Muffin",
-        description: "6 unidades de galletas Gluten free.",
+        description: "Presentación: Paquete de 6 unidades Muffins a base de zanahoria con banano sin azúcar",
         idProduct: 1,
         image: "gfpimg/zanabana-muffin.jpg",
         idCategory: 1,
@@ -106,24 +106,24 @@ let products = [{
         price: 2000,
         quantity: 1
     },
-    {
-        name: "Queque de Camote y Cacao",
-        description: "6 unidades de galletas Gluten free.",
-        idProduct: 13,
-        image: "gfpimg/quequecamote.jpg",
-        idCategory: 8,
-        price: 2000,
-        quantity: 1
-    },
-    {
-        name: "Queque de Limón",
-        description: "6 unidades de galletas Gluten free.",
-        idProduct: 14,
-        image: "gfpimg/quequecamote.jpg",
-        idCategory: 8,
-        price: 2000,
-        quantity: 1
-    },
+    // {
+    //     name: "Queque de Camote y Cacao",
+    //     description: "6 unidades de galletas Gluten free.",
+    //     idProduct: 13,
+    //     image: "gfpimg/quequecamote.jpg",
+    //     idCategory: 8,
+    //     price: 2000,
+    //     quantity: 1
+    // },
+    // {
+    //     name: "Queque de Limón",
+    //     description: "6 unidades de galletas Gluten free.",
+    //     idProduct: 14,
+    //     image: "gfpimg/quequecamote.jpg",
+    //     idCategory: 8,
+    //     price: 2000,
+    //     quantity: 1
+    // },
 ];
 let categories = [{
         name: 'Galletas',
@@ -173,10 +173,10 @@ let categories = [{
         description: 'prueba',
         id: 7
     },
-    {
-        name: 'Queques',
-        htmlId: 'queques',
-        description: 'prueba',
-        id: 8
-    },
+    // {
+    //     name: 'Queques',
+    //     htmlId: 'queques',
+    //     description: 'prueba',
+    //     id: 8
+    // },
 ];

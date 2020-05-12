@@ -15,7 +15,7 @@
   <!-- CSS Style Sheet -->
   <link rel="stylesheet" href="gofoodpro.css">
   <!-- Google Fonts-->
-  <!-- <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;400&display=swap" rel="stylesheet"> -->
+  <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;1,400;1,900&display=swap" rel="stylesheet">
   <!-- Font Awesome-->
   <script src="https://kit.fontawesome.com/3d9ffe25b9.js" crossorigin="anonymous"></script>
   <title>Go Food Pro</title>
@@ -55,52 +55,85 @@
   </div>
   <!-- Start Nav Bar -->
   <!-- Image and text -->
-  <nav class="navbar navbar-dark navbar-expand-md bg-#BBD646 sticky-top">
+  <nav class="navbar navbar-dark navbar-expand-md bg-#BBD646 sticky-top header pb-1">
     <a class="navbar-brand" href="#">
-      <img class="headerpic" src="gfpimg/icon.png" width="80" height="80" class="d-inline-block align-top" alt="">
+      <img class="headerpic" src="gfpimg/icon.png" width="100" height="100" class="d-inline-block align-top" alt="">
     </a>
     <div class="w-100">
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
         aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
+      <div class="row">
       <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav center">
+        <ul class="navbar-nav d-flex justify-content-left">
           <li class="nav-item active">
             <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
           </li>
-          <li class="nav-item dropdown">
+          <li class="nav-item dropdown active">
             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
               data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
               Productos
             </a>
             <div id="categories-menu" class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-
             </div>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Pricing</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-          </li>
-          <li class="cart">
-            <a href="#" data-toggle="modal" data-target="#exampleModal">
-              <i class="fas fa-shopping-cart"></i><span id='numberCart'>0</span>
-            </a>
           </li>
         </ul>
       </div>
+      <li class="cart">
+        <a href="#" data-toggle="modal" data-target="#exampleModal">
+          <i class="fas fa-shopping-cart"></i>
+        </a><span id='numberCart' class="numbercartmb">0</span>
+      </li>
     </div>
+  </div>
   </nav>
   <!-- END Nav BAR -->
+  <!-- Start Carrousel or Jumbotron -->
+  <div class="jumbotron text-right">
+    <h1 class="display-4">Go Food Pro</h1>
+    <p class="lead">Envíos Gratis por tu primera compra en línea</p>
+    <hr class="my-4">
+    <p>Aplican Terminos & Condiciones*</p>
+    <a class="btn btn-success btn-lg" href="#galletas" role="button">Comprar</a>
+  </div>
+  <!-- End Carrousel or Jumbotron -->
   <!-- Start Content -->
+  <section class="content">
   <div class="container">
+    <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fas fa-arrow-up"></i>
+    </button>
     <div class="row mt-2">
       <div id='products' class="col-12 mt-5">
       </div>
     </div>
   </div>
+  <script src="https://apps.elfsight.com/p/platform.js" defer></script>
+  <div class="elfsight-app-f14e22be-94f5-4e7f-90b0-93561b4aacc2"></div>
+</section>
+  <!-- End Content -->
+  <!-- Start Footer -->
+  <nav class="navbar navbar-dark bg-##000000 sticky-bottom footer">
+    <a class="navbar-brand" href="#">Contáctenos</a>
+      <div class="w-100">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavFooter"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon">
+      </span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavFooter">
+        <div class="navbar-nav footer">
+          <div itemscope itemtype="https://gofoodpro.com">
+          <a class="nav-item nav-link active" itemprop="telephone" href="tel:+50688906767"><i class="fa fa-phone-alt"></i>  +506 8890-6767</a>
+        </div>
+        <a class="nav-item nav-link active" href="mailto: info@gofoodpro.com"> <i class="fa fa-envelope"></i>  info@gofoodpro.com</a>
+          <a class="nav-item nav-link active"> <i class="fa fa-briefcase"></i>  San Jose, Costa Rica</a>
+          <a class="nav-item nav-link active" href="https://www.facebook.com/GoFoodPr0/"><i class="fa fa-facebook"></i></a>
+          <a class="nav-item nav-link active" href="https://www.instagram.com/gofoodpro/"><i class="fa fa-instagram"></i></a>
+        </div>
+      </div>
+  </nav>
+  <!-- End Footer -->
   <!-- End Container -->
   </div>
   <!-- Optional JavaScript -->

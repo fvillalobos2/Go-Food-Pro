@@ -1,3 +1,41 @@
+let band = false
+let band2 = false
+function payPal() {
+    paypal.Buttons({
+      createOrder: function (data, actions) {
+        // This function sets up the details of the transaction, including the amount and line item details.
+        return actions.order.create({
+          purchase_units: [{
+            amount: {
+              value: total
+            }
+          }]
+        });
+      },
+      onApprove: function (data, actions) {
+        // This function captures the funds from the transaction.
+        return actions.order.capture().then(function (details) {
+          // This function shows a transaction success message to your buyer.
+          localStorage.clear();
+          total = 0;
+          if(document.getElementById("numberCart") != null){
+            document.getElementById('total').innerHTML = `
+            <h5>Total:&#8353;${total}</h5>
+            `;
+          document.getElementById("numberCart").innerHTML = 0;
+            products.forEach((product, index) => {
+              document.getElementById(product.idProduct).innerHTML = `
+                <a onclick="addCart(${product.idProduct})" class="btn btn-success add-cart cart1">Añadir al Carrito</a>
+              `;
+            });
+          }
+          alert('Transaction completed by ' + details.payer.name.given_name + "thanks for your purchase");
+          cartInit();
+          window.location.href = 'gofoodpro.html'
+        });
+      }
+    }).render('#paypal-button-container');
+  }
 function cartInitPage() {
     total = 0;
     numberCart = 0;
@@ -22,7 +60,7 @@ function cartInitPage() {
             <tr>
                 <th ><img class='img-td' src=${product.image}></th>
                 <td>${product.name}</td>
-                <td>${product.description}</td>
+                <td><div id='description-card-page'>${product.description}</div></td>
                 <td>
                 <div class="d-flex">
                 <span class='lessProduct' onclick = "lessItems(${product.idProduct})">-</span>
@@ -57,7 +95,7 @@ function cartInitPage() {
         });
         if (total != 0) {
             document.getElementById('whatsapp').innerHTML = `
-        <a class="btn btn-primary mr-5" href="https://web.whatsapp.com/send?phone=50685860314&text=Lista de productos:%0D%0A${name} %0D%0ATotal:&#8353;${total}" target="_blank">Share via Whatsapp</a>
+        <a id='button-whatsapp' class="btn btn-primary mr-5 disabled" href="https://web.whatsapp.com/send?phone=50685860314&text=Lista de productos:%0D%0A${name} %0D%0ATotal:&#8353;${total}" target="_blank">Share via Whatsapp</a>
         `;
             if (document.getElementById('a-cart') != null) {
                 document.getElementById('a-cart').innerHTML = `
@@ -68,7 +106,30 @@ function cartInitPage() {
     }
 }
 cartInitPage()
-
+function changeDevilery(e){
+    if(!band){
+        console.log(band)
+        payPal()
+    }
+    let temp = document.getElementById('button-whatsapp')
+    if(e == 'Si'){
+        band = true
+        total = total + 2000
+        document.getElementById('total-cart').innerHTML = `
+        <h5>Total:&#8353;${total}</h5>
+        `;
+        temp.classList.remove('disabled')
+    }else{
+        if(band == true){
+            total = total - 2000
+            document.getElementById('total-cart').innerHTML = `
+            <h5>Total:&#8353;${total}</h5>
+            `;
+        }
+        temp.classList.remove('disabled') 
+        band = true
+    }
+}
 function moreProduct(id) {
     let data = JSON.parse(localStorage.getItem('cart'))
     data.forEach(product => {

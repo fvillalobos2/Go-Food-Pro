@@ -12,29 +12,37 @@ body {
     max-height: 7rem;
     overflow: auto;
 }
-#description-card::-webkit-scrollbar {
+#description-card-page{
+    max-height: 11rem;
+    overflow: auto;
+}
+#description-card::-webkit-scrollbar,#description-card-page::-webkit-scrollbar {
     width: 8px;   
     height: 8px;    
 }
-#description-card::-webkit-scrollbar-thumb {
+#description-card::-webkit-scrollbar-thumb,#description-card-page::-webkit-scrollbar-thumb {
     background: #ccc;
     border-radius: 4px;
 }
-#description-card::-webkit-scrollbar-thumb:hover {
+#description-card::-webkit-scrollbar-thumb:hover,#description-card-page::-webkit-scrollbar-thumb:hover {
     background: #b3b3b3;
     box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.2);
 }
-#description-card::-webkit-scrollbar-track {
+#description-card::-webkit-scrollbar-track,#description-card-page::-webkit-scrollbar-track {
     background: #e1e1e1;
     border-radius: 4px;
 }
-#description-card::-webkit-scrollbar-thumb:active {
+#description-card::-webkit-scrollbar-thumb:active,#description-card-page::-webkit-scrollbar-thumb:active {
     background-color: #999999;
 }
-#description-card::-webkit-scrollbar-track:hover,
-#description-card::-webkit-scrollbar-track:active {
+#description-card::-webkit-scrollbar-track:hover,#description-card-page::-webkit-scrollbar-track:hover,
+#description-card::-webkit-scrollbar-track:active,#description-card-page::-webkit-scrollbar-track:active {
   background: #d4d4d4;
 }
+a.disabled, button.disabled {
+    pointer-events: none;
+    cursor: default;
+  }
 .modal-header {
     background-color: black;
     color: white;

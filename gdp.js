@@ -48,7 +48,7 @@ function getData() {
   }
 }
 
-getData();;
+getData();
 let temp2 = '';
 var numberCart = 0;
 var total = 0;
@@ -135,48 +135,17 @@ function cartInit() {
         <a class="btn btn-primary" href="cart.html">Comprar</a>
         `;
       }
+    }else{
+      document.getElementById('whatsapp').innerHTML =''
+      if(document.getElementById('a-cart') != null){
+        document.getElementById('a-cart').innerHTML = ``;
+      }
     }
   }
 }
 
-function payPal() {
-  paypal.Buttons({
-    createOrder: function (data, actions) {
-      // This function sets up the details of the transaction, including the amount and line item details.
-      return actions.order.create({
-        purchase_units: [{
-          amount: {
-            value: total
-          }
-        }]
-      });
-    },
-    onApprove: function (data, actions) {
-      // This function captures the funds from the transaction.
-      return actions.order.capture().then(function (details) {
-        // This function shows a transaction success message to your buyer.
-        localStorage.clear();
-        total = 0;
-        if(document.getElementById("numberCart") != null){
-          document.getElementById('total').innerHTML = `
-          <h5>Total:&#8353;${total}</h5>
-          `;
-        document.getElementById("numberCart").innerHTML = 0;
-          products.forEach((product, index) => {
-            document.getElementById(product.idProduct).innerHTML = `
-              <a onclick="addCart(${product.idProduct})" class="btn btn-success add-cart cart1">Añadir al Carrito</a>
-            `;
-          });
-        }
-        alert('Transaction completed by ' + details.payer.name.given_name + "thanks for your purchase");
-        cartInit();
-        window.location.href = 'gofoodpro.html'
-      });
-    }
-  }).render('#paypal-button-container');
-}
 
-payPal();
+
 
 function moreProduct(id) {
   let data = JSON.parse(localStorage.getItem('cart'))

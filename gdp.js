@@ -26,11 +26,11 @@ function getData() {
                 <h4 id = 'title-card' class="card-title">${item.name}</h4>
                 <h5 id ='price-card' class="card-title">&#8353; ${item.price}</h5>
                 <p>
-                  <a class="btn btn-info" data-toggle="collapse" href="#${item.name.replace(/ /g, "")}" role="button" aria-expanded="false" aria-controls="collapseExample">
+                  <a class="btn btn-info" data-toggle="collapse" href="#a${item.idProduct}" role="button" aria-expanded="false" aria-controls="collapseExample">
                     Descripcion del Producto
                   </a>
                 </p>
-                <div class="collapse" id="${item.name.replace(/ /g, "")}">
+                <div class="collapse" id="a${item.idProduct}">
                   <div id="description-card" class="card card-body">
                    ${item.description}
                   </div>

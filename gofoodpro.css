@@ -12,7 +12,7 @@ body {
 }
 
 #description-card-page {
-    max-height: 5rem;
+    max-height: 8rem;
     overflow: auto;
 }
 

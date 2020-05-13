@@ -1,13 +1,14 @@
 body {
     font-family: 'Lato', sans-serif;
-    background-color: #FAFFE3;
+    background-image: url(gfpimg/geometric-leaves.png);
+    background-repeat: repeat;
 }
 .container {
     background-color: #FFFFFC;
 }
 
 #description-card {
-    border: 1px solid;
+    border: 1px solid #aeaeae;
     border-radius: .25rem;
 }
 
@@ -58,14 +59,21 @@ a.disabled, button.disabled {
 
 
 .jumbotron .display-4 {
+    font-size: 5rem;
     font-weight: 900;
-    text-transform: uppercase;
+    font-family: 'Pacifico', cursive;
+    margin: 0;
 }
 
 .jumbotron .lead {
     font-weight: 400;
+    font-size: 2rem;
+    margin-top: -18px;
 }
 
+.jumbotronp{
+    font-size: 2rem;
+}
 #numberCart {
     font-size: 0.8rem;
     color: white;
@@ -119,9 +127,12 @@ a.disabled, button.disabled {
 }
 
 .header {
-    background-color: #FAFFE3;
+    background-color: #f8c594;
     color: black;
     font-size: 1.5rem;
+    -webkit-box-shadow: -1px 4px 15px -4px rgba(0,0,0,0.75);
+    -moz-box-shadow: -1px 4px 15px -4px rgba(0,0,0,0.75);
+    box-shadow: -1px 4px 15px -4px rgba(0,0,0,0.75);
 }
 
 .dropdown-menu a:active {

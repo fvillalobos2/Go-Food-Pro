@@ -94,7 +94,6 @@ function cartInit() {
       <tr>
           <th ><img class='img-td-home' src=${product.image}></th>
           <td>${product.name}</td>
-          <td>${product.description}</td>
           <td>
           <div class="d-flex">
           <span class='lessProduct' onclick = "lessItems(${product.idProduct})">-</span>

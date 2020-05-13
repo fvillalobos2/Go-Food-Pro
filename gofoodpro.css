@@ -22,11 +22,6 @@ body {
     border: none;
 }
 
-.jumbotron {
-    background-image: url(gfpimg/jumbo-xl-bg.jpg);
-    background-size: 100%;
-    background-position: center;
-}
 
 .jumbotron .display-4 {
     font-weight: 900;
@@ -162,7 +157,7 @@ text-align: end;
 }
 
 
-@media (min-width: 768px) {
+@media (min-width: 769px) {
     .img-td {
         width: 40%
     }
@@ -185,6 +180,12 @@ text-align: end;
     .cart {
         display: flex;
         align-items: center;
+    }
+
+    .jumbotron {
+        background-image: url(gfpimg/jumbo-xl-bg.jpg);
+        background-size: 100%;
+        background-position: center;
     }
 }
 
@@ -216,18 +217,42 @@ text-align: end;
         margin-left: 1rem;
     }
 
+    .jumbotron {
+        background-image: url(gfpimg/jumbo-bg-xs.jpg);
+        background-size: 100%;
+        background-position: center;}
+
     .fa-shopping-cart {
         color: white;
         justify-content: end;
     }
 }
 
-@media (max-width: 767px) {
+@media (max-width: 768px) {
     .navbar-brand {
         width: 100%;
         display: flex;
         justify-content: center;
         margin: 0px;
+    }
+
+    .jumbotron {
+        background-image: url(gfpimg/jumbo-bg-md.jpg);
+        background-size: 100%;
+        background-position: center;}
+    
+    #numberCart {
+        font-size: 0.6rem;
+        color: white;
+        background-color: black;
+        border-radius: 50px;
+        padding: 0.3rem;
+        margin-top: 0;
+        margin-left: 0.2rem;
+        margin-right: 1rem;
+        margin-bottom: 2rem;
+
+        text-align: center;
     }
 
     .img-td {
@@ -253,5 +278,21 @@ text-align: end;
         top: 0;
         right: 0;
         list-style: none;
+    }
+
+    .jumbotron {
+        background-image: url(gfpimg/jumbo-bg-mb.jpg);
+        background-size: 100%;
+        background-position: center;
+    }
+    .jumbotron .display-4 {
+        font-size: 3rem;
+    }
+    .jumbotron .lead {
+        font-size: 1rem;
+    }
+    @media (min-width: 1000px){
+        .jumbotron {
+            background-image: url(gfpimg/jumbo-bg1-mb.jpg);
     }
 }

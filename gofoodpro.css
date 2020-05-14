@@ -371,18 +371,17 @@ font-size: 2rem;
         list-style: none;
     }
 
-    .jumbotron {
-        background-image: url(gfpimg/jumbo-bg-mb.jpg);
-        background-size: 100%;
-        background-position: center;
+    .jumbotron .display-4 {
+        font-size: 2.5rem;
     }
 
-    .jumbotron .display-4 {
-        font-size: 3rem;
+    .jumbotron .jumboicon {
+        height: 100;
+        width: 100;
     }
 
     .jumbotron .lead {
-        font-size: 2rem;
+        font-size: 1rem;
     }
 }
     @media (min-width: 1000px) {

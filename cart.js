@@ -74,7 +74,7 @@ function cartInitPage() {
                 <div class="d-flex">
                 <span class='lessProduct' onclick = "lessItems(${product.idProduct})">-</span>
                   <p><b>${product.quantity}</b></p>
-                <span class='moreProduct' onclick="moreProduct(${product.idProduct})"><i class="fas fa-plus"></i></span>
+                <span class='moreProduct' onclick="moreProduct(${product.idProduct})">+</span>
                 </div>
                 </td>
                 <td><span class='delete-table' onclick="deleteProduct(${product.idProduct})"><i class="fas fa-trash-alt"></i></span></td>

@@ -71,7 +71,7 @@ function cartInit() {
             <div class="d-flex">
             <span class='lessProduct' onclick = "lessItems(${item.idProduct})">-</span>
               <p><b>${item.quantity}</b></p>
-            <span class='moreProduct' onclick="moreProduct(${item.idProduct})"><i class="fas fa-plus"></i></span>
+            <span class='moreProduct' onclick="moreProduct(${item.idProduct})">+</span>
             </div>
           `
           }
@@ -98,7 +98,7 @@ function cartInit() {
           <div class="d-flex">
           <span class='lessProduct' onclick = "lessItems(${product.idProduct})">-</span>
             <p><b>${product.quantity}</b></p>
-          <span class='moreProduct' onclick="moreProduct(${product.idProduct})"><i class="fas fa-plus"></i></span>
+          <span class='moreProduct' onclick="moreProduct(${product.idProduct})">+</i></span>
           </div>
           </td>
           <td><span class='delete-table' onclick="deleteProduct(${product.idProduct})"><i class="fas fa-trash-alt"></i></span></td>
@@ -113,7 +113,7 @@ function cartInit() {
       //       <div class="d-flex">
       //       <span class='lessProduct' onclick = "lessItems(${product.idProduct})">-</span>
       //         <p><b>${product.quantity}</b></p>
-      //       <span class='moreProduct' onclick="moreProduct(${product.idProduct})"><i class="fas fa-plus"></i></span>
+      //       <span class='moreProduct' onclick="moreProduct(${product.idProduct})">+</span>
       //       </div>
       //     </div>
       //   `
@@ -127,9 +127,9 @@ function cartInit() {
       name += product.name + ', precio unitario: &#8353;' + product.price + ', cantidad: ' + product.quantity + '%0D%0A';
     });
     if(total != 0){
-      // document.getElementById('whatsapp').innerHTML = `
-      //   <a class="btn btn-primary" href="https://web.whatsapp.com/send?phone=50685860314&text=Lista de productos:%0D%0A${name} %0D%0ATotal:&#8353;${total}" target="_blank">Share via Whatsapp</a>
-      // `;
+      document.getElementById('whatsapp').innerHTML = `
+      <a class="btn btn-success" href="https://web.whatsapp.com/send?phone=50688906767&text=Hola me gustaria ordenar el siguiente carrito:%0D%0A${name} %0D%0ATotal:&#8353;${total}" target="_blank">Comprar via Whatsapp</a>
+      `;
       if(document.getElementById('a-cart') != null){
         document.getElementById('a-cart').innerHTML = `
         <a class="btn btn-primary" href="cart.html">Comprar</a>

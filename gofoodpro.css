@@ -12,11 +12,20 @@ body {
     border-radius: .25rem;
 }
 
+#total-cart {
+    display: flex;
+    justify-content: flex-end;
+}
+
 #description-card-page {
     max-height: 8rem;
     overflow: auto;
 }
 
+.formdelivery{
+    display: flex;
+    justify-content: flex-end;
+}
 
 #description-card::-webkit-scrollbar,#description-card-page::-webkit-scrollbar {
     width: 8px;   
@@ -57,7 +66,10 @@ a.disabled, button.disabled {
     border: none;
 }
 
-
+.modaltotal{
+    display: flex;
+    justify-content: flex-start;
+}
 .jumbotron .display-4 {
     font-size: 5rem;
     font-weight: 900;
@@ -207,7 +219,7 @@ font-size: 2rem;
 @media (min-width: 769px) {
 
     .img-td {
-        width: 40%;
+        width: 100%;
     }
 
     .img-td-home {

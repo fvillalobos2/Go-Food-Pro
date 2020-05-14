@@ -9,7 +9,7 @@ function payPal() {
     paypal.Buttons({
       createOrder: function (data, actions) {
         if(!band){
-          alert('Por favor elija si requiere delivery o no')
+          alert('Por favor elija si requiere envío o no')
         }else{
           return actions.order.create({
             purchase_units: [{
@@ -107,7 +107,7 @@ function cartInitPage() {
         //   <a onclick='alertDelivery()' id='button-whatsapp' class="btn btn-primary mr-5 disabled" href="https://web.whatsapp.com/send?phone=50685860314&text=Lista de productos:%0D%0A${name} %0D%0ATotal:&#8353;${total}" target="_blank">Share via Whatsapp</a>
         // `;
         document.getElementById('whatsapp').innerHTML = `
-        <button class="btn btn-primary mr-5" onclick='alertDelivery()'>Share via Whatsapp</button>
+        <button class="btn btn-success ml-5 mr-3" onclick='alertDelivery()'>Comprar via Whatsapp</button>
       `;
             if (document.getElementById('a-cart') != null) {
                 document.getElementById('a-cart').innerHTML = `
@@ -119,7 +119,7 @@ function cartInitPage() {
 }
 function alertDelivery(){
   if(!band){
-    alert('Por favor elija si requiere delivery o no')
+    alert('Por favor elija si requiere envío o no')
   }
 }
 cartInitPage()
@@ -133,7 +133,7 @@ function changeDevilery(e){
         <h5>Total:&#8353;${total}</h5>
         `;
         document.getElementById('whatsapp').innerHTML = `
-          <a onclick='alertDelivery()' id='button-whatsapp' class="btn btn-primary mr-5" href="https://web.whatsapp.com/send?phone=50685860314&text=Lista de productos:%0D%0A${name} %0D%0ADelivery:2000₡ %0D%0ATotal:&#8353;${total}" target="_blank">Share via Whatsapp</a>
+          <a onclick='alertDelivery()' id='button-whatsapp' class="btn btn-success mr-3 ml-3" href="https://web.whatsapp.com/send?phone=50688906767&text=Hola me gustaría ordenar el siguiente carrito:%0D%0A${name} %0D%0ADelivery: ₡2000 %0D%0ATotal:&#8353;${total}" target="_blank">Comprar vía Whatsapp</a>
        `;
     }else{
         if(band == true){
@@ -143,7 +143,7 @@ function changeDevilery(e){
             `;
         }
         document.getElementById('whatsapp').innerHTML = `
-        <a onclick='alertDelivery()' id='button-whatsapp' class="btn btn-primary mr-5" href="https://web.whatsapp.com/send?phone=50685860314&text=Lista de productos:%0D%0A${name} %0D%0ADelivery:No incluido %0D%0ATotal:&#8353;${total}" target="_blank">Share via Whatsapp</a>
+        <a onclick='alertDelivery()' id='button-whatsapp' class="btn btn-success mr-3 ml-3" href="https://web.whatsapp.com/send?phone=50688906767&text=Hola me gustaría ordenar el siguiente carrito:%0D%0A${name} %0D%0ADelivery:No incluido %0D%0ATotal:&#8353;${total}" target="_blank">Comprar vía Whatsapp</a>
      `;
         band = true
     }

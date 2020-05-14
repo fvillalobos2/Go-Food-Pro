@@ -127,9 +127,9 @@ function cartInit() {
       name += product.name + ', precio unitario: &#8353;' + product.price + ', cantidad: ' + product.quantity + '%0D%0A';
     });
     if(total != 0){
-      document.getElementById('whatsapp').innerHTML = `
-      <a class="btn btn-primary" href="https://web.whatsapp.com/send?phone=50685860314&text=Lista de productos:%0D%0A${name} %0D%0ATotal:&#8353;${total}" target="_blank">Share via Whatsapp</a>
-      `;
+      // document.getElementById('whatsapp').innerHTML = `
+      //   <a class="btn btn-primary" href="https://web.whatsapp.com/send?phone=50685860314&text=Lista de productos:%0D%0A${name} %0D%0ATotal:&#8353;${total}" target="_blank">Share via Whatsapp</a>
+      // `;
       if(document.getElementById('a-cart') != null){
         document.getElementById('a-cart').innerHTML = `
         <a class="btn btn-primary" href="cart.html">Comprar</a>

@@ -1,16 +1,25 @@
 let band = false
 let band2 = false
+let name;
+
 function payPal() {
+  if(band){
+    alert('hola')
+  }
     paypal.Buttons({
       createOrder: function (data, actions) {
+        if(!band){
+          alert('Por favor elija si requiere delivery o no')
+        }else{
+          return actions.order.create({
+            purchase_units: [{
+              amount: {
+                value: total
+              }
+            }]
+          });
+        }
         // This function sets up the details of the transaction, including the amount and line item details.
-        return actions.order.create({
-          purchase_units: [{
-            amount: {
-              value: total
-            }
-          }]
-        });
       },
       onApprove: function (data, actions) {
         // This function captures the funds from the transaction.
@@ -88,15 +97,18 @@ function cartInitPage() {
         document.getElementById('total-cart').innerHTML = `
         <h5>Total:&#8353;${total}</h5>
       `;
-        let name = '';
+        name = '';
         let quantity = '';
         data.forEach(product => {
             name += product.name + ', precio unitario: &#8353;' + product.price + ', cantidad: ' + product.quantity + '%0D%0A';
         });
         if (total != 0) {
-            document.getElementById('whatsapp').innerHTML = `
-        <a id='button-whatsapp' class="btn btn-primary mr-5 disabled" href="https://web.whatsapp.com/send?phone=50685860314&text=Lista de productos:%0D%0A${name} %0D%0ATotal:&#8353;${total}" target="_blank">Share via Whatsapp</a>
-        `;
+        //     document.getElementById('whatsapp').innerHTML = `
+        //   <a onclick='alertDelivery()' id='button-whatsapp' class="btn btn-primary mr-5 disabled" href="https://web.whatsapp.com/send?phone=50685860314&text=Lista de productos:%0D%0A${name} %0D%0ATotal:&#8353;${total}" target="_blank">Share via Whatsapp</a>
+        // `;
+        document.getElementById('whatsapp').innerHTML = `
+        <button class="btn btn-primary mr-5" onclick='alertDelivery()'>Share via Whatsapp</button>
+      `;
             if (document.getElementById('a-cart') != null) {
                 document.getElementById('a-cart').innerHTML = `
           <a class="btn btn-primary" href="cart.html">Comprar</a>
@@ -105,12 +117,14 @@ function cartInitPage() {
         }
     }
 }
+function alertDelivery(){
+  if(!band){
+    alert('Por favor elija si requiere delivery o no')
+  }
+}
 cartInitPage()
+payPal()
 function changeDevilery(e){
-    if(!band){
-        console.log(band)
-        payPal()
-    }
     let temp = document.getElementById('button-whatsapp')
     if(e == 'Si'){
         band = true
@@ -118,7 +132,9 @@ function changeDevilery(e){
         document.getElementById('total-cart').innerHTML = `
         <h5>Total:&#8353;${total}</h5>
         `;
-        temp.classList.remove('disabled')
+        document.getElementById('whatsapp').innerHTML = `
+          <a onclick='alertDelivery()' id='button-whatsapp' class="btn btn-primary mr-5" href="https://web.whatsapp.com/send?phone=50685860314&text=Lista de productos:%0D%0A${name} %0D%0ADelivery:2000₡ %0D%0ATotal:&#8353;${total}" target="_blank">Share via Whatsapp</a>
+       `;
     }else{
         if(band == true){
             total = total - 2000
@@ -126,7 +142,9 @@ function changeDevilery(e){
             <h5>Total:&#8353;${total}</h5>
             `;
         }
-        temp.classList.remove('disabled') 
+        document.getElementById('whatsapp').innerHTML = `
+        <a onclick='alertDelivery()' id='button-whatsapp' class="btn btn-primary mr-5" href="https://web.whatsapp.com/send?phone=50685860314&text=Lista de productos:%0D%0A${name} %0D%0ADelivery:No incluido %0D%0ATotal:&#8353;${total}" target="_blank">Share via Whatsapp</a>
+     `;
         band = true
     }
 }

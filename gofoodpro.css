@@ -1,21 +1,23 @@
 body {
     font-family: 'Lato', sans-serif;
-    background-color: #FAFFE3;
+    background-image: url(gfpimg/geometric-leaves.png);
+    background-repeat: repeat;
 }
 .container {
     background-color: #FFFFFC;
 }
 
 #description-card {
-    border: 1px solid;
+    border: 1px solid #aeaeae;
     border-radius: .25rem;
-    max-height: 7rem;
+}
+
+#description-card-page {
+    max-height: 8rem;
     overflow: auto;
 }
-#description-card-page{
-    max-height: 11rem;
-    overflow: auto;
-}
+
+
 #description-card::-webkit-scrollbar,#description-card-page::-webkit-scrollbar {
     width: 8px;   
     height: 8px;    
@@ -48,7 +50,7 @@ a.disabled, button.disabled {
     color: white;
 }
 
-.modal-content .close{
+.modal-content .close {
     color: white;
 }
 .card {
@@ -57,14 +59,21 @@ a.disabled, button.disabled {
 
 
 .jumbotron .display-4 {
+    font-size: 5rem;
     font-weight: 900;
-    text-transform: uppercase;
+    font-family: 'Pacifico', cursive;
+    margin: 0;
 }
 
 .jumbotron .lead {
     font-weight: 400;
+    font-size: 2rem;
+    margin-top: -18px;
 }
 
+.jumbotronp{
+    font-size: 2rem;
+}
 #numberCart {
     font-size: 0.8rem;
     color: white;
@@ -118,9 +127,12 @@ a.disabled, button.disabled {
 }
 
 .header {
-    background-color: #FAFFE3;
+    background-color: #f8c594;
     color: black;
     font-size: 1.5rem;
+    -webkit-box-shadow: -1px 4px 15px -4px rgba(0,0,0,0.75);
+    -moz-box-shadow: -1px 4px 15px -4px rgba(0,0,0,0.75);
+    box-shadow: -1px 4px 15px -4px rgba(0,0,0,0.75);
 }
 
 .dropdown-menu a:active {
@@ -181,6 +193,7 @@ text-align: end;
 
 .div-buttons {
     display: flex;
+    justify-content: flex-end;
 }
 
 .delete-table {
@@ -191,8 +204,9 @@ text-align: end;
 
 
 @media (min-width: 769px) {
+
     .img-td {
-        width: 40%
+        width: 100%
     }
 
     .img-td-home {
@@ -207,7 +221,6 @@ text-align: end;
         width: 100%;
         display: flex;
         justify-content: center;
-
     }
 
     .cart {
@@ -262,6 +275,7 @@ text-align: end;
 }
 
 @media (max-width: 768px) {
+
     .navbar-brand {
         width: 100%;
         display: flex;
@@ -272,7 +286,8 @@ text-align: end;
     .jumbotron {
         background-image: url(gfpimg/jumbo-bg-md.jpg);
         background-size: 100%;
-        background-position: center;}
+        background-position: center;
+    }
     
     #numberCart {
         font-size: 0.6rem;
@@ -302,7 +317,7 @@ text-align: end;
         left: 0;
     }
 
-    .img-td-home{
+    .img-td-home {
         width: 100%;
     }
 
@@ -318,14 +333,19 @@ text-align: end;
         background-size: 100%;
         background-position: center;
     }
+
     .jumbotron .display-4 {
         font-size: 3rem;
     }
+
     .jumbotron .lead {
         font-size: 1rem;
     }
-    @media (min-width: 1000px){
+}
+    @media (min-width: 1000px) {
         .jumbotron {
-            background-image: url(gfpimg/jumbo-bg1-mb.jpg);
+            background-image: url(gfpimg/jumbo-xl-bg1.jpg);
+            background-size: 100%;
+        background-position: center;
     }
 }

@@ -180,6 +180,7 @@ a.disabled, button.disabled {
 .fa-shopping-cart {
 color: black;
 text-align: end;
+font-size: 2rem;
 }
 
 .add-cart {
@@ -206,7 +207,7 @@ text-align: end;
 @media (min-width: 769px) {
 
     .img-td {
-        width: 100%
+        width: 40%;
     }
 
     .img-td-home {

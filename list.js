@@ -47,7 +47,7 @@ let products = [{
         name: "Mantequilla de Maní 100% Natural",
         description: "<p>Frasco de vidrio de <b>265g</b></p><p><b>Intercambio nutricional:</b> 1 cucharada = 1,5 grasas</p><p><b>Ingredientes:</b> Maní. Puede contener trazas de semillas o nueces.</p>",
         idProduct: 6,
-        image: "gfpimg/mantequillaa.jpg",
+        image: "gfpimg/mantequillamani.jpg",
         idCategory: 2,
         price: 5000,
         quantity: 1
@@ -65,7 +65,7 @@ let products = [{
         name: "Mantequilla de Almendras Sabor a Leche Condensada Sin Lácteos y Sin Azúcar",
         description: "<p>Frasco de vidrio de <b>265g</b></p><p><b>Intercambio nutricional:</b> 1 cucharada = 1,5 grasas</p><p><b>Ingredientes:</b> Almendras, extracto de stevia como endulzante, sabor a leche condensada. Contiene almendras. Puede contener trazas de semillas o nueces.</p>",
         idProduct: 8,
-        image: "gfpimg/mantequillaa.jpg",
+        image: "gfpimg/mantequillaalmedras.jpg",
         idCategory: 2,
         price: 7500,
         quantity: 1

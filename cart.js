@@ -118,11 +118,11 @@ function cartInitPage() {
       document.getElementById('whatsapp').innerHTML = ``;
       if(!band2){
         document.getElementById('whatsapp').innerHTML = `
-        <a id='button-whatsapp' class="btn btn-success mr-3 ml-3" href="https://wa.me/send?phone=50688906767?text=Hola me gustaría ordenar el siguiente carrito:%0D%0A${name} %0D%0AEnvío: ₡2000 %0D%0ATotal:&#8353;${total}" target="_blank">Comprar vía Whatsapp</a>
+        <a id='button-whatsapp' class="btn btn-success mr-3 ml-3" href="https://wa.me/50688906767?text=Hola me gustaría ordenar el siguiente carrito:%0D%0A${name} %0D%0AEnvío: ₡2000 %0D%0ATotal:&#8353;${total}" target="_blank">Comprar vía Whatsapp</a>
      `;
       }else{
         document.getElementById('whatsapp').innerHTML = `
-        <a id='button-whatsapp' class="btn btn-success mr-3 ml-3" href="https://wa.me/send?phone=50688906767?text=Hola me gustaría ordenar el siguiente carrito:%0D%0A${name} %0D%0AEnvío:No incluido %0D%0ATotal:&#8353;${total}" target="_blank">Comprar vía Whatsapp</a>
+        <a id='button-whatsapp' class="btn btn-success mr-3 ml-3" href="https://wa.me/50688906767?text=Hola me gustaría ordenar el siguiente carrito:%0D%0A${name} %0D%0AEnvío:No incluido %0D%0ATotal:&#8353;${total}" target="_blank">Comprar vía Whatsapp</a>
      `;
     }
   }
@@ -137,11 +137,11 @@ function alertDelivery(){
     document.getElementById('whatsapp').innerHTML = ``;
     if(!band2){
       document.getElementById('whatsapp').innerHTML = `
-      <a id='button-whatsapp' class="btn btn-success mr-3 ml-3" href="https://wa.me/send?phone=50688906767?text=Hola me gustaría ordenar el siguiente carrito:%0D%0A${name} %0D%0AEnvío: ₡2000 %0D%0ATotal:&#8353;${total}" target="_blank">Comprar vía Whatsapp</a>
+      <a id='button-whatsapp' class="btn btn-success mr-3 ml-3" href="https://wa.me/50688906767?text=Hola me gustaría ordenar el siguiente carrito:%0D%0A${name} %0D%0AEnvío: ₡2000 %0D%0ATotal:&#8353;${total}" target="_blank">Comprar vía Whatsapp</a>
    `;
     }else{
       document.getElementById('whatsapp').innerHTML = `
-      <a id='button-whatsapp' class="btn btn-success mr-3 ml-3" href="https://wa.me/send?phone=50688906767?text=Hola me gustaría ordenar el siguiente carrito:%0D%0A${name} %0D%0AEnvío:No incluido %0D%0ATotal:&#8353;${total}" target="_blank">Comprar vía Whatsapp</a>
+      <a id='button-whatsapp' class="btn btn-success mr-3 ml-3" href="https://wa.me/50688906767?text=Hola me gustaría ordenar el siguiente carrito:%0D%0A${name} %0D%0AEnvío:No incluido %0D%0ATotal:&#8353;${total}" target="_blank">Comprar vía Whatsapp</a>
    `;
     }
    
@@ -155,7 +155,7 @@ function changeDevilery(e){
         if(band3){
           document.getElementById('whatsapp').innerHTML = ``
           document.getElementById('whatsapp').innerHTML = `
-          <a id='button-whatsapp' class="btn btn-success mr-3 ml-3" href="https://wa.me/send?phone=50688906767?text=Hola me gustaría ordenar el siguiente carrito:%0D%0A${name} %0D%0AEnvío: ₡2000 %0D%0ATotal:&#8353;${total}" target="_blank">Comprar vía Whatsapp</a>
+          <a id='button-whatsapp' class="btn btn-success mr-3 ml-3" href="https://wa.me/50688906767?text=Hola me gustaría ordenar el siguiente carrito:%0D%0A${name} %0D%0AEnvío: ₡2000 %0D%0ATotal:&#8353;${total}" target="_blank">Comprar vía Whatsapp</a>
        `;
         }
         band = true
@@ -176,7 +176,7 @@ function changeDevilery(e){
        if(band3){
         document.getElementById('whatsapp').innerHTML = ``
         document.getElementById('whatsapp').innerHTML = `
-        <a id='button-whatsapp' class="btn btn-success mr-3 ml-3" href="https://wa.me/send?phone=50688906767?text=Hola me gustaría ordenar el siguiente carrito:%0D%0A${name} %0D%0ADelivery:No incluido %0D%0ATotal:&#8353;${total}" target="_blank">Comprar vía Whatsapp</a>
+        <a id='button-whatsapp' class="btn btn-success mr-3 ml-3" href="https://wa.me/50688906767?text=Hola me gustaría ordenar el siguiente carrito:%0D%0A${name} %0D%0ADelivery:No incluido %0D%0ATotal:&#8353;${total}" target="_blank">Comprar vía Whatsapp</a>
      `;
        }
         band2 = true

@@ -77,10 +77,6 @@ a.disabled, button.disabled {
     margin: 0;
 }
 
-#td-products .d-flex{
-
-}
-
 .jumbotron .lead {
     font-weight: 400;
     font-size: 2rem;
@@ -307,7 +303,8 @@ font-size: 2rem;
     .jumbotron {
         background-image: url(gfpimg/jumbo-bg-xs.jpg);
         background-size: 100%;
-        background-position: center;}
+        background-position: center;
+    }
 
     .fa-shopping-cart {
         color: white;

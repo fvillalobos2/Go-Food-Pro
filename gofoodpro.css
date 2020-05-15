@@ -12,11 +12,20 @@ body {
     border-radius: .25rem;
 }
 
+#total-cart {
+    display: flex;
+    justify-content: flex-end;
+}
+
 #description-card-page {
     max-height: 8rem;
     overflow: auto;
 }
 
+.formdelivery{
+    display: flex;
+    justify-content: flex-end;
+}
 
 #description-card::-webkit-scrollbar,#description-card-page::-webkit-scrollbar {
     width: 8px;   
@@ -57,12 +66,19 @@ a.disabled, button.disabled {
     border: none;
 }
 
-
+.modaltotal{
+    display: flex;
+    justify-content: flex-start;
+}
 .jumbotron .display-4 {
     font-size: 5rem;
     font-weight: 900;
     font-family: 'Pacifico', cursive;
     margin: 0;
+}
+
+#td-products .d-flex{
+
 }
 
 .jumbotron .lead {
@@ -153,20 +169,44 @@ a.disabled, button.disabled {
     left: 0;
 }
 
-.lessProduct {
+#td-products .d-flex b{
+    font-size: 1.2rem;
+}
+
+#td-products .lessProduct {
+font-size: 2rem;
+margin-top: -0.5rem;
+margin-right: 0.6rem;
+justify-content: flex-start;
+align-items: center;
+}
+
+#td-products .moreProduct {
+    font-size: 1.5rem;
+    margin-top: -0.2rem;
+    margin-left: 0.4rem;
+    justify-content: flex-start;
+    align-items: center;
+    }
+
+div .card-body .d-flex{
+        font-size: 2rem;
+    }
+
+div .card-body .lessProduct {
+    cursor: pointer;
+    font-size: 3rem;
+    position: relative;
+    top: -0.7rem;
+    right: 0.7rem;
+}
+
+div .card-body .moreProduct {
     cursor: pointer;
     font-size: 2rem;
     position: relative;
-    top: -1rem;
-    right: 0.2rem;
-}
-
-.moreProduct {
-    cursor: pointer;
-    font-size: 0.8rem;
-    position: relative;
-    left: 0.3rem;
-    top: 0.2rem;
+    left: 0.5rem;
+    top: 0rem;
 }
 
 .card-body {
@@ -207,7 +247,7 @@ font-size: 2rem;
     }
 
     .img-td {
-        width: 40%;
+        width: 100%;
     }
 
     .img-td-home {
@@ -277,7 +317,7 @@ font-size: 2rem;
 }
 
 @media (max-width: 768px) {
-    
+
     .navbar-brand {
         width: 100%;
         display: flex;
@@ -292,18 +332,20 @@ font-size: 2rem;
     }
     
     #numberCart {
-        font-size: 0.6rem;
+        font-size: 1rem;
+        font-weight: 900;
         color: white;
         background-color: black;
         border-radius: 50px;
         padding: 0.3rem;
-        margin-top: 0;
         margin-left: 0.2rem;
         margin-right: 1rem;
-        margin-bottom: 2rem;
-
         text-align: center;
     }
+
+    .fa-shopping-cart {
+        margin-top: 1rem;
+        }
 
     .img-td {
         width: 100%
@@ -340,7 +382,7 @@ font-size: 2rem;
     }
 
     .jumbotron .lead {
-        font-size: 1rem;
+        font-size: 2rem;
     }
 }
     @media (min-width: 1000px) {

@@ -12,6 +12,7 @@ body {
     border-radius: .25rem;
 }
 
+
 #total-cart {
     display: flex;
     justify-content: flex-end;
@@ -76,7 +77,6 @@ a.disabled, button.disabled {
     font-family: 'Pacifico', cursive;
     margin: 0;
 }
-
 
 .jumbotron .lead {
     font-weight: 400;
@@ -242,6 +242,11 @@ font-size: 2rem;
     .dropdown:hover .dropdown-menu {
         display: block;
     }
+    
+    .jumbotron .jumboicon {
+        height: 150px;
+        width: 150px;
+    }
 
     .img-td {
         width: 100%;
@@ -268,10 +273,7 @@ font-size: 2rem;
 
     .jumbotron {
         background-image: url(gfpimg/jumbo-xl-bg.jpg);
-        background-size: 100%;
-        background-position: center;
-        width: cover;
-        height: 100%;
+      background-size: cover;
     }
 }
 
@@ -305,10 +307,7 @@ font-size: 2rem;
 
     .jumbotron {
         background-image: url(gfpimg/jumbo-bg-xs.jpg);
-        background-size: 100%;
-        background-position: center;
-        width: cover;
-        height: 100%;
+     background-size: cover;
     }
 
     .fa-shopping-cart {
@@ -328,10 +327,7 @@ font-size: 2rem;
 
     .jumbotron {
         background-image: url(gfpimg/jumbo-bg-md.jpg);
-        width: cover;
-        height: 100%;
-        background-position: center;
-
+        background-size: cover;
     }
     
     #numberCart {
@@ -380,20 +376,22 @@ font-size: 2rem;
     }
 
     .jumbotron .jumboicon {
-        height: 100;
-        width: 100;
+        height: 50px;
+        width: 50px;
     }
 
     .jumbotron .lead {
-        font-size: 2rem;
+        font-size: 1.2rem;
+        margin-top: 0.5rem;
+    }
+    .jumbotron p {
+        margin-top: -10px;
+        font-size: 1rem;
     }
 }
     @media (min-width: 1000px) {
         .jumbotron {
             background-image: url(gfpimg/jumbo-xl-bg1.jpg);
-            background-size: 100%;
-        background-position: center;
-        width: cover;
-        height: 100%;
+            background-size: cover;
     }
 }

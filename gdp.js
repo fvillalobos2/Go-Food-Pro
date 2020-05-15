@@ -132,7 +132,7 @@ function cartInit() {
       // `;
       if(document.getElementById('a-cart') != null){
         document.getElementById('a-cart').innerHTML = `
-        <a class="btn btn-primary" href="carrito.html">Comprar</a>
+        <a class="btn btn-primary" href="carrito">Comprar</a>
         `;
       }
     }else{

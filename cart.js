@@ -34,7 +34,7 @@ function payPal() {
           }
           alert('Transaction completed by ' + details.payer.name.given_name + "thanks for your purchase");
           cartInit();
-          window.location.href = 'gofoodpro.html'
+          window.location.href = 'index.html'
         });
       }
     }).render('#paypal-button-container');

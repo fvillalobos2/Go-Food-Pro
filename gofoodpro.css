@@ -77,9 +77,6 @@ a.disabled, button.disabled {
     margin: 0;
 }
 
-#td-products .d-flex{
-
-}
 
 .jumbotron .lead {
     font-weight: 400;
@@ -273,6 +270,8 @@ font-size: 2rem;
         background-image: url(gfpimg/jumbo-xl-bg.jpg);
         background-size: 100%;
         background-position: center;
+        width: cover;
+        height: 100%;
     }
 }
 
@@ -308,6 +307,8 @@ font-size: 2rem;
         background-image: url(gfpimg/jumbo-bg-xs.jpg);
         background-size: 100%;
         background-position: center;
+        width: cover;
+        height: 100%;
     }
 
     .fa-shopping-cart {
@@ -327,8 +328,10 @@ font-size: 2rem;
 
     .jumbotron {
         background-image: url(gfpimg/jumbo-bg-md.jpg);
-        background-size: 100%;
+        width: cover;
+        height: 100%;
         background-position: center;
+
     }
     
     #numberCart {
@@ -390,5 +393,7 @@ font-size: 2rem;
             background-image: url(gfpimg/jumbo-xl-bg1.jpg);
             background-size: 100%;
         background-position: center;
+        width: cover;
+        height: 100%;
     }
 }

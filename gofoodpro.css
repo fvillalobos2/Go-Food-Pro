@@ -139,9 +139,9 @@ a.disabled, button.disabled {
     background-color: #76c372;
 }
 
-.dropdown:hover .dropdown-menu {
+.dropdown:hover {
     display: block;
-}
+}   
 
 .fa .fa-facebook {
     color: #ffffff;

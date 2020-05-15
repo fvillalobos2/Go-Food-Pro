@@ -1,16 +1,11 @@
 let band = false
 let band2 = false
+let band3 = false
 let name;
 
 function payPal() {
-  if(band){
-    alert('hola')
-  }
     paypal.Buttons({
       createOrder: function (data, actions) {
-        if(!band){
-          alert('Por favor elija si requiere envío o no')
-        }else{
           return actions.order.create({
             purchase_units: [{
               amount: {
@@ -18,7 +13,6 @@ function payPal() {
               }
             }]
           });
-        }
         // This function sets up the details of the transaction, including the amount and line item details.
       },
       onApprove: function (data, actions) {
@@ -59,11 +53,17 @@ function cartInitPage() {
     }
     cart.innerHTML = '';
     td.innerHTML = '';
+    let tempSuma = 0
     if (data) {
-        data.forEach(dato => {
+        data.forEach((dato,index) => {
             let suma = parseFloat(dato.price) * dato.quantity;
-            total += parseFloat(suma);
+            tempSuma += parseFloat(dato.price) * dato.quantity ;
+            total += parseFloat(suma) 
         });
+        if(band){
+          tempSuma += 2000
+          total = tempSuma
+        }
         for (const product of data) {
             td.innerHTML += `
             <tr>
@@ -106,9 +106,6 @@ function cartInitPage() {
         //     document.getElementById('whatsapp').innerHTML = `
         //   <a onclick='alertDelivery()' id='button-whatsapp' class="btn btn-primary mr-5 disabled" href="https://wa.me/50685860314?text=Lista de productos:%0D%0A${name} %0D%0ATotal:&#8353;${total}" target="_blank">Share via Whatsapp</a>
         // `;
-        document.getElementById('whatsapp').innerHTML = `
-        <button class="btn btn-success ml-5 mr-3" onclick='alertDelivery()'>Comprar via Whatsapp</button>
-      `;
             if (document.getElementById('a-cart') != null) {
                 document.getElementById('a-cart').innerHTML = `
           <a class="btn btn-primary" href="carrito.html">Comprar</a>
@@ -116,36 +113,74 @@ function cartInitPage() {
             }
         }
     }
+    if(band3){
+      document.getElementById('button-comprar').innerHTML =''
+      document.getElementById('whatsapp').innerHTML = ``;
+      if(!band2){
+        document.getElementById('whatsapp').innerHTML = `
+        <a id='button-whatsapp' class="btn btn-success mr-3 ml-3" href="https://wa.me/50688906767?text=Hola me gustaría ordenar el siguiente carrito:%0D%0A${name} %0D%0ADelivery: ₡2000 %0D%0ATotal:&#8353;${total}" target="_blank">Comprar vía Whatsapp</a>
+     `;
+      }else{
+        document.getElementById('whatsapp').innerHTML = `
+        <a id='button-whatsapp' class="btn btn-success mr-3 ml-3" href="https://wa.me/50688906767?text=Hola me gustaría ordenar el siguiente carrito:%0D%0A${name} %0D%0ADelivery:No incluido %0D%0ATotal:&#8353;${total}" target="_blank">Comprar vía Whatsapp</a>
+     `;
+    }
+  }
 }
 function alertDelivery(){
-  if(!band){
+  if(!band && !band2){
     alert('Por favor elija si requiere envío o no')
+  }else{ 
+    payPal()
+    cartInitPage()
+    document.getElementById('button-comprar').innerHTML =''
+    document.getElementById('whatsapp').innerHTML = ``;
+    if(!band2){
+      document.getElementById('whatsapp').innerHTML = `
+      <a id='button-whatsapp' class="btn btn-success mr-3 ml-3" href="https://wa.me/50688906767?text=Hola me gustaría ordenar el siguiente carrito:%0D%0A${name} %0D%0ADelivery: ₡2000 %0D%0ATotal:&#8353;${total}" target="_blank">Comprar vía Whatsapp</a>
+   `;
+    }else{
+      document.getElementById('whatsapp').innerHTML = `
+      <a id='button-whatsapp' class="btn btn-success mr-3 ml-3" href="https://wa.me/50688906767?text=Hola me gustaría ordenar el siguiente carrito:%0D%0A${name} %0D%0ADelivery:No incluido %0D%0ATotal:&#8353;${total}" target="_blank">Comprar vía Whatsapp</a>
+   `;
+    }
+   
+    band3 = true
   }
 }
 cartInitPage()
-payPal()
 function changeDevilery(e){
     let temp = document.getElementById('button-whatsapp')
     if(e == 'Si'){
+        if(band3){
+          document.getElementById('whatsapp').innerHTML = ``
+          document.getElementById('whatsapp').innerHTML = `
+          <a id='button-whatsapp' class="btn btn-success mr-3 ml-3" href="https://wa.me/50688906767?text=Hola me gustaría ordenar el siguiente carrito:%0D%0A${name} %0D%0ADelivery: ₡2000 %0D%0ATotal:&#8353;${total}" target="_blank">Comprar vía Whatsapp</a>
+       `;
+        }
         band = true
+        band2 = false
         total = total + 2000
+        localStorage.setItem('delivery', 2000)
         document.getElementById('total-cart').innerHTML = `
         <h5>Total:&#8353;${total}</h5>
         `;
-        document.getElementById('whatsapp').innerHTML = `
-          <a onclick='alertDelivery()' id='button-whatsapp' class="btn btn-success mr-3 ml-3" href="https://wa.me/50688906767?text=Hola me gustaría ordenar el siguiente carrito:%0D%0A${name} %0D%0ADelivery: ₡2000 %0D%0ATotal:&#8353;${total}" target="_blank">Comprar vía Whatsapp</a>
-       `;
     }else{
         if(band == true){
             total = total - 2000
+            localStorage.setItem('delivery', 2000)
             document.getElementById('total-cart').innerHTML = `
             <h5>Total:&#8353;${total}</h5>
             `;
         }
+       if(band3){
+        document.getElementById('whatsapp').innerHTML = ``
         document.getElementById('whatsapp').innerHTML = `
-        <a onclick='alertDelivery()' id='button-whatsapp' class="btn btn-success mr-3 ml-3" href="https://wa.me/50688906767?text=Hola me gustaría ordenar el siguiente carrito:%0D%0A${name} %0D%0ADelivery:No incluido %0D%0ATotal:&#8353;${total}" target="_blank">Comprar vía Whatsapp</a>
+        <a id='button-whatsapp' class="btn btn-success mr-3 ml-3" href="https://wa.me/50688906767?text=Hola me gustaría ordenar el siguiente carrito:%0D%0A${name} %0D%0ADelivery:No incluido %0D%0ATotal:&#8353;${total}" target="_blank">Comprar vía Whatsapp</a>
      `;
-        band = true
+       }
+        band2 = true
+        band = false
     }
 }
 function moreProduct(id) {
@@ -180,3 +215,4 @@ function deleteProduct(id) {
     localStorage.setItem('cart', JSON.stringify(cart));
     cartInitPage()
 }
+document.getElementById("button-comprar-2").addEventListener("click", alertDelivery);

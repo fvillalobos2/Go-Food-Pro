@@ -132,7 +132,7 @@ function cartInit() {
       `;
       if(document.getElementById('a-cart') != null){
         document.getElementById('a-cart').innerHTML = `
-        <a class="btn btn-primary" href="cart.html">Comprar</a>
+        <a class="btn btn-primary" href="https://www.gofoodpro.com/carrito">Comprar</a>
         `;
       }
     }else{

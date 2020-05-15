@@ -155,10 +155,6 @@ a.disabled, button.disabled {
     background-color: #76c372;
 }
 
-.dropdown:hover .dropdown-menu {
-    display: block;
-}
-
 .fa .fa-facebook {
     color: #ffffff;
 }
@@ -245,6 +241,10 @@ font-size: 2rem;
 
 
 @media (min-width: 769px) {
+
+    .dropdown:hover .dropdown-menu {
+        display: block;
+    }
 
     .img-td {
         width: 100%;

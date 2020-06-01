@@ -12,6 +12,25 @@ body {
     border-radius: .25rem;
 }
 
+.carousel-item1{
+    background-image: url(gfpimg/bg-xl-gfp.jpg);
+    background-size: cover;
+}
+
+.pnuestra{
+background-color: white;
+font-size: 1rem;
+}
+
+.jumboiconp {
+    height: 150px;
+width: 150px;
+}
+
+.carouselicon{
+height: 150px;
+width: 150px;
+}
 
 #total-cart {
     display: flex;
@@ -74,18 +93,51 @@ a.disabled, button.disabled {
 .jumbotron .display-4 {
     font-size: 5rem;
     font-weight: 900;
-    font-family: 'Pacifico', cursive;
     margin: 0;
 }
 
-.jumbotron .lead {
+.carousel-caption .display-4 {
+    font-size: 5rem;
+    font-weight: 900;
+    margin: 0;
+    color: black;
+}
+
+.carousel-caption .lead {
     font-weight: 400;
     font-size: 2rem;
     margin-top: -18px;
+    color: black;
 }
 
+.carouselp{
+    font-size: 2rem;
+    color: black;
+}
+
+.carousel-control-next-icon{
+    height: 40px;
+    width: 40px;
+}
+
+.card-img-top-historia{
+    max-width: 30%;
+}
+
+.card-text {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 1000px;
+  }
+
+.carousel-control-prev-icon{
+    height: 40px;
+    width: 40px;
+}
 .jumbotronp{
     font-size: 2rem;
+    color: white;
 }
 #numberCart {
     font-size: 0.8rem;
@@ -139,8 +191,13 @@ a.disabled, button.disabled {
     background-color: #000000;
 }
 
+.nav-tabs {
+    font-size: 1.5rem;
+}
+
+
 .header {
-    background-color: #f8c594;
+    background-color:#fffcfc;
     color: black;
     font-size: 1.5rem;
     -webkit-box-shadow: -1px 4px 15px -4px rgba(0,0,0,0.75);
@@ -255,6 +312,10 @@ font-size: 2rem;
     .img-td-home {
         width: 100%;
     }
+    
+    section .nh{
+background-color: red;
+    }
 
     .paypal-buttons {
         width: 19rem !important;
@@ -272,9 +333,14 @@ font-size: 2rem;
     }
 
     .jumbotron {
-        background-image: url(gfpimg/jumbo-xl-bg.jpg);
+        background-image: url(gfpimg/bg-xl-gfp-4.jpg);
       background-size: cover;
     }
+
+.navbar-expand-md .navbar-nav .nav-link {
+    padding-right: 4.5rem;
+    padding-left: 4.5rem;
+}
 }
 
 @media (max-width:350px) {
@@ -306,7 +372,7 @@ font-size: 2rem;
     }
 
     .jumbotron {
-        background-image: url(gfpimg/jumbo-bg-xs.jpg);
+        background-image: url(gfpimg/bg-xl-gfp-4.jpg);
      background-size: cover;
     }
 
@@ -326,7 +392,7 @@ font-size: 2rem;
     }
 
     .jumbotron {
-        background-image: url(gfpimg/jumbo-bg-md.jpg);
+        background-image: url(gfpimg/bg-xl-gfp-4.jpg);
         background-size: cover;
     }
     
@@ -391,7 +457,9 @@ font-size: 2rem;
 }
     @media (min-width: 1000px) {
         .jumbotron {
-            background-image: url(gfpimg/jumbo-xl-bg1.jpg);
+            background-image: url(gfpimg/bg-xl-gfp-4.jpg);
             background-size: cover;
     }
 }
+
+

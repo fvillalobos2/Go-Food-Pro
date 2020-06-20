@@ -11,7 +11,7 @@ let products = [{
         name: "Galletas de Cacao",
         description: "<p>Galletas de cacao intenso sin harinas.</p> <p> Paquete de <b> 6 unidades</b></p><p><b>Intercambio nutricional:</b> 1 galleta =<br> 1 ½ grasas, ½ proteína y ½ carbohidrato</p><p><b>Ingredientes:</b>  Cacao nibs recubiertos de chocolate al 70%, mantequilla de almendras, mantequilla de maní, azúcar de coco, claras de huevo, cocoa en polvo, bicarbonato de sodio. Contiene: Almendras, maní y huevo. Puede contener trazas de gluten, semillas o nueces.</p>",
         idProduct: 2,
-        image: "gfpimg/galletas-cacao-1.jpg",
+        image: "gfpimg/galletas-cacao.jpg",
         idCategory: 1,
         price: 5000,
         quantity: 1
@@ -20,7 +20,7 @@ let products = [{
         name: "ZanaBana Muffin",
         description: "<p>Muffins a base de zanahoria con banano sin azúcar.</p> <p> Paquete de <b> 6 unidades</b></p><p><b>Intercambio nutricional:</b> 1 muffin = <br> 1 carbohidrato y ½ grasa</p><p><b>Ingredientes:</b> Bananos, avena, claras de huevo, zanahorias, aceite de coco, sucralosa, sal, especias (menos del 2%) y bicarbonato de sodio. Contiene huevo. Puede contener trazas de gluten, semillas o nueces.</p>",
         idProduct: 3,
-        image: "gfpimg/zanabana-muffin-1.jpg",
+        image: "gfpimg/zanabana-muffin.jpg",
         idCategory: 1,
         price: 5500,
         quantity: 1
@@ -29,7 +29,7 @@ let products = [{
         name: "Choco ZanaBana Muffin",
         description: "<p>Muffins a base de zanahoria con banano sin azúcar con chips de chocolate oscuro</p> <p> Paquete de <b> 6 unidades</b></p><p><b>Intercambio nutricional:</b> 1 muffin =<br> 1 carbohidrato, 1 grasa y ½ proteína</p><p><b>Ingredientes:</b> Bananos, avena, claras de huevo, zanahorias, chocolate semiamargo, aceite de  coco, sucralosa, sal, especias (menos del 2%) y bicarbonato de sodio. Contiene: huevo. Puede contener trazas de gluten, semillas o nueces.</p>",
         idProduct: 4,
-        image: "gfpimg/choco-muffin-1.jpg",
+        image: "gfpimg/choco-muffin.jpg",
         idCategory: 1,
         price: 5500,
         quantity: 1
@@ -119,7 +119,7 @@ let products = [{
         name: "Crunch Bars",
         description: "<p>Barritas a base de arroz tostado y mantequilla de almendras 100% natural.</p> <p> Paquete de <b> 6 unidades</b><br></p><p><b>Intercambio nutricional:</b> 1 barrita =<br> 1 grasa, ½ proteína y 1 carbohidrato</p><p><b>Ingredientes:</b> Arroz tostado, agave azul orgánico, mantequilla de almendras (sin azúcar o aceites añadidos), chocolate semiamargo, proteína aislada de suero de leche. Contiene: almendras y suero de leche. Puede contener trazas de gluten, semillas o nueces.</p>",
         idProduct: 12,
-        image: "gfpimg/Crunchbars.jpg",
+        image: "gfpimg/crunchbars-1.jpg",
         idCategory: 1,
         price: 4500,
         quantity: 1
@@ -128,7 +128,7 @@ let products = [{
         name: "Donas",
         description: "<p>Donitas a base de camote como primer ingrediente con chocolate semiamargo y cremosa mantequilla de maní.</p> <p> Paquete de <b> 6 unidades</b></p><p><b>Intercambio nutricional:</b> 1 dona = <br> ½ carbohidrato y 1 grasa</p><p><b>Ingredientes:</b> Camote, chocolate semiamargo, leche de coco, avena, mantequilla de maní (sin azúcares o aceites añadidos). Contiene: maní. Puede contener trazas de gluten, semillas o nueces.</p>",
         idProduct: 13,
-        image: "gfpimg/donas-1.jpg",
+        image: "gfpimg/donas.jpg",
         idCategory: 1,
         price: 3900,
         quantity: 1

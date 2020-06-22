@@ -119,7 +119,7 @@ let products = [{
         name: "Crunch Bars",
         description: "<p>Barritas a base de arroz tostado y mantequilla de almendras 100% natural.</p> <p> Paquete de <b> 6 unidades</b><br></p><p><b>Intercambio nutricional:</b> 1 barrita =<br> 1 grasa, ½ proteína y 1 carbohidrato</p><p><b>Ingredientes:</b> Arroz tostado, agave azul orgánico, mantequilla de almendras (sin azúcar o aceites añadidos), chocolate semiamargo, proteína aislada de suero de leche. Contiene: almendras y suero de leche. Puede contener trazas de gluten, semillas o nueces.</p>",
         idProduct: 12,
-        image: "gfpimg/crunchbars-1.jpg",
+        image: "gfpimg/Crunchbars-1.jpg",
         idCategory: 1,
         price: 4500,
         quantity: 1

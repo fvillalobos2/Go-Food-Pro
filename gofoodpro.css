@@ -59,6 +59,7 @@ width: 150px;
     background: #b3b3b3;
     box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.2);
 }
+
 #description-card::-webkit-scrollbar-track,#description-card-page::-webkit-scrollbar-track {
     background: #e1e1e1;
     border-radius: 4px;
@@ -220,7 +221,7 @@ a.disabled, button.disabled {
 .delete-product {
     cursor: pointer;
     position: absolute;
-    left: 0;
+    right: 0;
 }
 
 #td-products .d-flex b{
@@ -295,11 +296,15 @@ font-size: 2rem;
 
 
 @media (min-width: 769px) {
-
+    .table-responsive{
+        display: block;
+    }
     .dropdown:hover .dropdown-menu {
         display: block;
     }
-    
+    #product-card{
+        display: none;
+    }
     .jumbotron .jumboicon {
         height: 150px;
         width: 150px;
@@ -383,7 +388,34 @@ background-color: red;
 }
 
 @media (max-width: 768px) {
-
+    .carousel-inner img{
+        height: 15rem;
+    }
+    #product-card{
+        display: block;
+    }
+    .table-responsive{
+        display: none;
+    }
+    .carouselp {
+        font-size: 1rem;
+    }
+    .btn-success {
+        padding: 0.5rem 0.5rem;
+        font-size: 1rem;
+    }
+    .carousel-caption .display-4 {
+        font-size: 2rem;
+        margin: 0!important;
+    }
+    .carousel-caption .lead {
+        font-size: 1rem;
+        margin: 0;
+    }
+    .carousel-caption{
+        margin: 0!important;
+        padding: 0;
+    }
     .navbar-brand {
         width: 100%;
         display: flex;
@@ -427,7 +459,7 @@ background-color: red;
     }
 
     .img-td-home {
-        width: 100%;
+        width: 25%;
     }
 
     .cart {

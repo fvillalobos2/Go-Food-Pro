@@ -7,10 +7,19 @@ function getData() {
       <h1 id=${category.htmlId} class="display-4 text-center">-${category.name}-</h1>
       `;
     }
+    var url = location.href;
+    var array = url.split('/');
     if(dropdown != null){
-      dropdown.innerHTML += `
-      <a class="dropdown-item" href="#${category.htmlId}">${category.name}</a>
-      `;
+       if(array.pop() == ''){
+        dropdown.innerHTML += `
+        <a class="dropdown-item" href="#${category.htmlId}">${category.name}</a>
+        `;
+       }else{
+        dropdown.innerHTML += `
+        <a class="dropdown-item" href="/#${category.htmlId}">${category.name}</a>
+        `;
+       }
+     
     }
     if(section != null){
       let cards = document.createElement('div');
@@ -104,19 +113,19 @@ function cartInit() {
           <td><span class='delete-table' onclick="deleteProduct(${product.idProduct})"><i class="fas fa-trash-alt"></i></span></td>
       </tr>
       `
-      // cart.innerHTML += `
-      //   <div class='d-flex'>
-      //   <span class='delete-product' onclick="deleteProduct(${product.idProduct})"><i class="fas fa-trash-alt"></i></span>
-      //     <h5>${product.name}</h5>
-      //     <p>${product.description}</p>
-      //     <p class='mr-3'><b>&#8353;${product.price}</b></p>
-      //       <div class="d-flex">
-      //       <span class='lessProduct' onclick = "lessItems(${product.idProduct})">-</span>
-      //         <p><b>${product.quantity}</b></p>
-      //       <span class='moreProduct' onclick="moreProduct(${product.idProduct})">+</span>
-      //       </div>
-      //     </div>
-      //   `
+      cart.innerHTML += `
+        <div class='d-flex flex-column'>
+        <img class='img-td-home' src=${product.image}>
+          <h5>${product.name}</h5>
+          <p class='mr-3'><b>&#8353;${product.price}</b></p>
+            <div class="d-flex">
+            <span class='lessProduct' onclick = "lessItems(${product.idProduct})">-</span>
+              <p><b>${product.quantity}</b></p>
+            <span class='moreProduct' onclick="moreProduct(${product.idProduct})">+</span>
+            <span class='delete-product' onclick="deleteProduct(${product.idProduct})"><i class="fas fa-trash-alt"></i></span>
+            </div>
+          </div>
+        `
     }
     document.getElementById('total').innerHTML = `
       <h5>Total:&#8353;${total}</h5>

@@ -49,7 +49,7 @@ let products = [{
         idProduct: 6,
         image: "gfpimg/mantequillam-1.jpg",
         idCategory: 0,
-        price: 5000,
+        price: 5500,
         quantity: 1
     },
     {

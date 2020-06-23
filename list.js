@@ -47,7 +47,7 @@ let products = [{
         name: "Mantequilla de Maní 100% Natural",
         description: "<p>Frasco de vidrio de <b>265g</b></p><p><b>Intercambio nutricional:</b> 1 cucharada = 1,5 grasas</p><p><b>Ingredientes:</b> Maní. Puede contener trazas de semillas o nueces.</p>",
         idProduct: 6,
-        image: "gfpimg/mantequillamani.jpg",
+        image: "gfpimg/mantequillam-1.jpg",
         idCategory: 0,
         price: 5000,
         quantity: 1
@@ -65,7 +65,7 @@ let products = [{
         name: "Mantequilla de Almendras Sabor a Leche Condensada",
         description: "<p>Sin Lácteos y Sin Azúcar</p><p>Frasco de vidrio de <b>265g</b></p><p><b>Intercambio nutricional:</b> 1 cucharada = 1,5 grasas</p><p><b>Ingredientes:</b> Almendras, extracto de stevia como endulzante, sabor a leche condensada. Contiene almendras. Puede contener trazas de semillas o nueces.</p>",
         idProduct: 8,
-        image: "gfpimg/mantequillaalemdrasl.jpg",
+        image: "gfpimg/mantequillaalemdrasl-1.jpg",
         idCategory: 0,
         price: 7500,
         quantity: 1
@@ -74,14 +74,14 @@ let products = [{
         name: "Mantequilla de Marañon 100% Natural",
         description: "<p>Frasco de vidrio de <b>265g</b></p><p><b>Intercambio nutricional:</b> 1 cucharada = 1,5 grasas</p><p><b>Ingredientes:</b> Contiene Marañon.</p>",
         idProduct: 14,
-        image: "gfpimg/mantequillamaranon.jpg",
+        image: "gfpimg/mantequillamaranon-1.jpg",
         idCategory: 0,
         price: 7500,
         quantity: 1
     },
     {
         name: "Keto Cocadas",
-        description: "<p>Galletas a base de coco y cacao puro.</p> <p> Paquete de <b> 200 gramos</b></p><p><b>Intercambio nutricional:</b> 3 cocadas =<br> 1 galleta: 2 ½ grasas</p><p><b>Ingredientes:</b> Coco, claras de huevo, eritritol, mantequilla de almendras, aceite de coco, cocoa pura, y bicarbonato de sodio. Contiene: almendras y huevo. Puede contener trazas de gluten, semillas o nueces.</p>",
+        description: "<p>Galletas a base de coco y cacao puro.</p> <p> Paquete de <b> 200 gramos</b></p><p><b>Intercambio nutricional:</b> 1 cocadas =<br> 2 ½ grasas</p><p><b>Ingredientes:</b> Coco, claras de huevo, eritritol, mantequilla de almendras, aceite de coco, cocoa pura, y bicarbonato de sodio. Contiene: almendras y huevo. Puede contener trazas de gluten, semillas o nueces.</p>",
         idProduct: 9,
         image: "gfpimg/chocococadas-1.jpg",
         idCategory: 1,

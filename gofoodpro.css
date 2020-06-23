@@ -220,8 +220,8 @@ a.disabled, button.disabled {
 
 .delete-product {
     cursor: pointer;
-    position: absolute;
-    right: 0;
+    float: right;
+    margin-left: auto;
 }
 
 #td-products .d-flex b{
@@ -294,8 +294,36 @@ font-size: 2rem;
     margin-left: 1rem;
 }
 
-
+@media (max-width:1450px){
+    .carousel-caption .display-4 {
+        font-size: 3rem;
+    }
+    .carousel-caption p{
+        font-size: 1.25rem;
+    }
+    .carousel-caption .lead {
+        font-size: 1.25rem;
+    }
+}
+@media (max-width:1175px){
+    .carousel-caption .display-4 {
+        margin-bottom: -3rem;
+    }
+    .carousel-caption{
+        top: -5rem;
+    }
+    .carousel-caption-2{
+        top: -2rem!important;
+    }
+    .nav-item{
+        width: 10rem;
+    }
+    .navbar-nav{
+        width: 34rem!important;
+    }
+}
 @media (min-width: 769px) {
+   
     .table-responsive{
         display: block;
     }
@@ -304,6 +332,9 @@ font-size: 2rem;
     }
     #product-card{
         display: none;
+    }
+    .fa-shopping-cart {
+        font-size: 25px!important;
     }
     .jumbotron .jumboicon {
         height: 150px;
@@ -388,11 +419,21 @@ background-color: red;
 }
 
 @media (max-width: 768px) {
+    .carouselicon {
+        height: 150px!important;
+    }
     .carousel-inner img{
         height: 15rem;
     }
     #product-card{
         display: block;
+    }
+    .carousel-caption-2 {
+        top: 1rem!important;
+    }
+    #display-img-h1{
+        margin-bottom: -3rem!important;
+        margin-top: 2rem!important;
     }
     .table-responsive{
         display: none;
@@ -485,6 +526,16 @@ background-color: red;
     .jumbotron p {
         margin-top: -10px;
         font-size: 1rem;
+    }
+}
+@media (max-width:450px){
+    .carouselicon {
+        height: 100px!important;
+        width: 5rem;
+    }
+    #display-img-h1 {
+        margin-bottom: -1rem!important;
+        margin-top: 4rem!important;
     }
 }
     @media (min-width: 1000px) {

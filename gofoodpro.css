@@ -368,7 +368,12 @@ background-color: red;
         align-items: center;
     }
 
-    .jumbotron .nuestra-historia {
+    .preguntas {
+        background-image: url(gfpimg/bg-xl-gfp-6.jpg);
+      background-size: cover;
+    }
+
+    .nuestra-historia {
         background-image: url(gfpimg/bg-xl-gfp-7.jpg);
       background-size: cover;
     }
@@ -425,7 +430,7 @@ background-color: red;
 
 @media (max-width: 768px) {
     .carouselicon {
-        height: 150px!important;
+        height: 80px!important;
     }
     .carousel-inner img{
         height: 15rem;
@@ -547,6 +552,15 @@ background-color: red;
         .jumbotron {
             background-image: url(gfpimg/bg-xl-gfp-4.jpg);
             background-size: cover;
+    }
+
+    .nuestra-historia {
+        background-image: url(gfpimg/bg-xl-gfp-7.jpg);
+      background-size: cover;
+    }
+    .preguntas {
+        background-image: url(gfpimg/bg-xl-gfp-6.jpg);
+      background-size: cover;
     }
 }
 

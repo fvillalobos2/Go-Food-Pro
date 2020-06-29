@@ -430,7 +430,7 @@ background-color: red;
 
 @media (max-width: 768px) {
     .carouselicon {
-        height: 80px!important;
+        height: 150px!important;
     }
     .carousel-inner img{
         height: 15rem;
@@ -536,6 +536,18 @@ background-color: red;
     .jumbotron p {
         margin-top: -10px;
         font-size: 1rem;
+    }
+    .img-carousel-1{
+        background-image: url(gfpimg/bg-md-gfp-2.jpg);
+        background-size: cover;
+    }
+    .img-carousel-2{
+        background-image: url(gfpimg/bg-md-gfp-3.jpg);
+        background-size: cover;
+    }
+    .img-carousel-3{
+        background-image: url(gfpimg/bg-md-gfp-1.jpg);
+        background-size: cover;
     }
 }
 @media (max-width:450px){

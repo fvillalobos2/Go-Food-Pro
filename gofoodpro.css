@@ -443,6 +443,10 @@ background-color: red;
     .carouselp {
         font-size: 0.7rem;
     }
+    .carousel-caption .lead {
+        font-size: 0.8rem;
+        margin: 4px;
+    }
 }
 @media (max-width: 930px) {
     .carousel-caption p {

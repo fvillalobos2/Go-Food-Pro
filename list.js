@@ -18,7 +18,7 @@ let products = [{
     },
     {
         name: "ZanaBana Muffin",
-        description: "<p>Muffins a base de zanahoria con banano sin azúcar.</p> <p> Paquete de <b> 6 unidades</b></p><p><b>Intercambio nutricional:</b> 1 muffin = <br> 1 carbohidrato y ½ grasa</p><p><b>Ingredientes:</b> Bananos, avena, claras de huevo, zanahorias, aceite de coco, sucralosa, sal, especias (menos del 2%) y bicarbonato de sodio. Contiene huevo. Puede contener trazas de gluten, semillas o nueces.</p>",
+        description: "<p>Muffins a base de zanahoria con banano y sin azúcar.</p> <p> Paquete de <b> 6 unidades</b></p><p><b>Intercambio nutricional:</b> 1 muffin = <br> 1 carbohidrato y ½ grasa</p><p><b>Ingredientes:</b> Bananos, avena, claras de huevo, zanahorias, aceite de coco, sucralosa, sal, especias (menos del 2%) y bicarbonato de sodio. Contiene huevo. Puede contener trazas de gluten, semillas o nueces.</p>",
         idProduct: 3,
         image: "gfpimg/zanabana-muffin.jpg",
         idCategory: 1,
@@ -27,7 +27,7 @@ let products = [{
     },
     {
         name: "Choco ZanaBana Muffin",
-        description: "<p>Muffins a base de zanahoria con banano sin azúcar con chips de chocolate oscuro</p> <p> Paquete de <b> 6 unidades</b></p><p><b>Intercambio nutricional:</b> 1 muffin =<br> 1 carbohidrato, 1 grasa y ½ proteína</p><p><b>Ingredientes:</b> Bananos, avena, claras de huevo, zanahorias, chocolate semiamargo, aceite de  coco, sucralosa, sal, especias (menos del 2%) y bicarbonato de sodio. Contiene: huevo. Puede contener trazas de gluten, semillas o nueces.</p>",
+        description: "<p>Muffins a base de zanahoria con banano, sin azúcar y con chips de chocolate oscuro</p> <p> Paquete de <b> 6 unidades</b></p><p><b>Intercambio nutricional:</b> 1 muffin =<br> 1 carbohidrato, 1 grasa y ½ proteína</p><p><b>Ingredientes:</b> Bananos, avena, claras de huevo, zanahorias, chocolate semiamargo, aceite de  coco, sucralosa, sal, especias (menos del 2%) y bicarbonato de sodio. Contiene: huevo. Puede contener trazas de gluten, semillas o nueces.</p>",
         idProduct: 4,
         image: "gfpimg/choco-muffin.jpg",
         idCategory: 1,
@@ -56,7 +56,7 @@ let products = [{
         name: "Mantequilla de Almendras 100% Natural",
         description: "<p>Frasco de vidrio de <b>265g</b></p><p><b>Intercambio nutricional:</b> 1 cucharada = 1,5 grasas</p><p><b>Ingredientes:</b>Almendras. Puede contener trazas de gluten, semillas o nueces.</p>",
         idProduct: 5,
-        image: "gfpimg/mantequillaalmedras.jpg",
+        image: "gfpimg/mantequillaalmedras-1.jpg",
         idCategory: 0,
         price: 6500,
         quantity: 1
@@ -99,7 +99,7 @@ let products = [{
     },
     {
         name: "Keto Nutcracker Bread",
-        description: "<p>Pan a base de semillas mixtas con fibra natural sin avena y sin azúcares añadidos.</p> <p> Unidad de <b> 750 gramos</b><br>(de 10 a 15 tajadas)</p><p><b>Intercambio nutricional:</b> 1 rebanada de 50g = Carbohidratos totales: 3g Carbohidratos netos : 0g  Grasas: 2</p><p><b>Ingredientes:</b> Agua, semillas mixtas (girasol, linaza, chía, almendras, ajonjolí, calabaza), ƒibra, aceite de coco, sal. Contiene: almendras y ajonjolí. Puede contener trazas de gluten.</p>",
+        description: "<p>Pan a base de semillas mixtas con fibra natural, sin avena ni azúcares añadidos.</p> <p> Unidad de <b> 750 gramos</b><br>(de 10 a 15 tajadas)</p><p><b>Intercambio nutricional:</b> 1 rebanada de 50g = Carbohidratos totales: 3g Carbohidratos netos : 0g  Grasas: 2</p><p><b>Ingredientes:</b> Agua, semillas mixtas (girasol, linaza, chía, almendras, ajonjolí, calabaza), ƒibra, aceite de coco, sal. Contiene: almendras y ajonjolí. Puede contener trazas de gluten.</p>",
         idProduct: 11,
         image: "gfpimg/ketonutcracker.jpg",
         idCategory: 1,

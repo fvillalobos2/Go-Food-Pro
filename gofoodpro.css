@@ -402,6 +402,7 @@ background-color: red;
     .display-4 {
         font-size: 2.5rem;
     }
+    
 
     .cart-page {
         flex-direction: column;
@@ -439,6 +440,9 @@ background-color: red;
     .carousel-inner img{
         height: 10rem;
     }
+    .carouselp {
+        font-size: 0.7rem;
+    }
 }
 @media (max-width: 930px) {
     .carousel-caption p {
@@ -472,7 +476,7 @@ background-color: red;
         display: none;
     }
     .carouselp {
-        font-size: 1rem;
+        font-size: 0.7rem;
     }
     .btn-success {
         padding: 0.5rem 0.5rem;

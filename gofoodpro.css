@@ -387,6 +387,14 @@ background-color: red;
     padding-right: 4.5rem;
     padding-left: 4.5rem;
 }
+.nuestra-historia {
+    background-image: url(gfpimg/bg-xl-gfp-7.jpg);
+  background-size: cover;
+}
+.preguntas {
+    background-image: url(gfpimg/bg-xl-gfp-6.jpg);
+  background-size: cover;
+}
 }
 
 @media (max-width:350px) {
@@ -493,6 +501,17 @@ background-color: red;
         background-image: url(gfpimg/bg-xl-gfp-4.jpg);
         background-size: cover;
     }
+    .preguntas {
+        background-image: url(gfpimg/bg-xl-gfp-6.jpg);
+      background-size: cover;
+      color: white;
+    }
+
+    .nuestra-historia {
+        background-image: url(gfpimg/bg-xl-gfp-7.jpg);
+      background-size: cover;
+      color: white;
+    }
     
     #numberCart {
         font-size: 1rem;
@@ -552,17 +571,13 @@ background-color: red;
         margin-top: -10px;
         font-size: 1rem;
     }
-    .img-carousel-1{
-        background-image: url(gfpimg/bg-md-gfp-2.jpg);
-        background-size: cover;
+    .nuestra-historia {
+        background-image: url(gfpimg/bg-xl-gfp-7.jpg);
+      background-size: cover;
     }
-    .img-carousel-2{
-        background-image: url(gfpimg/bg-md-gfp-3.jpg);
-        background-size: cover;
-    }
-    .img-carousel-3{
-        background-image: url(gfpimg/bg-md-gfp-1.jpg);
-        background-size: cover;
+    .preguntas {
+        background-image: url(gfpimg/bg-xl-gfp-6.jpg);
+      background-size: cover;
     }
 }
 @media (max-width:450px){

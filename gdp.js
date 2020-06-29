@@ -1,3 +1,4 @@
+
 function getData() {
   let section = document.querySelector('#products');
   let dropdown = document.querySelector('#categories-menu');
@@ -6,6 +7,7 @@ function getData() {
       section.innerHTML += `
       <h1 id=${category.htmlId} class="display-4 text-center">-${category.name}-</h1>
       `;
+      var scroll = new SmoothScroll(`a[href*="#${category.htmlId}"]`);
     }
     var url = location.href;
     var array = url.split('/');

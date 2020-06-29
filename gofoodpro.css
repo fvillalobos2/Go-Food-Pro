@@ -420,10 +420,17 @@ background-color: red;
 
 @media (max-width: 768px) {
     .carouselicon {
-        height: 150px!important;
+        height: 75px!important;
+        width: 4rem;
+    }
+    #lane-separator{
+        margin: 0!important;
     }
     .carousel-inner img{
-        height: 15rem;
+        height: 10rem;
+    }
+    #display-img-h1{
+        font-size: 1.25rem;
     }
     #product-card{
         display: block;
@@ -431,9 +438,9 @@ background-color: red;
     .carousel-caption-2 {
         top: 1rem!important;
     }
-    #display-img-h1{
-        margin-bottom: -3rem!important;
-        margin-top: 2rem!important;
+    #display-img-h1 {
+        margin-bottom: -1rem!important;
+        margin-top: 4rem!important;
     }
     .table-responsive{
         display: none;
@@ -446,7 +453,7 @@ background-color: red;
         font-size: 1rem;
     }
     .carousel-caption .display-4 {
-        font-size: 2rem;
+        font-size: 1.5rem;
         margin: 0!important;
     }
     .carousel-caption .lead {
@@ -530,8 +537,8 @@ background-color: red;
 }
 @media (max-width:450px){
     .carouselicon {
-        height: 100px!important;
-        width: 5rem;
+        height: 75px!important;
+        width: 4rem;
     }
     #display-img-h1 {
         margin-bottom: -1rem!important;

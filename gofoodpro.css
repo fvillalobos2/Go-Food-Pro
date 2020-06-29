@@ -427,18 +427,27 @@ background-color: red;
         justify-content: end;
     }
 }
-
-@media (max-width: 768px) {
+@media (max-width:768px){
+    .carousel-inner img{
+        height: 10rem;
+    }
+}
+@media (max-width: 930px) {
+    .carousel-caption p {
+        font-size: 1rem;
+    }
+    .carousel-caption {
+        top: -3rem;
+    }
     .carouselicon {
+        display: none;
         height: 75px!important;
         width: 4rem;
     }
     #lane-separator{
         margin: 0!important;
     }
-    .carousel-inner img{
-        height: 10rem;
-    }
+   
     #display-img-h1{
         font-size: 1.25rem;
     }
@@ -449,7 +458,6 @@ background-color: red;
         top: 1rem!important;
     }
     #display-img-h1 {
-        margin-bottom: -1rem!important;
         margin-top: 4rem!important;
     }
     .table-responsive{
@@ -563,7 +571,6 @@ background-color: red;
         width: 4rem;
     }
     #display-img-h1 {
-        margin-bottom: -1rem!important;
         margin-top: 4rem!important;
     }
 }

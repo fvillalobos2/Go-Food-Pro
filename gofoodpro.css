@@ -310,6 +310,15 @@ font-size: 2rem;
     }
 }
 @media (max-width:1175px){
+    .cart {
+        margin-left: 5rem;
+    }
+    .nav-item{
+        width: 10rem;
+    }
+    .navbar-nav{
+        width: 45rem!important;
+    }
     .carousel-caption .display-4 {
         margin-bottom: -3rem;
     }
@@ -319,13 +328,9 @@ font-size: 2rem;
     .carousel-caption-2{
         top: -2rem!important;
     }
-    .nav-item{
-        width: 10rem;
-    }
-    .navbar-nav{
-        width: 34rem!important;
-    }
+  
 }
+
 @media (min-width: 769px) {
    
     .table-responsive{
@@ -436,7 +441,7 @@ background-color: red;
     }
 
     .fa-shopping-cart {
-        color: white;
+        color: black;
         justify-content: end;
     }
 }
@@ -503,10 +508,13 @@ background-color: red;
         padding: 0;
     }
     .navbar-brand {
-        width: 100%;
+        width: 24%;
         display: flex;
         justify-content: center;
         margin: 0px;
+    }
+    .cart {
+        margin-left: 0rem;
     }
 
     .jumbotron {
@@ -558,11 +566,11 @@ background-color: red;
     .img-td-home {
         width: 25%;
     }
-
+   
     .cart {
         position: absolute;
-        top: 0;
-        right: 0;
+        top: 0rem;
+        right: 0rem;
         list-style: none;
     }
 
@@ -616,5 +624,32 @@ background-color: red;
       background-size: cover;
     }
 }
-
+@media (max-width:936px){
+    .nav-item{
+        width: 10rem;
+    }
+    .navbar-nav{
+        width: 34rem!important;
+    }
+    .navbar-expand-md .navbar-nav .nav-link {
+        padding-right: 0;
+        padding-left: 0;
+    }
+}
+@media (max-width:1366px) and (min-width:1180px){
+    .item-image{
+        top: -3rem;
+    }
+}
+@media (max-width:930px) and (min-width:768px){
+    .cart {
+       top: 0rem;
+       right: 0rem;
+   }
+}
+@media (max-width:1260px) and (min-width:980px){
+    .p-history{
+        font-size: .75rem;
+    }
+}
 

@@ -1,4 +1,7 @@
 
+$('.navbar-nav>li>div').on('click', function(){
+  $('.navbar-collapse').collapse('hide');
+});
 function getData() {
   let section = document.querySelector('#products');
   let dropdown = document.querySelector('#categories-menu');

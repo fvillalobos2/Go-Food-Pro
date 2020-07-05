@@ -6,7 +6,9 @@ body {
 .container {
     background-color: #FFFFFC;
 }
-
+#img-carrouse-mobile{
+    display: none;
+}
 #description-card {
     border: 1px solid #aeaeae;
     border-radius: .25rem;
@@ -16,7 +18,10 @@ body {
     background-image: url(gfpimg/bg-xl-gfp.jpg);
     background-size: cover;
 }
-
+.navbar-light .navbar-brand {
+    color: rgba(0,0,0,.9);
+    margin: auto;
+}
 .pnuestra{
 background-color: white;
 font-size: 1rem;
@@ -446,8 +451,15 @@ background-color: red;
     }
 }
 @media (max-width:768px){
-    .carousel-inner img{
-        height: 10rem;
+    #img-carrouse-mobile{
+        display: block;
+    }
+    #img-carrouse-web{
+        display: none!important;
+    }
+    .fa-shopping-cart{
+        top: 5px;
+        position: relative;
     }
     .carouselp {
         font-size: 0.7rem;
@@ -601,6 +613,9 @@ background-color: red;
     }
 }
 @media (max-width:450px){
+    .carousel-inner img {
+        height: 10rem;
+    }
     .carouselicon {
         height: 75px!important;
         width: 4rem;

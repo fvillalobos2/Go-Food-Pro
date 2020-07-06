@@ -691,11 +691,11 @@ background-color: red;
         font-size: .8rem;
     }
 }
-@media (max-width:990px){
+/* @media (max-width:990px){
     .img-fluid {
         max-width: 40%;
         height: auto;
         margin-left: 30%;
     }
-}
+} */
 

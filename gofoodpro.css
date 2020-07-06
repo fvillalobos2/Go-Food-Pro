@@ -6,6 +6,9 @@ body {
 .container {
     background-color: #FFFFFC;
 }
+#cart-mobile{
+    display:none;
+}
 #img-carrouse-mobile{
     display: none;
 }
@@ -691,11 +694,13 @@ background-color: red;
         font-size: .8rem;
     }
 }
-/* @media (max-width:990px){
-    .img-fluid {
-        max-width: 40%;
-        height: auto;
-        margin-left: 30%;
+@media (max-width:990px){
+    #cart-web{
+        display: none;
     }
-} */
+    #cart-mobile{
+        display:block;
+    }
+}
+
 

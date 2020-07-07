@@ -701,6 +701,9 @@ background-color: red;
     #cart-mobile{
         display:block;
     }
+    .jumbotron .display-4 {
+        text-align: left;
+    }
 }
 
 

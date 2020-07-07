@@ -2,14 +2,14 @@ let band = false
 let band2 = false
 let band3 = false
 let name;
-
+let totalDolars = 0
 function payPal() {
     paypal.Buttons({
       createOrder: function (data, actions) {
           return actions.order.create({
             purchase_units: [{
               amount: {
-                value: total
+                value: totalDolars
               }
             }]
           });
@@ -59,10 +59,12 @@ function cartInitPage() {
             let suma = parseFloat(dato.price) * dato.quantity;
             tempSuma += parseFloat(dato.price) * dato.quantity ;
             total += parseFloat(suma) 
+            totalDolars = parseFloat(total/582).toFixed(2)
         });
         if(band){
           tempSuma += 2000
           total = tempSuma
+          totalDolars = parseFloat(total/582).toFixed(2)
         }
         for (const product of data) {
             td.innerHTML += `

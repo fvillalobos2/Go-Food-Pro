@@ -33,7 +33,7 @@ function getData() {
       for (let item of products) {
         if (item.idCategory == category.id) {
           cards.innerHTML += `
-          <div class="col-lg-4 col-md-6 col-sm-12 mt-lg-2 mt-2">
+          <div id=${item.name.replace(/ /g, "").toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g,"")} class="col-lg-4 col-md-6 col-sm-12 mt-lg-2 mt-2">
             <div id = 'card-id' class="card">
               <img src=${item.image} class="card-img-top" alt="...">
               <div class= "card-body">

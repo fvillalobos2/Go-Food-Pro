@@ -95,6 +95,7 @@ function cartInit() {
   }
   if(document.getElementById("numberCart") != null){
     document.getElementById("numberCart").innerHTML = numberCart;
+    document.getElementById("numberCartMobile").innerHTML = numberCart;
   }
   cart.innerHTML = '';
   td.innerHTML = '';

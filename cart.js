@@ -33,7 +33,7 @@ function payPal() {
             });
           }
           alert('Transaction completed by ' + details.payer.name.given_name + "thanks for your purchase");
-          cartInit();
+          cartInitPage();
           window.location.href = 'index.html'
         });
       }

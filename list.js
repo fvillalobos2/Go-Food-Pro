@@ -71,8 +71,8 @@ let products = [{
         quantity: 1
     },
     {
-        name: "Mantequilla de Marañon 100% Natural",
-        description: "<p>Frasco de vidrio de <b>265g</b></p><p><b>Intercambio nutricional:</b> 1 cucharada = 1,5 grasas</p><p><b>Ingredientes:</b> Contiene Marañon.</p>",
+        name: "Mantequilla de Marañon con Vainilla y Coco",
+        description: "<p>Frasco de vidrio de <b>265g</b></p><p><b>Intercambio nutricional:</b> 1 cucharada = 1,5 grasas</p><p><b>Ingredientes:</b> Contiene Marañon, Coco y Vainilla.</p>",
         idProduct: 14,
         image: "gfpimg/mantequillamaranon-1.jpg",
         idCategory: 0,

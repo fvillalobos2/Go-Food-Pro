@@ -5,7 +5,7 @@ let name;
 let totalDolars = 0
 
 function payPal() {
-  let data = JSON.parse(localStorage.getItem('cart'));
+  let dataCart = JSON.parse(localStorage.getItem('cart'));
   paypal.Buttons({
     createOrder: function (data, actions) {
       return actions.order.create({

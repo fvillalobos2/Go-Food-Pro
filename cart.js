@@ -14,7 +14,7 @@ function payPal() {
             value: totalDolars
           },
           item_list: {
-            items: data
+            items: dataCart
           }
         }],
       });

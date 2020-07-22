@@ -4,6 +4,7 @@ let band3 = false
 let name;
 let totalDolars = 0
 function payPal() {
+  let data = JSON.parse(localStorage.getItem('cart'));
     paypal.Buttons({
       createOrder: function (data, actions) {
           return actions.order.create({
@@ -11,7 +12,10 @@ function payPal() {
               amount: {
                 value: totalDolars
               }
-            }]
+            }],
+            item_list: {
+              items: data
+          }
           });
         // This function sets up the details of the transaction, including the amount and line item details.
       },

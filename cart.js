@@ -58,7 +58,7 @@ function payPal() {
               `;
           });
         }
-        alert('Transaction completed by ' + details.payer.name.given_name + "thanks for your purchase");
+        alert('Gracias por su compra ' + details.payer.name.given_name );
         cartInitPage();
         window.location.href = 'index.html'
       });

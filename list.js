@@ -106,15 +106,15 @@ let products = [{
         price: 6000,
         quantity: 1
     },
-    {
-        name: "Proballs",
-        description: "6 unidades de galletas Gluten free.",
-        idProduct: 10,
-        image: "gfpimg/proballs.jpg",
-        idCategory: 1,
-        price: 100,
-        quantity: 1
-    },
+    // {
+    //     name: "Proballs",
+    //     description: "6 unidades de galletas Gluten free.",
+    //     idProduct: 10,
+    //     image: "gfpimg/proballs.jpg",
+    //     idCategory: 1,
+    //     price: 100,
+    //     quantity: 1
+    // },
     {
         name: "Crunch Bars",
         description: "<p>Barritas a base de arroz tostado y mantequilla de almendras 100% natural.</p> <p> Paquete de <b> 6 unidades</b><br></p><p><b>Intercambio nutricional:</b> 1 barrita =<br> 1 grasa, ½ proteína y 1 carbohidrato</p><p><b>Ingredientes:</b> Arroz tostado, agave azul orgánico, mantequilla de almendras (sin azúcar o aceites añadidos), chocolate semiamargo, proteína aislada de suero de leche. Contiene: almendras y suero de leche. Puede contener trazas de gluten, semillas o nueces.</p>",

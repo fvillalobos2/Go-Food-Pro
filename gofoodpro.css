@@ -110,7 +110,7 @@ a.disabled, button.disabled {
 }
 
 .carousel-caption .display-4 {
-    font-size: 4rem;
+    font-size: 3rem;
     font-weight: 900;
     margin: 0;
     color: black;
@@ -120,9 +120,12 @@ a.disabled, button.disabled {
 
 .carousel-caption .lead {
     font-weight: 400;
-    font-size: 2rem;
+    font-size: 1.5rem;
     margin-top: -18px;
     color: black;
+    padding-left: 50%;
+    margin-top: 1rem;
+    word-break: break-word;
 }
 
 .carouselp{
@@ -308,9 +311,9 @@ font-size: 2rem;
     margin-left: 1rem;
 }
 
-@media (max-width:1450px){
+@media (max-width:1550px){
     .carousel-caption .display-4 {
-        font-size: 3rem;
+        font-size: 2rem;
     }
     .carousel-caption p{
         font-size: 1.25rem;
@@ -324,7 +327,7 @@ font-size: 2rem;
         height: 20rem;
     }
 }
-@media (max-width:1175px){
+@media (max-width:1280px){
     .cart {
         margin-left: 5rem;
     }
@@ -483,7 +486,7 @@ background-color: red;
         margin: 4px;
     }
 }
-@media (max-width: 930px) {
+@media (max-width: 980px) {
     .carousel-caption p {
         font-size: 1rem;
     }

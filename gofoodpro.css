@@ -12,6 +12,9 @@ body {
 #img-carrouse-mobile{
     display: none;
 }
+#img-carrouse-mobile-2{
+    display: none;
+}
 #description-card {
     border: 1px solid #aeaeae;
     border-radius: .25rem;
@@ -632,8 +635,17 @@ background-color: red;
 }
 @media (max-width:450px){
     .carousel-caption .display-4 {
-        font-size: 1rem;
-        margin: 0!important;
+        font-size: .6rem;
+        margin: 1rem;
+    }
+    
+    .carousel-control-prev-icon {
+        height: 25px;
+        width: 40px;
+    }
+    .carousel-control-next-icon {
+        height: 25px;
+        width: 40px;
     }
     #display-img-h1 {
         font-size: 1rem;
@@ -643,14 +655,19 @@ background-color: red;
         width: 39rem!important;
     }
     .carousel-caption .lead {
-        font-size: .8rem;
+        font-size: .6rem;
+        margin: 8px 0;
+        padding-left: 40%;
     }
     .carouselicon {
         height: 75px!important;
         width: 4rem;
     }
     #display-img-h1 {
-        margin-top: 3.5rem!important;
+        margin-top: 4.2rem!important;
+    }
+    .btn-success {
+        font-size: .8rem!important;
     }
 }
     @media (min-width: 1000px) {
@@ -722,10 +739,63 @@ background-color: red;
 }
 @media (max-width:630px){
     #img-carrouse-mobile{
-        display: block;
-        height: 15rem;
-        width: 40rem!important;
+        display: none;
+        /* height: 15rem;
+        width: 40rem!important; */
     } 
+    #img-carrouse-mobile-2{
+display: block;
+    }
 }
-
+@media (max-width:450px){
+    .carousel-caption p {
+        font-size: .6rem;
+        padding-left: 31%;
+        margin-bottom: 7px;
+      
+    }
+}
+@media (max-width:600px){
+    .carousel-caption p {
+        font-size: 1rem;
+        padding-left: 31%;
+        margin-bottom: 7px;
+      
+    }
+    .carousel-caption .display-4 {
+        font-size: 1rem;
+        margin: 1rem;
+    }
+    
+    .carousel-control-prev-icon {
+        height: 25px;
+        width: 40px;
+    }
+    .carousel-control-next-icon {
+        height: 25px;
+        width: 40px;
+    }
+    #display-img-h1 {
+        font-size: 1.5rem;
+    }
+    #img-carrouse-mobile{
+        height: 14rem;
+        width: 39rem!important;
+    }
+    .carousel-caption .lead {
+        font-size: 1rem;
+        margin: 8px 0;
+        padding-left: 40%;
+    }
+    .carouselicon {
+        height: 75px!important;
+        width: 4rem;
+    }
+    #display-img-h1 {
+        margin-top: 4.2rem!important;
+    }
+    .btn-success {
+        font-size: .8rem!important;
+    }
+}
 

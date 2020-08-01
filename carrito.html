@@ -138,13 +138,20 @@
             </div>
             <div class="container">
             <div class="row formdelivery">
+                <div>
                 <form>
-                    <p>Seleccione si requiere envío: (Costo del envío ₡ 2000)</p>
-                    <input onchange="changeDevilery(this.value)" type="radio" id="si" name="select" value="Si">
-                    <label for="si">Si</label><br>
+                    <p>Seleccione si requiere envío</p>
+                    <input onchange="changeDevilery(this.value)" type="radio" id="si" name="select" value="GAM">
+                    <label for="si">Si - Dentro del GAM - Costo: 2000&#8353;</label><br>
+                    <input onchange="changeDevilery(this.value)" type="radio" id="no" name="select" value="NOGAM">
+                    <label for="no">Si - Fuera del GAM - Costo: 2500&#8353;</label><br>
                     <input onchange="changeDevilery(this.value)" type="radio" id="no" name="select" value="no">
                     <label for="no">No</label><br>
                 </form>
+                <form id="form-delivery">
+
+                </form>
+            </div>
             </div>
             <div class="row">
             <div id='total-cart' class="col-12"></div></div>

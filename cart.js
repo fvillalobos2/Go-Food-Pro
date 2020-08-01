@@ -3,11 +3,14 @@ let band2 = false
 let band3 = false
 let name;
 let totalDolars = 0
+if(localStorage.getItem('delivery')){
+  localStorage.removeItem('delivery')
+}
 let totalSendTax = 0
 function payPal() {
   let dataCart = JSON.parse(localStorage.getItem('cart'));
   if(band){
-    totalSendTax = 2000
+    totalSendTax = localStorage.getItem('delivery')
   }else{
     totalSendTax = 0
   }
@@ -183,24 +186,47 @@ cartInitPage()
 
 function changeDevilery(e) {
   let temp = document.getElementById('button-whatsapp')
-  if (e == 'Si') {
+  if(e === "GAM"){
     if (band3) {
       document.getElementById('whatsapp').innerHTML = ``
       document.getElementById('whatsapp').innerHTML = `
           <a id='button-whatsapp' class="btn btn-success mr-3 ml-3" href="https://wa.me/50688906767?text=Hola me gustaría ordenar el siguiente carrito:%0D%0A${name} %0D%0AEnvío: ₡2000 %0D%0ATotal:&#8353;${total}" target="_blank">Comprar vía Whatsapp</a>
        `;
     }
+    if(localStorage.getItem('delivery')){
+      total -= localStorage.getItem('delivery')
+    }
     band = true
     band2 = false
-    total = total + 2000
+    total += 2000
     localStorage.setItem('delivery', 2000)
     document.getElementById('total-cart').innerHTML = `
         <h5>Total:&#8353;${total}</h5>
         `;
-  } else {
+  }
+ if(e === "NOGAM"){
+  if (band3) {
+    document.getElementById('whatsapp').innerHTML = ``
+    document.getElementById('whatsapp').innerHTML = `
+        <a id='button-whatsapp' class="btn btn-success mr-3 ml-3" href="https://wa.me/50688906767?text=Hola me gustaría ordenar el siguiente carrito:%0D%0A${name} %0D%0AEnvío: ₡2000 %0D%0ATotal:&#8353;${total}" target="_blank">Comprar vía Whatsapp</a>
+     `;
+  }
+  if(localStorage.getItem('delivery')){
+    total -= localStorage.getItem('delivery')
+  }
+  band = true
+  band2 = false
+  total +=  2500
+  localStorage.setItem('delivery', 2500)
+  document.getElementById('total-cart').innerHTML = `
+      <h5>Total:&#8353;${total}</h5>
+      `;
+ }
+ if(e === "no") {
     if (band == true) {
-      total = total - 2000
-      localStorage.setItem('delivery', 2000)
+      total -= localStorage.getItem('delivery')
+      localStorage.removeItem('delivery')
+      //localStorage.setItem('delivery', 2000)
       document.getElementById('total-cart').innerHTML = `
             <h5>Total:&#8353;${total}</h5>
             `;

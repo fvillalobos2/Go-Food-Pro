@@ -82,7 +82,7 @@ let products = [{
     {
         name: "Peanut Butter Cups",
         description: "<p>Tacitas de mantequilla de maní con sabor a leche condensada.</p> <p> Caja de <b> 6 unidades</b></p><p><b>Intercambio nutricional:</b> 2,5 grasas / 1 carbohidrato</p><p><b>Ingredientes:</b> Licor de cacao, azúcar, vainilla, cacao en polvo, mantequilla de maní con sabor a leche condensada. Puede contener trazas de soya.</p>",
-        idProduct: 9,
+        idProduct: 15,
         image: "gfpimg/peanutbuttercups.jpg",
         idCategory: 1, 
         price: 5700,

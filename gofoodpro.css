@@ -352,7 +352,9 @@ font-size: 2rem;
     }
   
 }
-
+li{
+    list-style:none;
+}
 @media (min-width: 769px) {
    
     .table-responsive{

@@ -70,13 +70,22 @@ let products = [{
         price: 7500,
         quantity: 1
     },
+    // {
+    //     name: "Mantequilla de Marañon con Vainilla y Coco",
+    //     description: "<p>Frasco de vidrio de <b>265g</b></p><p><b>Intercambio nutricional:</b> 1 cucharada = 1,5 grasas</p><p><b>Ingredientes:</b> Contiene Marañon, Coco y Vainilla.</p>",
+    //     idProduct: 14,
+    //     image: "gfpimg/mantequillamaranon-1.jpg",
+    //     idCategory: 0,
+    //     price: 7500,
+    //     quantity: 1
+    // },
     {
-        name: "Mantequilla de Marañon con Vainilla y Coco",
-        description: "<p>Frasco de vidrio de <b>265g</b></p><p><b>Intercambio nutricional:</b> 1 cucharada = 1,5 grasas</p><p><b>Ingredientes:</b> Contiene Marañon, Coco y Vainilla.</p>",
-        idProduct: 14,
-        image: "gfpimg/mantequillamaranon-1.jpg",
-        idCategory: 0,
-        price: 7500,
+        name: "Peanut Butter Cups",
+        description: "<p>Tacitas de mantequilla de maní con sabor a leche condensada.</p> <p> Caja de <b> 6 unidades</b></p><p><b>Intercambio nutricional:</b> 2,5 grasas / 1 carbohidrato</p><p><b>Ingredientes:</b> Licor de cacao, azúcar, vainilla, cacao en polvo, mantequilla de maní con sabor a leche condensada. Puede contener trazas de soya.</p>",
+        idProduct: 15,
+        image: "gfpimg/peanutbuttercups.jpg",
+        idCategory: 1, 
+        price: 5700,
         quantity: 1
     },
     {

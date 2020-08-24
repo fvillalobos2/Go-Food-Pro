@@ -38,6 +38,7 @@ function getData() {
               <img src=${item.image} class="card-img-top" alt="...">
               <div class= "card-body">
                 <h4 id = 'title-card' class="card-title">${item.name}</h4>
+                <p><span>${item.unit}</span><p>
                 <h5 id ='price-card' class="card-title">&#8353; ${item.price}</h5>
                 <p>
                   <a class="btn btn-info" data-toggle="collapse" href="#a${item.idProduct}" role="button" aria-expanded="false" aria-controls="collapseExample">

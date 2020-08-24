@@ -5,6 +5,7 @@ let products = [{
         image: "gfpimg/galletas-almendra-1.jpg",
         idCategory: 1,
         price: 5500,
+        unit:'Paquete de 6 unidades',
         quantity: 1
     },
     {
@@ -14,6 +15,7 @@ let products = [{
         image: "gfpimg/galletas-cacao.jpg",
         idCategory: 1,
         price: 5000,
+        unit:'Paquete de 6 unidades',
         quantity: 1
     },
     {
@@ -23,6 +25,7 @@ let products = [{
         image: "gfpimg/zanabana-muffin.jpg",
         idCategory: 1,
         price: 5500,
+        unit:'Paquete de 6 unidades',
         quantity: 1
     },
     {
@@ -32,6 +35,7 @@ let products = [{
         image: "gfpimg/choco-muffin.jpg",
         idCategory: 1,
         price: 5500,
+        unit:'Paquete de 6 unidades',
         quantity: 1
     },
     {
@@ -41,6 +45,7 @@ let products = [{
         image: "gfpimg/mantequillam.jpg",
         idCategory: 0,
         price: 5500,
+        unit:'Frasco de vidrio de 265g',
         quantity: 1
     },
     {
@@ -50,6 +55,7 @@ let products = [{
         image: "gfpimg/mantequillam-1.jpg",
         idCategory: 0,
         price: 5500,
+        unit:'Frasco de vidrio de 265g',
         quantity: 1
     },
     {
@@ -59,6 +65,7 @@ let products = [{
         image: "gfpimg/mantequillaalmedras-1.jpg",
         idCategory: 0,
         price: 6500,
+        unit:'Frasco de vidrio de 265g',
         quantity: 1
     },
     {
@@ -68,6 +75,7 @@ let products = [{
         image: "gfpimg/mantequillaalemdrasl-1.jpg",
         idCategory: 0,
         price: 7500,
+        unit:'Frasco de vidrio de 265g',
         quantity: 1
     },
     // {
@@ -86,6 +94,7 @@ let products = [{
         image: "gfpimg/peanutbuttercups.jpg",
         idCategory: 1, 
         price: 5700,
+        unit:'Paquete de 6 unidades',
         quantity: 1
     },
     {
@@ -95,6 +104,7 @@ let products = [{
         image: "gfpimg/chocococadas-1.jpg",
         idCategory: 1,
         price: 5500,
+        unit:'Paquete de 200 gramos',
         quantity: 1
     },
     {
@@ -104,6 +114,7 @@ let products = [{
         image: "gfpimg/nutcrackerbread.jpg",
         idCategory: 1,
         price: 6000,
+        unit:'Unidad de 750 gramos (de 10 a 15 tajadas)',
         quantity: 1
     },
     {
@@ -113,6 +124,7 @@ let products = [{
         image: "gfpimg/ketonutcracker.jpg",
         idCategory: 1,
         price: 6000,
+        unit:'Unidad de 750 gramos (de 10 a 15 tajadas)',
         quantity: 1
     },
     // {
@@ -131,6 +143,7 @@ let products = [{
         image: "gfpimg/Crunchbars-1.jpg",
         idCategory: 1,
         price: 4500,
+        unit:'Paquete de 6 unidades',
         quantity: 1
     },
     {
@@ -140,6 +153,7 @@ let products = [{
         image: "gfpimg/donas.jpg",
         idCategory: 1,
         price: 3900,
+        unit:'Paquete de 6 unidades',
         quantity: 1
     },
     // {

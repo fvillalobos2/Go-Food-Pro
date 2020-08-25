@@ -526,7 +526,7 @@ background-color: red;
         font-size: 0.7rem;
     }
     .btn-success {
-        padding: 0.5rem 0.5rem;
+        padding: 0.5rem 1.5rem;
         font-size: 1rem;
     }
     .carousel-caption .display-4 {
@@ -712,7 +712,7 @@ background-color: red;
         margin-top: 4.2rem!important;
     }
     .btn-success {
-        font-size: .8rem!important;
+        font-size: 1.2rem!important;
     }
 }
     @media (min-width: 1000px) {

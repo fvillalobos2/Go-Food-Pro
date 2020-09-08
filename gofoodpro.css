@@ -757,8 +757,8 @@ background-color: red;
 }
 @media (max-width:930px) and (min-width:768px){
     .cart {
-       top: 0rem;
-       right: 0rem;
+       top: 2rem;
+       right: 5rem;
    }
 }
 @media (max-width:1260px) and (min-width:980px){
@@ -807,5 +807,6 @@ display: block;
 .another-headerpic{
     width: 4.5rem;
     margin-left: auto;
+    min-height: 6rem;
 }
 

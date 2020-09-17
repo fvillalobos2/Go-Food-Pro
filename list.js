@@ -19,6 +19,16 @@ let products = [{
         quantity: 1
     },
     {
+        name: "Galletas Veganas Choco-Chips",
+        description: "<p> Paquete de <b> 5 unidades</b></p><p><b>Intercambio nutricional:</b> 1 galleta =<br> 2,5 grasas | 1 carbohidrato</p><p><b>Ingredientes:</b>Mantequilla de almendras, azúcar cruda, chips de chocolate oscuro, agua, harina de yuca, nibs de chocolate, chía, vainilla, stevia, bicarbonato de sodio. Contiene: Almendras.</p>",
+        idProduct: 17,
+        image: "gfpimg/galletas-veganas-choco-chips.jpg",
+        idCategory: 1,
+        price: 5500,
+        unit:'Paquete de 5 unidades',
+        quantity: 1
+    },
+    {
         name: "ZanaBana Muffin",
         description: "<p>Muffins a base de zanahoria con banano y sin azúcar.</p> <p> Paquete de <b> 6 unidades</b></p><p><b>Intercambio nutricional:</b> 1 muffin = <br> 1 carbohidrato y ½ grasa</p><p><b>Ingredientes:</b> Bananos, avena, claras de huevo, zanahorias, aceite de coco, sucralosa, sal, especias (menos del 2%) y bicarbonato de sodio. Contiene huevo. Puede contener trazas de gluten, semillas o nueces.</p>",
         idProduct: 3,
@@ -87,6 +97,16 @@ let products = [{
     //     price: 7500,
     //     quantity: 1
     // },
+    {
+        name: "Cajetas KETO Veganas",
+        description: "<p> Bolsita de <b> 6 unidades</b></p><p><b>Intercambio nutricional:</b> 1 bolita = 1/2 grasa</p><p><b>Ingredientes:</b> Mantequilla de maní natural (sin aceites ni azúcares añadidos), coco rallado, sabor a dulce de leche y estevia (rebiana) como endulzante natural.</p>",
+        idProduct: 16,
+        image: "gfpimg/cajetas-keto-veganas.jpg",
+        idCategory: 1, 
+        price: 3000,
+        unit:'Bolsita de 6 unidades',
+        quantity: 1
+    },
     {
         name: "Peanut Butter Cups",
         description: "<p>Tacitas de mantequilla de maní con sabor a leche condensada.</p> <p> Caja de <b> 6 unidades</b></p><p><b>Intercambio nutricional:</b> 2,5 grasas / 1 carbohidrato</p><p><b>Ingredientes:</b> Chocolate al 70%, vainilla, cacao en polvo, mantequilla de maní con sabor a leche condensada sin lácteos ni azúcar. Puede contener trazas de soya.</p>",

@@ -20,7 +20,7 @@ let products = [{
     },
     {
         name: "Galletas Veganas Choco-Chips",
-        description: "<p> Paquete de <b> 5 unidades</b></p><p><b>Intercambio nutricional:</b> 1 galleta =<br> 2,5 grasas | 1 carbohidrato</p><p><b>Ingredientes:</b>Mantequilla de almendras, azúcar cruda, chips de chocolate oscuro, agua, harina de yuca, nibs de chocolate, chía, vainilla, stevia, bicarbonato de sodio. Contiene: Almendras.</p>",
+        description: "<p>Deliciosas y chiclosas galletas veganas con chispas de chocolate.</p><p> Paquete de <b> 5 unidades</b></p><p><b>Intercambio nutricional:</b> 1 galleta =<br> 2,5 grasas | 1 carbohidrato</p><p><b>Ingredientes:</b>Mantequilla de almendras, azúcar cruda, chips de chocolate oscuro, agua, harina de yuca, nibs de chocolate, chía, vainilla, stevia, bicarbonato de sodio. Contiene: Almendras.</p>",
         idProduct: 17,
         image: "gfpimg/galletas-veganas-choco-chips.jpg",
         idCategory: 1,
@@ -99,7 +99,7 @@ let products = [{
     // },
     {
         name: "Cajetas KETO Veganas",
-        description: "<p> Bolsita de <b> 6 unidades</b></p><p><b>Intercambio nutricional:</b> 1 bolita = 1/2 grasa</p><p><b>Ingredientes:</b> Mantequilla de maní natural (sin aceites ni azúcares añadidos), coco rallado, sabor a dulce de leche y estevia (rebiana) como endulzante natural.</p>",
+        description: "<p>Cajetas a base de mantequilla de mani y coco crocante con notas a dulce de leche.</p><p> Bolsita de <b> 6 unidades</b></p><p><b>Intercambio nutricional:</b> 1 bolita = 1/2 grasa</p><p><b>Ingredientes:</b> Mantequilla de maní natural (sin aceites ni azúcares añadidos), coco rallado, sabor a dulce de leche y estevia (rebiana) como endulzante natural.</p>",
         idProduct: 16,
         image: "gfpimg/cajetas-keto-veganas.jpg",
         idCategory: 1, 
@@ -176,6 +176,26 @@ let products = [{
         unit:'Paquete de 6 unidades',
         quantity: 1
     },
+    {
+        name: "Go-Bucha Manzana Canela",
+        description: "<p>Bebida fermentada abase de té, agua y frutas</p> <p> Envase de <b>500 ml</b></p><p><b>Ingredientes:</b> Agua, té, manzana, canela, cultivo vivo de kombucha(scoby).<br><p> Mantener en refrigeración.</p></p>",
+        idProduct: 18,
+        image: "gfpimg/go-bucha-manzana.jpg",
+        idCategory: 2,
+        price: `1600`,
+        unit:'500 ml',
+        quantity: 1
+    },
+    {
+        name: "Go-Bucha Piña",
+        description: "<p>Bebida fermentada abase de té, agua y frutas</p> <p> Envase de <b>500 ml</b></p><p><b>Ingredientes:</b>Agua, té, piña, jengibre fresco, cúrcuma fresca.cultivo vivo de kombucha (scoby).</p><br><p> Mantener en refrigeración.</p>",
+        idProduct: 19,
+        image: "gfpimg/go-bumcha-pina.jpg",
+        idCategory: 2,
+        price: 1600,
+        unit:'500 ml',
+        quantity: 1
+    },
     // {
     //     name: "Queque de Camote y Cacao",
     //     description: "6 unidades de galletas Gluten free.",
@@ -214,12 +234,12 @@ let categories = [
         description: 'prueba',
         id: 1
     },
-    // {
-    //     name: 'Muffins',
-    //     htmlId: 'muffins',
-    //     description: 'prueba',
-    //     id: 1
-    // },
+    {
+        name: 'Kombuchas',
+        htmlId: 'kombuchas',
+        description: 'prueba',
+        id: 2
+    },
     // {
     //     name: 'Cocadas',
     //     htmlId: 'cocadas',

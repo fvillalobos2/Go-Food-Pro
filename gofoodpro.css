@@ -19,7 +19,12 @@ body {
     border: 1px solid #aeaeae;
     border-radius: .25rem;
 }
-
+a {
+    color: #76c372;
+}
+a:hover {
+    color: #555;
+}
 .carousel-item1{
     background-image: url(gfpimg/bg-xl-gfp.jpg);
     background-size: cover;

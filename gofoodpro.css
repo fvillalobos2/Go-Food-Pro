@@ -473,6 +473,9 @@ background-color: red;
         color: black;
         justify-content: end;
     }
+    .another-headerpic{
+        display: none;
+    } 
 }
 
 @media (max-width:768px){
@@ -495,6 +498,9 @@ background-color: red;
         font-size: 0.8rem;
         margin: 4px;
     }
+    .another-headerpic{
+        display: none;
+    } 
 }
 @media (max-width: 980px) {
     .carousel-caption p {

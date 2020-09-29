@@ -2,7 +2,34 @@
 <html lang="en">
 
 <head>
-
+  <script>
+    // Measures product impressions and also tracks a standard
+    // pageview for the tag configuration.
+    // Product impressions are sent by pushing an impressions object
+    // containing one or more impressionFieldObjects.
+    dataLayer.push({
+      'ecommerce': {
+        'currencyCode': 'USD',                       // Local currency is optional.
+        'impressions': [
+         {
+           'name': 'Mantequilla de Maní Sabor a Leche Condensada',       // Name or ID is required.
+           'id': '7',
+           'price': '5500',
+           'brand': 'Go Food Pro',
+           'category': 'Mantequillas',
+           'position': 1
+         },
+         {
+           'name': 'Mantequilla de Maní 100% Natural',
+           'id': '6',
+           'price': '5500',
+           'brand': 'Go Food Pro',
+           'category': 'Mantequillas',
+           'position': 2
+         }]
+      }
+    });
+    </script>
   <!-- Google Tag Manager -->
   <script>
     (function (w, d, s, l, i) {

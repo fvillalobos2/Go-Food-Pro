@@ -1,18 +1,13 @@
 <!doctype html>
 <html lang="en">
-
 <head>
-  <script>
-    // Measures product impressions and also tracks a standard
-    // pageview for the tag configuration.
-    // Product impressions are sent by pushing an impressions object
-    // containing one or more impressionFieldObjects.
-    dataLayer.push({
-      'ecommerce': {
+    <!-- <script>
+  dataLayer = [{
+    'ecommerce': {
         'currencyCode': 'USD',                       // Local currency is optional.
         'impressions': [
          {
-           'name': 'Mantequilla de Maní Sabor a Leche Condensada',       // Name or ID is required.
+           'name': `${Product Name}`,       // Name or ID is required.
            'id': '7',
            'price': '5500',
            'brand': 'Go Food Pro',
@@ -28,8 +23,8 @@
            'position': 2
          }]
       }
-    });
-    </script>
+  }];
+    </script> -->
   <!-- Google Tag Manager -->
   <script>
     (function (w, d, s, l, i) {
@@ -140,7 +135,7 @@
   <!-- Image and text -->
   <nav class="navbar navbar-light navbar-expand-md sticky-top header pb-1">
     <a class="navbar-brand" href="#">
-      <img class="headerpic" src="gfpimg/icon.png" width="100" height="100" class="d-inline-block align-top" alt="">
+      <img class="headerpic" src="gfpimg/icon-min.jpg" width="100" height="100" class="d-inline-block align-top" alt="">
     </a>
     <div class="w-100">
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
@@ -204,9 +199,9 @@
     </ol>
     <div class="carousel-inner">
       <div class="carousel-item active mb-3">
-        <img src="gfpimg/bg-xl-gfp-5.jpg" id="img-carrouse-web" class="d-block w-100 img-carousel-1" alt="...">
-        <img src="gfpimg/bg-md-gfp-1.jpg" id="img-carrouse-mobile" class="w-100 img-carousel-1" alt="...">
-        <img src="gfpimg/mobile-crunchbars-1.jpg" id="img-carrouse-mobile-2" class="w-100 img-carousel-1" alt="...">
+        <img src="gfpimg/bg-xl-gfp-5-min.jpg" id="img-carrouse-web" class="d-block w-100 img-carousel-1" alt="...">
+        <img src="gfpimg/bg-md-gfp-1-min.jpg" id="img-carrouse-mobile" class="w-100 img-carousel-1" alt="...">
+        <img src="gfpimg/mobile-crunchbars-1-min.jpg" id="img-carrouse-mobile-2" class="w-100 img-carousel-1" alt="...">
         <div class="carousel-caption d-sm-block text-right my-4 item-image">
           <!-- <img src="gfpimg/icon.png" class="carouselicon" alt=""> -->
           <h1 id="display-img-h1" class="display-4 "> Crunch Bars</h1>
@@ -218,9 +213,9 @@
         </div>
       </div>
       <div class="carousel-item mb-3">
-        <img src="gfpimg\bg-xl-gfp-4.jpg" id="img-carrouse-web" class="d-block w-100 img-carousel-2" alt="...">
-        <img src="gfpimg\bg-md-gfp-2.jpg" id="img-carrouse-mobile" class="w-100 img-carousel-1" alt="...">
-        <img src="gfpimg\mobile-donas-1.jpg" id="img-carrouse-mobile-2" class="w-100 img-carousel-1" alt="...">
+        <img src="gfpimg\bg-xl-gfp-4-min.jpg" id="img-carrouse-web" class="d-block w-100 img-carousel-2" alt="...">
+        <img src="gfpimg\bg-md-gfp-2-min.jpg" id="img-carrouse-mobile" class="w-100 img-carousel-1" alt="...">
+        <img src="gfpimg\mobile-donas-1-min.jpg" id="img-carrouse-mobile-2" class="w-100 img-carousel-1" alt="...">
         <div class="carousel-caption-2 carousel-caption d-sm-block text-right my-4">
           <h1 class="display-4 mb-4">Donas de Camote</h1>
           <p class="lead">Una innegable combinación del chocolate oscuro y la cremosa mantequilla de maní unidos a la
@@ -231,9 +226,9 @@
         </div>
       </div>
       <div class="carousel-item mb-3">
-        <img src="gfpimg\bg-xl-gfp-2.jpg" id="img-carrouse-web" class="d-block w-100 img-carousel-3" alt="...">
-        <img src="gfpimg\bg-md-gfp-3.jpg" id="img-carrouse-mobile" class="w-100 img-carousel-1" alt="...">
-        <img src="gfpimg\mobile-galletas-1.jpg" id="img-carrouse-mobile-2" class="w-100 img-carousel-1" alt="...">
+        <img src="gfpimg\bg-xl-gfp-2-min.jpg" id="img-carrouse-web" class="d-block w-100 img-carousel-3" alt="...">
+        <img src="gfpimg\bg-md-gfp-3-min.jpg" id="img-carrouse-mobile" class="w-100 img-carousel-1" alt="...">
+        <img src="gfpimg\mobile-galletas-1-min.jpg" id="img-carrouse-mobile-2" class="w-100 img-carousel-1" alt="...">
         <div class="carousel-caption d-sm-block text-right my-4 item-image">
           <h1 id="display-img-h1" class="display-4 display-img-h1">Galletas de Almendra</h1>
           <p class="lead">La perfecta unión entre crema de almendra tostada y nibs de cacao 100% orgánicos en una

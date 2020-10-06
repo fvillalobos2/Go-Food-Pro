@@ -19,9 +19,14 @@ body {
     border: 1px solid #aeaeae;
     border-radius: .25rem;
 }
-
+a {
+    color: #76c372;
+}
+a:hover {
+    color: #555;
+}
 .carousel-item1{
-    background-image: url(gfpimg/bg-xl-gfp.jpg);
+    background-image: url(gfpimg/bg-xl-gfp-min.jpg);
     background-size: cover;
 }
 .navbar-light .navbar-brand {
@@ -402,17 +407,17 @@ background-color: red;
     }
 
     .preguntas {
-        background-image: url(gfpimg/bg-xl-gfp-6.jpg);
+        background-image: url(gfpimg/bg-xl-gfp-6-min.jpg);
       background-size: cover;
     }
 
     .nuestra-historia {
-        background-image: url(gfpimg/bg-xl-gfp-7.jpg);
+        background-image: url(gfpimg/bg-xl-gfp-7-min.jpg);
       background-size: cover;
     }
 
     .jumbotron{
-        background-image: url(gfpimg/bg-xl-gfp-4.jpg);
+        background-image: url(gfpimg/bg-xl-gfp-4-min.jpg);
       background-size: cover;
     }
 
@@ -421,11 +426,11 @@ background-color: red;
     padding-left: 4.5rem;
 }
 .nuestra-historia {
-    background-image: url(gfpimg/bg-xl-gfp-7.jpg);
+    background-image: url(gfpimg/bg-xl-gfp-7-min.jpg);
   background-size: cover;
 }
 .preguntas {
-    background-image: url(gfpimg/bg-xl-gfp-6.jpg);
+    background-image: url(gfpimg/bg-xl-gfp-6-min.jpg);
   background-size: cover;
 }
 }
@@ -460,7 +465,7 @@ background-color: red;
     }
 
     .jumbotron {
-        background-image: url(gfpimg/bg-xl-gfp-4.jpg);
+        background-image: url(gfpimg/bg-xl-gfp-4-min.jpg);
      background-size: cover;
     }
 
@@ -468,6 +473,9 @@ background-color: red;
         color: black;
         justify-content: end;
     }
+    .another-headerpic{
+        display: none;
+    } 
 }
 
 @media (max-width:768px){
@@ -490,6 +498,9 @@ background-color: red;
         font-size: 0.8rem;
         margin: 4px;
     }
+    .another-headerpic{
+        display: none;
+    } 
 }
 @media (max-width: 980px) {
     .carousel-caption p {
@@ -552,17 +563,17 @@ background-color: red;
     }
 
     .jumbotron {
-        background-image: url(gfpimg/bg-xl-gfp-4.jpg);
+        background-image: url(gfpimg/bg-xl-gfp-4-min.jpg);
         background-size: cover;
     }
     .preguntas {
-        background-image: url(gfpimg/bg-xl-gfp-6.jpg);
+        background-image: url(gfpimg/bg-xl-gfp-6-min.jpg);
       background-size: cover;
       color: white;
     }
 
     .nuestra-historia {
-        background-image: url(gfpimg/bg-xl-gfp-7.jpg);
+        background-image: url(gfpimg/bg-xl-gfp-7-min.jpg);
       background-size: cover;
       color: white;
     }
@@ -627,11 +638,11 @@ background-color: red;
         font-size: 1rem;
     }
     .nuestra-historia {
-        background-image: url(gfpimg/bg-xl-gfp-7.jpg);
+        background-image: url(gfpimg/bg-xl-gfp-7-min.jpg);
       background-size: cover;
     }
     .preguntas {
-        background-image: url(gfpimg/bg-xl-gfp-6.jpg);
+        background-image: url(gfpimg/bg-xl-gfp-6-min.jpg);
       background-size: cover;
     }
 }
@@ -721,16 +732,16 @@ background-color: red;
 }
     @media (min-width: 1000px) {
         .jumbotron {
-            background-image: url(gfpimg/bg-xl-gfp-4.jpg);
+            background-image: url(gfpimg/bg-xl-gfp-4-min.jpg);
             background-size: cover;
     }
 
     .nuestra-historia {
-        background-image: url(gfpimg/bg-xl-gfp-7.jpg);
+        background-image: url(gfpimg/bg-xl-gfp-7-min.jpg);
       background-size: cover;
     }
     .preguntas {
-        background-image: url(gfpimg/bg-xl-gfp-6.jpg);
+        background-image: url(gfpimg/bg-xl-gfp-6-min.jpg);
       background-size: cover;
     }
 }

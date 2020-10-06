@@ -1,9 +1,32 @@
+let subcategories=[
+    {
+        id:0,
+        name:'gluten friendly y sin preservantes',
+        image:''
+    },
+    {
+        id:1,
+        name:'KETO',
+        image:''
+    },
+    {
+        id:2,
+        name:'VEGANO',
+        image:''
+    },
+    {
+        id:3,
+        name:'SIN AZÚCAR',
+        image:''
+    },
+]
 let products = [{
         name: "Galletas de Almendra",
         description: "<p>Galletas a base de nuestra cremosa mantequilla de almendras con crujientes nibs de cacao.</p> <p> Paquete de <b> 6 unidades</b></p><p><b>Intercambio nutricional:</b> 1 galleta =<br> 2 grasas, 1 proteína y 1 carbohidrato</p><p><b>Ingredientes:</b>  Almendras, cacao nibs recubiertos de chocolate al 70%, claras de huevo, azúcar de coco, almidón de yuca, bicarbonato de sodio. Contiene: Almendras y claras de huevo. Puede contener trazas de gluten, semillas o nueces.</p>",
         idProduct: 1,
         image: "gfpimg/galletas-almendra-1.jpg",
         idCategory: 1,
+        idSubCategories:[0],
         price: 5500,
         unit:'Paquete de 6 unidades',
         quantity: 1

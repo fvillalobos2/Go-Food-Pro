@@ -1,23 +1,33 @@
 let subcategories=[
     {
         id:0,
-        name:'gluten friendly y sin preservantes',
-        image:'gfpimg/sinpreservantes-32px-min.jpg'
+        name:'Sin preservantes',
+        image:'gfpimg/sinpreservantes-32px-min.png'
     },
     {
         id:1,
-        name:'KETO',
-        image:'gfpimg/keto-32px-min.jpg'
+        name:'Keto',
+        image:'gfpimg/keto-32px-min.png'
     },
     {
         id:2,
-        name:'VEGANO',
-        image:'gfpimg/vegano-32px-min.jpg'
+        name:'Vegano',
+        image:'gfpimg/vegano-32px-min.png'
     },
     {
         id:3,
-        name:'SIN AZÚCAR',
-        image:'gfpimg/sinazucar-32px-min.jpg'
+        name:'Sin Azúcar',
+        image:'gfpimg/sinazucar-32px-min.png'
+    },
+    {
+        id:4,
+        name:'Gluten Friendly',
+        image:'gfpimg/glutenfriendly-32px-min.png'
+    },
+    {
+        id:5,
+        name:'Sin Lácteos',
+        image:'gfpimg/sinlacteos-32px-min.png'
     },
 ]
 let products = [{
@@ -26,7 +36,7 @@ let products = [{
         idProduct: 1,
         image: "gfpimg/galletas-almendra-1-min.jpg",
         idCategory: 1,
-        idSubCategories:[0],
+        idSubCategories:[0,4,5],
         price: 5500,
         unit:'Paquete de 6 unidades',
         quantity: 1
@@ -37,18 +47,18 @@ let products = [{
         idProduct: 2,
         image: "gfpimg/galletas-cacao-min.jpg",
         idCategory: 1,
-        idSubCategories:[0],
+        idSubCategories:[0,4,5],
         price: 5000,
         unit:'Paquete de 6 unidades',
         quantity: 1
     },
     {
-        name: "Galletas Veganas Choco-Chips",
+        name: "Galletas Choco-Chips",
         description: "<p>Deliciosas y chiclosas galletas veganas con chispas de chocolate.</p><p> Paquete de <b> 5 unidades</b></p><p><b>Intercambio nutricional:</b> 1 galleta =<br> 2,5 grasas | 1 carbohidrato</p><p><b>Ingredientes:</b>Mantequilla de almendras, azúcar cruda, chips de chocolate oscuro, agua, harina de yuca, nibs de chocolate, chía, vainilla, stevia, bicarbonato de sodio. Contiene: Almendras.</p>",
         idProduct: 17,
         image: "gfpimg/galletas-veganas-choco-chips-min.jpg",
         idCategory: 1,
-        idSubCategories:[0,2],
+        idSubCategories:[0,2,4,5],
         price: 5500,
         unit:'Paquete de 5 unidades',
         quantity: 1
@@ -59,7 +69,7 @@ let products = [{
         idProduct: 3,
         image: "gfpimg/zanabana-muffin-min.jpg",
         idCategory: 1,
-        idSubCategories:[0,3],
+        idSubCategories:[0,3,4,5],
         price: 5500,
         unit:'Paquete de 6 unidades',
         quantity: 1
@@ -70,7 +80,7 @@ let products = [{
         idProduct: 4,
         image: "gfpimg/choco-muffin-min.jpg",
         idCategory: 1,
-        idSubCategories:[0,3],
+        idSubCategories:[0,4,5],
         price: 5500,
         unit:'Paquete de 6 unidades',
         quantity: 1
@@ -79,9 +89,9 @@ let products = [{
         name: "Mantequilla de Maní Sabor a Leche Condensada",
         description: "<p>Sin Lácteos y Sin Azúcar</p><p>Frasco de vidrio de <b>265g</b></p><p><b>Intercambio nutricional:</b> 1 cucharada = 1,5 grasas</p><p><b>Ingredientes:</b> Maní, extracto de stevia como endulzante, sabor a leche condensada. Contiene maní. Puede contener trazas de semillas o nueces.</p>",
         idProduct: 7,
-        image: "gfpimg/mantequillam-min.jpg",
+        image: "gfpimg/mantequillam-min11.jpg",
         idCategory: 0,
-        idSubCategories:[0],
+        idSubCategories:[0,2,3,4,5],
         price: 5500,
         unit:'Frasco de vidrio de 265g',
         quantity: 1
@@ -92,7 +102,7 @@ let products = [{
         idProduct: 6,
         image: "gfpimg/mantequillam-1-min.jpg",
         idCategory: 0,
-        idSubCategories:[0,3],
+        idSubCategories:[0,2,3,4,5],
         price: 5500,
         unit:'Frasco de vidrio de 265g',
         quantity: 1
@@ -103,7 +113,7 @@ let products = [{
         idProduct: 5,
         image: "gfpimg/mantequillaalmedras-1-min.jpg",
         idCategory: 0,
-        idSubCategories:[0,1,2,3],
+        idSubCategories:[0,1,2,3,4,5],
         price: 6500,
         unit:'Frasco de vidrio de 265g',
         quantity: 1
@@ -112,9 +122,9 @@ let products = [{
         name: "Mantequilla de Almendras Sabor a Leche Condensada",
         description: "<p>Sin Lácteos y Sin Azúcar</p><p>Frasco de vidrio de <b>265g</b></p><p><b>Intercambio nutricional:</b> 1 cucharada = 1,5 grasas</p><p><b>Ingredientes:</b> Almendras, extracto de stevia como endulzante, sabor a leche condensada. Contiene almendras. Puede contener trazas de semillas o nueces.</p>",
         idProduct: 8,
-        image: "gfpimg/mantequillaalemdrasl-1-min.jpg",
+        image: "gfpimg/mantequillam-11-min.jpg",
         idCategory: 0,
-        idSubCategories:[0,1,2],
+        idSubCategories:[0,1,2,3,4,5],
         price: 7500,
         unit:'Frasco de vidrio de 265g',
         quantity: 1
@@ -134,7 +144,7 @@ let products = [{
         idProduct: 16,
         image: "gfpimg/cajetas-keto-veganas-min.jpg",
         idCategory: 1,
-        idSubCategories:[0,2], 
+        idSubCategories:[0,1,2,3,4,5], 
         price: 3000,
         unit:'Bolsita de 6 unidades',
         quantity: 1
@@ -145,7 +155,7 @@ let products = [{
         idProduct: 15,
         image: "gfpimg/peanutbuttercups-min.jpg",
         idCategory: 1,
-        idSubCategories:[0,2], 
+        idSubCategories:[0,2,4,5], 
         price: 5700,
         unit:'Paquete de 6 unidades',
         quantity: 1
@@ -156,7 +166,7 @@ let products = [{
         idProduct: 9,
         image: "gfpimg/chocococadas-1-min.jpg",
         idCategory: 1,
-        idSubCategories:[0,1],
+        idSubCategories:[0,1,4,5],
         price: 5500,
         unit:'Paquete de 200 gramos',
         quantity: 1
@@ -167,7 +177,7 @@ let products = [{
         idProduct: 10,
         image: "gfpimg/nutcrackerbread-min.jpg",
         idCategory: 1,
-        idSubCategories:[0,2,3],
+        idSubCategories:[0,2,4,5],
         price: 6000,
         unit:'Unidad de 750 gramos (de 10 a 15 tajadas)',
         quantity: 1
@@ -178,7 +188,7 @@ let products = [{
         idProduct: 11,
         image: "gfpimg/ketonutcracker-min.jpg",
         idCategory: 1,
-        idSubCategories:[0,1,2,3],
+        idSubCategories:[0,1,2,3,4,5],
         price: 6000,
         unit:'Unidad de 750 gramos (de 10 a 15 tajadas)',
         quantity: 1
@@ -198,7 +208,7 @@ let products = [{
         idProduct: 12,
         image: "gfpimg/Crunchbars-1-min.jpg",
         idCategory: 1,
-        idSubCategories:[0],
+        idSubCategories:[0,4],
         price: 4500,
         unit:'Paquete de 6 unidades',
         quantity: 1
@@ -209,7 +219,7 @@ let products = [{
         idProduct: 13,
         image: "gfpimg/donas-min.jpg",
         idCategory: 1,
-        idSubCategories:[0,2],
+        idSubCategories:[0,2,4,5],
         price: 3900,
         unit:'Paquete de 6 unidades',
         quantity: 1
@@ -220,7 +230,7 @@ let products = [{
         idProduct: 18,
         image: "gfpimg/go-bucha-manzana-min.jpg",
         idCategory: 2,
-        idSubCategories:[0],
+        idSubCategories:[0,2,4,5],
         price: `1600`,
         unit:'500 ml',
         quantity: 1
@@ -231,7 +241,7 @@ let products = [{
         idProduct: 19,
         image: "gfpimg/go-bumcha-pina-min.jpg",
         idCategory: 2,
-        idSubCategories:[0],
+        idSubCategories:[0,2,4,5],
         price: 1600,
         unit:'500 ml',
         quantity: 1

@@ -102,14 +102,14 @@ function myFunction(x){
       }
       setTimeout(() => {
         if(!$title.length){
-          //$(this).trigger( "click" );
+          $(this).trigger( "click" );
         }
       }, 2000);
     });
   }
 }
 
-var x = window.matchMedia("(max-width: 700px)")
+var x = window.matchMedia("(max-width: 765px)")
 myFunction(x) // Call listener function at run time
 x.addListener(myFunction)
 let temp2 = '';

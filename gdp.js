@@ -96,12 +96,19 @@ function myFunction(x){
       span.classList.add('titleSpan')
       if (!$title.length) {
         $(this).append('<span class="title">' + $(this).attr("title") + '</span>');
+      
       } else {
           $title.remove();
       }
+      setTimeout(() => {
+        if(!$title.length){
+          //$(this).trigger( "click" );
+        }
+      }, 2000);
     });
   }
 }
+
 var x = window.matchMedia("(max-width: 700px)")
 myFunction(x) // Call listener function at run time
 x.addListener(myFunction)

@@ -789,7 +789,24 @@ background-color: red;
 .container-image {
     position: relative;
     top: 2rem;
+    margin-left: auto;
+    display: flex;
 }
+.container-image img{
+    margin-right: 5px;
+}
+.more_info {
+    border-bottom: 1px dotted;
+    position: relative;
+  }
+.more-info .title {
+    position: absolute;
+    top: 39px;
+    background: silver;
+    padding: 4px;
+    left: 3rem;
+    white-space: nowrap;
+  }
 @media (max-width:990px){
     #cart-web{
         display: none;
@@ -803,6 +820,14 @@ background-color: red;
     }
 }
 @media (max-width:630px){
+    .more-info .title {
+        position: absolute;
+        top: 35px;
+        background: silver;
+        padding: 4px;
+        left: -10rem;
+        white-space: nowrap;
+      }
     #img-carrouse-mobile{
         display: none;
         /* height: 15rem;

@@ -71,17 +71,40 @@ displaySubCategories=()=>{
   subcategories.forEach(item => {
     products.forEach(elem => {
       if(elem.classList.contains(`cat-${item.id}`)){
+        const div = document.createElement('div')
         const img = document.createElement('img');
         img.classList.add('subcat-item');
         img.src = item.image
         img.title = item.name
-        elem.appendChild(img)
+        div.classList.add('more-info')
+        div.title = item.name
+        div.appendChild(img)
+        elem.appendChild(div)
       }
     });
   })
 }
 getData();
 displaySubCategories()
+
+function myFunction(x){
+  if (x.matches) {
+    $(".more-info").click(function () {
+      var $title = $(this).find(".title");
+      let span = document.createElement('span')
+      span.innerHTML = $title
+      span.classList.add('titleSpan')
+      if (!$title.length) {
+        $(this).append('<span class="title">' + $(this).attr("title") + '</span>');
+      } else {
+          $title.remove();
+      }
+    });
+  }
+}
+var x = window.matchMedia("(max-width: 700px)")
+myFunction(x) // Call listener function at run time
+x.addListener(myFunction)
 let temp2 = '';
 var numberCart = 0;
 var total = 0;

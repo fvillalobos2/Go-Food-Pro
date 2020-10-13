@@ -801,11 +801,12 @@ background-color: red;
   }
 .more-info .title {
     position: absolute;
-    top: 39px;
-    background: silver;
+    top: 35px;
+    background: white;
     padding: 4px;
-    left: 3rem;
+    left: 0rem;
     white-space: nowrap;
+    border: 1px solid black;
   }
 @media (max-width:990px){
     #cart-web{
@@ -819,7 +820,7 @@ background-color: red;
         text-align: left;
     }
 }
-@media (max-width:765px){
+@media (max-width:768px){
     .more-info .title {
         position: absolute;
         top: 35px;

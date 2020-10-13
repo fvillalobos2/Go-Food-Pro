@@ -786,10 +786,15 @@ background-color: red;
         font-size: .8rem;
     }
 }
+.container-image {
+    position: relative;
+    top: 2rem;
+}
 @media (max-width:990px){
     #cart-web{
         display: none;
     }
+ 
     #cart-mobile{
         display:block;
     }
@@ -807,6 +812,7 @@ background-color: red;
 display: block;
     }
 }
+
 @media (max-width:450px){
     .carousel-caption p {
         font-size: .6rem;

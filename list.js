@@ -2,22 +2,22 @@ let subcategories=[
     {
         id:0,
         name:'gluten friendly y sin preservantes',
-        image:''
+        image:'gfpimg/sinpreservantes-32px-min.jpg'
     },
     {
         id:1,
         name:'KETO',
-        image:''
+        image:'gfpimg/keto-32px-min.jpg'
     },
     {
         id:2,
         name:'VEGANO',
-        image:''
+        image:'gfpimg/vegano-32px-min.jpg'
     },
     {
         id:3,
         name:'SIN AZÚCAR',
-        image:''
+        image:'gfpimg/sinazucar-32px-min.jpg'
     },
 ]
 let products = [{
@@ -37,6 +37,7 @@ let products = [{
         idProduct: 2,
         image: "gfpimg/galletas-cacao-min.jpg",
         idCategory: 1,
+        idSubCategories:[0],
         price: 5000,
         unit:'Paquete de 6 unidades',
         quantity: 1
@@ -47,6 +48,7 @@ let products = [{
         idProduct: 17,
         image: "gfpimg/galletas-veganas-choco-chips-min.jpg",
         idCategory: 1,
+        idSubCategories:[0,2],
         price: 5500,
         unit:'Paquete de 5 unidades',
         quantity: 1
@@ -57,6 +59,7 @@ let products = [{
         idProduct: 3,
         image: "gfpimg/zanabana-muffin-min.jpg",
         idCategory: 1,
+        idSubCategories:[0,3],
         price: 5500,
         unit:'Paquete de 6 unidades',
         quantity: 1
@@ -67,6 +70,7 @@ let products = [{
         idProduct: 4,
         image: "gfpimg/choco-muffin-min.jpg",
         idCategory: 1,
+        idSubCategories:[0,3],
         price: 5500,
         unit:'Paquete de 6 unidades',
         quantity: 1
@@ -77,6 +81,7 @@ let products = [{
         idProduct: 7,
         image: "gfpimg/mantequillam-min.jpg",
         idCategory: 0,
+        idSubCategories:[0],
         price: 5500,
         unit:'Frasco de vidrio de 265g',
         quantity: 1
@@ -87,6 +92,7 @@ let products = [{
         idProduct: 6,
         image: "gfpimg/mantequillam-1-min.jpg",
         idCategory: 0,
+        idSubCategories:[0,3],
         price: 5500,
         unit:'Frasco de vidrio de 265g',
         quantity: 1
@@ -97,6 +103,7 @@ let products = [{
         idProduct: 5,
         image: "gfpimg/mantequillaalmedras-1-min.jpg",
         idCategory: 0,
+        idSubCategories:[0,1,2,3],
         price: 6500,
         unit:'Frasco de vidrio de 265g',
         quantity: 1
@@ -107,6 +114,7 @@ let products = [{
         idProduct: 8,
         image: "gfpimg/mantequillaalemdrasl-1-min.jpg",
         idCategory: 0,
+        idSubCategories:[0,1,2],
         price: 7500,
         unit:'Frasco de vidrio de 265g',
         quantity: 1
@@ -125,7 +133,8 @@ let products = [{
         description: "<p>Cajetas a base de mantequilla de mani y coco crocante con notas a dulce de leche.</p><p> Bolsita de <b> 6 unidades</b></p><p><b>Intercambio nutricional:</b> 1 bolita = 1/2 grasa</p><p><b>Ingredientes:</b> Mantequilla de maní natural (sin aceites ni azúcares añadidos), coco rallado, sabor a dulce de leche y estevia (rebiana) como endulzante natural.</p>",
         idProduct: 16,
         image: "gfpimg/cajetas-keto-veganas-min.jpg",
-        idCategory: 1, 
+        idCategory: 1,
+        idSubCategories:[0,2], 
         price: 3000,
         unit:'Bolsita de 6 unidades',
         quantity: 1
@@ -135,7 +144,8 @@ let products = [{
         description: "<p>Tacitas de mantequilla de maní con sabor a leche condensada.</p> <p> Caja de <b> 6 unidades</b></p><p><b>Intercambio nutricional:</b> 2,5 grasas / 1 carbohidrato</p><p><b>Ingredientes:</b> Chocolate al 70%, vainilla, cacao en polvo, mantequilla de maní con sabor a leche condensada sin lácteos ni azúcar. Puede contener trazas de soya.</p>",
         idProduct: 15,
         image: "gfpimg/peanutbuttercups-min.jpg",
-        idCategory: 1, 
+        idCategory: 1,
+        idSubCategories:[0,2], 
         price: 5700,
         unit:'Paquete de 6 unidades',
         quantity: 1
@@ -146,6 +156,7 @@ let products = [{
         idProduct: 9,
         image: "gfpimg/chocococadas-1-min.jpg",
         idCategory: 1,
+        idSubCategories:[0,1],
         price: 5500,
         unit:'Paquete de 200 gramos',
         quantity: 1
@@ -156,6 +167,7 @@ let products = [{
         idProduct: 10,
         image: "gfpimg/nutcrackerbread-min.jpg",
         idCategory: 1,
+        idSubCategories:[0,2,3],
         price: 6000,
         unit:'Unidad de 750 gramos (de 10 a 15 tajadas)',
         quantity: 1
@@ -166,6 +178,7 @@ let products = [{
         idProduct: 11,
         image: "gfpimg/ketonutcracker-min.jpg",
         idCategory: 1,
+        idSubCategories:[0,1,2,3],
         price: 6000,
         unit:'Unidad de 750 gramos (de 10 a 15 tajadas)',
         quantity: 1
@@ -185,6 +198,7 @@ let products = [{
         idProduct: 12,
         image: "gfpimg/Crunchbars-1-min.jpg",
         idCategory: 1,
+        idSubCategories:[0],
         price: 4500,
         unit:'Paquete de 6 unidades',
         quantity: 1
@@ -195,6 +209,7 @@ let products = [{
         idProduct: 13,
         image: "gfpimg/donas-min.jpg",
         idCategory: 1,
+        idSubCategories:[0,2],
         price: 3900,
         unit:'Paquete de 6 unidades',
         quantity: 1
@@ -205,6 +220,7 @@ let products = [{
         idProduct: 18,
         image: "gfpimg/go-bucha-manzana-min.jpg",
         idCategory: 2,
+        idSubCategories:[0],
         price: `1600`,
         unit:'500 ml',
         quantity: 1
@@ -215,6 +231,7 @@ let products = [{
         idProduct: 19,
         image: "gfpimg/go-bumcha-pina-min.jpg",
         idCategory: 2,
+        idSubCategories:[0],
         price: 1600,
         unit:'500 ml',
         quantity: 1

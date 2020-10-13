@@ -32,10 +32,13 @@ function getData() {
       section.appendChild(cards);
       for (let item of products) {
         if (item.idCategory == category.id) {
+          item.idSubCategories = item.idSubCategories.map(elem => "cat-" + elem)
+          item.idSubCategories = item.idSubCategories.join(' ')
           cards.innerHTML += `
-          <div id=${item.name.replace(/ /g, "").toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g,"")} class="col-lg-4 col-md-6 col-sm-12 mt-lg-2 mt-2">
+          <div id=${item.name.replace(/ /g, "").toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g,"")} class="col-lg-4 col-md-6 col-sm-12 mt-lg-2 mt-2 card-products ${item.idSubCategories}">
             <div id = 'card-id' class="card">
-              <img src=${item.image} class="card-img-top" alt="...">
+            <div class="container-image ${item.idSubCategories}"></div>
+            <img src=${item.image} class="card-img-top " alt="...">
               <div class= "card-body">
                 <h4 id = 'title-card' class="card-title">${item.name}</h4>
                 <p><span>${item.unit}</span><p>
@@ -62,8 +65,23 @@ function getData() {
     }
   }
 }
-
+displaySubCategories=()=>{
+  let products = document.querySelectorAll(`.container-image`);
+  console.log(products)
+  subcategories.forEach(item => {
+    products.forEach(elem => {
+      if(elem.classList.contains(`cat-${item.id}`)){
+        const img = document.createElement('img');
+        img.classList.add('subcat-item');
+        img.src = item.image
+        img.title = item.name
+        elem.appendChild(img)
+      }
+    });
+  })
+}
 getData();
+displaySubCategories()
 let temp2 = '';
 var numberCart = 0;
 var total = 0;

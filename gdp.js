@@ -85,6 +85,25 @@ displaySubCategories=()=>{
     });
   })
 }
+// addImageToCarrousel=()=>{
+//   let products = document.querySelectorAll(`.container-image`);
+//   console.log(products)
+//   subcategories.forEach(item => {
+//     products.forEach(elem => {
+//       if(elem.classList.contains(`cat-${item.id}`)){
+//         const div = document.createElement('div')
+//         const img = document.createElement('img');
+//         img.classList.add('subcat-item');
+//         img.src = item.image
+//         img.title = item.name
+//         div.classList.add('more-info')
+//         div.title = item.name
+//         div.appendChild(img)
+//         elem.appendChild(div)
+//       }
+//     });
+//   })
+// }
 getData();
 displaySubCategories()
 
@@ -265,8 +284,6 @@ function addCart(id) {
     if (item.idProduct == id) {
       cart.push(item);
       let category = categories.filter(elem => elem.id === item.idCategory)
-      console.log(category)
-      console.log(item)
       dataLayer.push({
         'event': 'addToCart',
         'ecommerce': {

@@ -2,6 +2,7 @@
 $('.navbar-nav>li>div').on('click', function(){
   $('.navbar-collapse').collapse('hide');
 });
+
 function getData() {
   let section = document.querySelector('#products');
   let dropdown = document.querySelector('#categories-menu');
@@ -260,9 +261,26 @@ function addCart(id) {
     data = JSON.parse(localStorage.getItem('cart'));
     cart = data;
   }
-  products.forEach(item => {
+  products.forEach((item,index) => {
     if (item.idProduct == id) {
       cart.push(item);
+      dataLayer.push({
+        'event': 'addToCart',
+        'ecommerce': {
+          'currencyCode': 'EUR',
+          'add': {                                // 'add' actionFieldObject measures.
+            'products': [{                        //  adding a product to a shopping cart.
+              'name': item.name,
+              'id': index,
+              'price': item.price,
+              'brand': 'Google',
+              'category': 'Apparel',
+              'variant': 'Gray',
+              'quantity': item.quantity
+             }]
+          }
+        }
+      });
     }
   });
   localStorage.setItem('cart', JSON.stringify(cart));

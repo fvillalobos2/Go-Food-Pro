@@ -264,6 +264,9 @@ function addCart(id) {
   products.forEach((item,index) => {
     if (item.idProduct == id) {
       cart.push(item);
+      let category = categories.filter(elem => elem.id === item.idCategory)
+      console.log(category)
+      console.log(item)
       dataLayer.push({
         'event': 'addToCart',
         'ecommerce': {
@@ -271,10 +274,10 @@ function addCart(id) {
           'add': {                                // 'add' actionFieldObject measures.
             'products': [{                        //  adding a product to a shopping cart.
               'name': item.name,
-              'id': index,
+              'id': item.idProduct,
               'price': item.price,
               'brand': 'Google',
-              'category': 'Apparel',
+              'category': category[0].name,
               'variant': 'Gray',
               'quantity': item.quantity
              }]

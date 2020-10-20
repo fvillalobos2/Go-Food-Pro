@@ -166,7 +166,7 @@ let products = [{
         idProduct: 9,
         image: "gfpimg/chocococadas-1-min.jpg",
         idCategory: 1,
-        idSubCategories:[0,1,4,5],
+        idSubCategories:[0,1,3,4,5],
         price: 5500,
         unit:'Paquete de 200 gramos',
         quantity: 1

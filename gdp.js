@@ -293,9 +293,8 @@ function addCart(id) {
               'name': item.name,
               'id': item.idProduct,
               'price': item.price,
-              'brand': 'Google',
+              'brand': 'Go Food Pro',
               'category': category[0].name,
-              'variant': 'Gray',
               'quantity': item.quantity
              }]
           }

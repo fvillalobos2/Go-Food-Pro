@@ -287,7 +287,7 @@ function addCart(id) {
       dataLayer.push({
         'event': 'addToCart',
         'ecommerce': {
-          'currencyCode': 'EUR',
+          'currencyCode': 'USD',
           'add': {                                // 'add' actionFieldObject measures.
             'products': [{                        //  adding a product to a shopping cart.
               'name': item.name,

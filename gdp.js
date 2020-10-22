@@ -46,7 +46,7 @@ function getData() {
                 <h5 id ='price-card' class="card-title">&#8353; ${item.price}</h5>
                 <p>
                   <a class="btn btn-info" data-toggle="collapse" href="#a${item.idProduct}" role="button" aria-expanded="false" aria-controls="collapseExample">
-                    Descripcion del Producto
+                    Descripción del Producto
                   </a>
                 </p>
                 <div class="collapse" id="a${item.idProduct}">

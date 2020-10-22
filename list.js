@@ -179,7 +179,7 @@ let products = [{
         idCategory: 1,
         idSubCategories:[0,2,4,5],
         price: 6000,
-        unit:'Unidad de 750 gramos (de 10 a 15 tajadas)',
+        unit:'Unidad de 750 gramos',
         quantity: 1
     },
     {
@@ -190,7 +190,7 @@ let products = [{
         idCategory: 1,
         idSubCategories:[0,1,2,3,4,5],
         price: 6000,
-        unit:'Unidad de 750 gramos (de 10 a 15 tajadas)',
+        unit:'Unidad de 750 gramos',
         quantity: 1
     },
     // {

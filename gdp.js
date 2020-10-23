@@ -148,13 +148,15 @@ function cartInit() {
       numberCart += item.quantity;
       temp.forEach(product => {
         if (item.idProduct == product.idProduct){
+          // <span class='lessProduct' onclick = "lessItems(${item.idProduct})">-</span>
+          // <span class='moreProduct' onclick="moreProduct(${item.idProduct})">+</span>
           if(document.getElementById(item.idProduct) != null){
             document.getElementById(item.idProduct).innerHTML = `
             <a style='color:white;' class="btn btn-success add-cart cart1">Añadido al carrito</a>
             <div class="d-flex">
-            <span class='lessProduct' onclick = "lessItems(${item.idProduct})">-</span>
+            
               <p><b>${item.quantity}</b></p>
-            <span class='moreProduct' onclick="moreProduct(${item.idProduct})">+</span>
+            
             </div>
           `
           }
@@ -188,6 +190,7 @@ function cartInit() {
           <span class='moreProduct' onclick="moreProduct(${product.idProduct})">+</i></span>
           </div>
           </td>
+          <td><p class='mr-3'><b>&#8353;${product.price}</b></p></td>
           <td><span class='delete-table' onclick="deleteProduct(${product.idProduct})"><i class="fas fa-trash-alt"></i></span></td>
       </tr>
       `
@@ -296,7 +299,7 @@ function addCart(id) {
               'brand': 'Google',
               'category': category[0].name,
               'variant': 'Gray',
-              'quantity': item.quantity
+              'quantity': item.unit
              }]
           }
         }

@@ -152,11 +152,9 @@ function cartInit() {
           // <span class='moreProduct' onclick="moreProduct(${item.idProduct})">+</span>
           if(document.getElementById(item.idProduct) != null){
             document.getElementById(item.idProduct).innerHTML = `
-            <a style='color:white;' class="btn btn-success add-cart cart1">Añadido al carrito</a>
+            <a onclick="moreProduct(${item.idProduct})" style='color:white;' class="btn btn-success add-cart cart1">Añadido al carrito</a>
             <div class="d-flex">
-            
               <p><b>${item.quantity}</b></p>
-            
             </div>
           `
           }
@@ -179,16 +177,20 @@ function cartInit() {
       total += parseFloat(suma);
     });
     for (const product of data) {
+      product.price = product.price * product.quantity
       td.innerHTML += `
       <tr>
           <th ><img class='img-td-home' src=${product.image}></th>
           <td>${product.name}</td>
+          <td>${product.unit}</td>
           <td>
           <div class="d-flex">
           <span class='lessProduct' onclick = "lessItems(${product.idProduct})">-</span>
             <p><b>${product.quantity}</b></p>
           <span class='moreProduct' onclick="moreProduct(${product.idProduct})">+</i></span>
           </div>
+          </td>
+        
           </td>
           <td><p class='mr-3'><b>&#8353;${product.price}</b></p></td>
           <td><span class='delete-table' onclick="deleteProduct(${product.idProduct})"><i class="fas fa-trash-alt"></i></span></td>
@@ -238,6 +240,7 @@ function cartInit() {
 
 
 function moreProduct(id) {
+  console.log(id)
   let data = JSON.parse(localStorage.getItem('cart'))
   data.forEach(product => {
     if (product.idProduct == id) {
@@ -310,8 +313,9 @@ function addCart(id) {
   numberCart = numberCart + 1;
   let iconCart = document.getElementById("numberCart");
   iconCart.innerHTML = numberCart;
+  console.log(id)
   document.getElementById(id).innerHTML = `
-  <a style='color:white;' class="btn btn-success add-cart cart1">Añadido al carrito</a>
+    <a onclick="moreProduct(${id})" style='color:white;' class="btn btn-success add-cart cart1">Añadido al carrito</a>
   `;
   cartInit();
 }

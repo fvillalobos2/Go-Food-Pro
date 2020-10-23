@@ -46,7 +46,7 @@ function getData() {
                 <h5 id ='price-card' class="card-title">&#8353; ${item.price}</h5>
                 <p>
                   <a class="btn btn-info" data-toggle="collapse" href="#a${item.idProduct}" role="button" aria-expanded="false" aria-controls="collapseExample">
-                    Descripcion del Producto
+                    Descripción del Producto
                   </a>
                 </p>
                 <div class="collapse" id="a${item.idProduct}">
@@ -290,13 +290,13 @@ function addCart(id) {
       dataLayer.push({
         'event': 'addToCart',
         'ecommerce': {
-          'currencyCode': 'EUR',
+          'currencyCode': 'USD',
           'add': {                                // 'add' actionFieldObject measures.
             'products': [{                        //  adding a product to a shopping cart.
               'name': item.name,
               'id': item.idProduct,
               'price': item.price,
-              'brand': 'Google',
+              'brand': 'Go Food Pro',
               'category': category[0].name,
               'variant': 'Gray',
               'quantity': item.unit

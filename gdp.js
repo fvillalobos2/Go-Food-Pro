@@ -224,7 +224,7 @@ function cartInit() {
       // `;
       if(document.getElementById('a-cart') != null){
         document.getElementById('a-cart').innerHTML = `
-        <a class="btn btn-primary" onclick="onCheckout()">Comprar</a>
+        <a style="color:white;" class="btn btn-success" onclick="onCheckout()">Comprar</a>
         `;
       }
     }else{

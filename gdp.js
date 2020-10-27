@@ -237,16 +237,18 @@ function cartInit() {
 }
 function onCheckout() {
   let data = JSON.parse(localStorage.getItem('cart'))
-  let products = {}
-  products = data.map(item => {
-    products.name = item.name,
-    products.id = item.idProduct,
-    products.price = item.price,
-    products.brand = "Go Food Pro",
-    products.category = item.idCategory,
-    products.variant = "Variant",
-    products.quantity = item.quantity
-    return products
+  let products = []
+  data.map(item => {
+    let product = {
+      name : item.name,
+      id : item.idProduct,
+      price : item.price,
+      brand : "Go Food Pro",
+      category : item.idCategory,
+      variant : "Variant",
+      quantity : item.quantity
+    }
+    products.push(product)
   })
   dataLayer.push({
     'event': 'checkout',

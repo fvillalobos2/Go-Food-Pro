@@ -35,6 +35,7 @@ function getData() {
         if (item.idCategory == category.id) {
           item.idSubCategories = item.idSubCategories.map(elem => "cat-" + elem)
           item.idSubCategories = item.idSubCategories.join(' ')
+          console.log(item.image)
           cards.innerHTML += `
           <div id=${item.name.replace(/ /g, "").toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g,"")} class="col-lg-4 col-md-6 col-sm-12 mt-lg-2 mt-2 card-products ${item.idSubCategories}">
             <div id = 'card-id' class="card">
@@ -224,7 +225,7 @@ function cartInit() {
       // `;
       if(document.getElementById('a-cart') != null){
         document.getElementById('a-cart').innerHTML = `
-        <a class="btn btn-primary" href="carrito">Comprar</a>
+        <a class="btn btn-primary" onclick="onCheckout()">Comprar</a>
         `;
       }
     }else{
@@ -235,7 +236,32 @@ function cartInit() {
     }
   }
 }
-
+function onCheckout() {
+  let data = JSON.parse(localStorage.getItem('cart'))
+  let products = {}
+  products = data.map(item => {
+    products.name = item.name,
+    products.id = item.idProduct,
+    products.price = item.price,
+    products.brand = "Go Food Pro",
+    products.category = item.idCategory,
+    products.variant = "Gray",
+    products.quantity = item.unit
+    return products
+  })
+  dataLayer.push({
+    'event': 'checkout',
+    'ecommerce': {
+      'checkout': {
+        'actionField': {'step': 1, 'option': 'Comprar'},
+        'products': products
+     }
+   },
+   'eventCallback': function() {
+      document.location = 'carrito';
+   }
+  });
+}
 
 
 

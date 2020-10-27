@@ -244,8 +244,8 @@ function onCheckout() {
     products.price = item.price,
     products.brand = "Go Food Pro",
     products.category = item.idCategory,
-    products.variant = "Gray",
-    products.quantity = item.unit
+    products.variant = "Variant",
+    products.quantity = item.quantity
     return products
   })
   dataLayer.push({

@@ -245,7 +245,6 @@ function onCheckout() {
       price : item.price,
       brand : "Go Food Pro",
       category : item.idCategory,
-      variant : "Variant",
       quantity : item.quantity
     }
     products.push(product)
@@ -329,7 +328,7 @@ function addCart(id) {
               'brand': 'Go Food Pro',
               'category': category[0].name,
               'variant': 'Gray',
-              'quantity': item.unit
+              'quantity': item.quantity
              }]
           }
         }

@@ -154,9 +154,6 @@ function cartInit() {
             document.getElementById(item.idProduct).innerHTML = `
             <a style='color:white;' class="btn btn-success add-cart cart1">Añadido al carrito</a>
             <div class="d-flex">
-            
-              <p><b>${item.quantity}</b></p>
-            
             </div>
           `
           }

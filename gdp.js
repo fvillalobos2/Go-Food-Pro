@@ -35,12 +35,22 @@ function getData() {
         if (item.idCategory == category.id) {
           item.idSubCategories = item.idSubCategories.map(elem => "cat-" + elem)
           item.idSubCategories = item.idSubCategories.join(' ')
-          console.log(item.image)
           cards.innerHTML += `
           <div id=${item.name.replace(/ /g, "").toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g,"")} class="col-lg-4 col-md-6 col-sm-12 mt-lg-2 mt-2 card-products ${item.idSubCategories}">
             <div id = 'card-id' class="card">
             <div class="container-image ${item.idSubCategories}"></div>
-            <img src=${item.image} class="card-img-top " alt="...">
+            <div id="b${item.idProduct}" class="carousel slide" data-ride="carousel">
+              <div class="carousel-inner products-carrousel">
+              </div>
+              <a class="carousel-control-prev" href="#b${item.idProduct}" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+              </a>
+              <a class="carousel-control-next" href="#b${item.idProduct}" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+              </a>
+            </div>
               <div class= "card-body">
                 <h4 id = 'title-card' class="card-title">${item.name}</h4>
                 <p><span>${item.unit}</span><p>
@@ -69,7 +79,6 @@ function getData() {
 }
 displaySubCategories=()=>{
   let products = document.querySelectorAll(`.container-image`);
-  console.log(products)
   subcategories.forEach(item => {
     products.forEach(elem => {
       if(elem.classList.contains(`cat-${item.id}`)){
@@ -86,27 +95,28 @@ displaySubCategories=()=>{
     });
   })
 }
-// addImageToCarrousel=()=>{
-//   let products = document.querySelectorAll(`.container-image`);
-//   console.log(products)
-//   subcategories.forEach(item => {
-//     products.forEach(elem => {
-//       if(elem.classList.contains(`cat-${item.id}`)){
-//         const div = document.createElement('div')
-//         const img = document.createElement('img');
-//         img.classList.add('subcat-item');
-//         img.src = item.image
-//         img.title = item.name
-//         div.classList.add('more-info')
-//         div.title = item.name
-//         div.appendChild(img)
-//         elem.appendChild(div)
-//       }
-//     });
-//   })
-// }
+addImageToCarrousel=()=>{
+  let items = document.querySelectorAll(`.products-carrousel`);
+  items.forEach((elem,index) => {
+    console.log(elem)
+    products[index].image.forEach((item,index) => {
+          const div = document.createElement('div')
+          const itemCarrousel = document.createElement('img');
+          itemCarrousel.src = item
+          div.classList.add('carousel-item')
+          if(index === 0){
+            div.classList.add('active')
+          }
+          div.appendChild(itemCarrousel)
+          elem.appendChild(div)
+          console.log(elem)
+    })
+  })
+}
 getData();
+addImageToCarrousel()
 displaySubCategories()
+
 
 function myFunction(x){
   if (x.matches) {
@@ -266,7 +276,6 @@ function onCheckout() {
 
 
 function moreProduct(id) {
-  console.log(id)
   let data = JSON.parse(localStorage.getItem('cart'))
   data.forEach(product => {
     if (product.idProduct == id) {
@@ -339,7 +348,6 @@ function addCart(id) {
   numberCart = numberCart + 1;
   let iconCart = document.getElementById("numberCart");
   iconCart.innerHTML = numberCart;
-  console.log(id)
   document.getElementById(id).innerHTML = `
     <a onclick="moreProduct(${id})" style='color:white;' class="btn btn-success add-cart cart1">Añadido al carrito</a>
   `;

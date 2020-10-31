@@ -2,6 +2,7 @@ let band = false
 let band2 = false
 let band3 = false
 let name;
+let bandShow = true
 let totalDolars = 0
 if(localStorage.getItem('delivery')){
   localStorage.removeItem('delivery')
@@ -266,7 +267,17 @@ function lessItems(id) {
   localStorage.setItem('cart', JSON.stringify(data));
   cartInitPage();
 }
-
+function bankFunction(){
+  let element = document.getElementById('banco')
+  if(bandShow){
+    element.innerHTML = 'xdddd'
+    bandShow = false
+  }else{
+    element.innerHTML = ''
+    bandShow = true
+  }
+ 
+}
 function deleteProduct(id) {
   let cart = JSON.parse(localStorage.getItem('cart'))
   cart.forEach((product, index) => {
@@ -294,7 +305,7 @@ function onCheckoutCart(url) {
   })
   console.log('hola')
   dataLayer.push({
-    'event': 'iCompar',
+    'event': 'iComprar',
     'ecommerce': {
       'checkout': {
         'actionField': {'step': 2, 'option': 'Pagar'},

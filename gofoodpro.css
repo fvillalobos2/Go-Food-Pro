@@ -6,6 +6,9 @@ body {
 .container {
     background-color: #FFFFFC;
 }
+.products-carrousel .carousel-item{
+    height: 22rem;
+}
 #cart-mobile{
     display:none;
 }

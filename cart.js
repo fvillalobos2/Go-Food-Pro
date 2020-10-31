@@ -36,7 +36,7 @@ function payPal() {
             "value": totalDolars,
             "breakdown": {
               "item_total": { "currency_code":"USD", "value":totalItems.toFixed(2)},
-              "shipping": { "currency_code":"USD", "value":parseFloat(totalSendTax / 582).toFixed(2)},
+              "shipping": { "currency_code":"USD", "value":parseFloat(totalSendTax / 605).toFixed(2)},
               "tax_total": { "currency_code":"USD", "value":0},
               "discount": { "currency_code":"USD", "value":"0"}
             }

@@ -98,7 +98,6 @@ displaySubCategories=()=>{
 addImageToCarrousel=()=>{
   let items = document.querySelectorAll(`.products-carrousel`);
   items.forEach((elem,index) => {
-    console.log(elem)
     products[index].image.forEach((item,index) => {
           const div = document.createElement('div')
           const itemCarrousel = document.createElement('img');
@@ -109,7 +108,6 @@ addImageToCarrousel=()=>{
           }
           div.appendChild(itemCarrousel)
           elem.appendChild(div)
-          console.log(elem)
     })
   })
 }

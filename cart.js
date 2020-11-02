@@ -270,18 +270,18 @@ function lessItems(id) {
 function bankFunction(){
   let element = document.querySelectorAll('#banco')
   if(bandShow){
-    element[0].innerHTML = `CUENTA COLONES
-    GO FOOD PRO GROUP SOCIEDAD ANO 
+    element[0].innerHTML = `CUENTA COLONES<br>
+    GO FOOD PRO GROUP SOCIEDAD ANO<br> 
     Número de cuenta BAC: 944595131 
-    Número de cuenta IBAN: CR86010200009445951318
-    SINPE MOVIL: 8827 3627
-    Cédula jurídica 3-101-796857`
-    element[1].innerHTML = `CUENTA COLONES
-    GO FOOD PRO GROUP SOCIEDAD ANO 
+    <br>Número de cuenta IBAN: CR86010200009445951318
+    <br>SINPE MOVIL: 8827 3627
+    <br>Cédula jurídica 3-101-796857`
+    element[1].innerHTML = `CUENTA COLONES<br>
+    GO FOOD PRO GROUP SOCIEDAD ANO<br> 
     Número de cuenta BAC: 944595131 
-    Número de cuenta IBAN: CR86010200009445951318
-    SINPE MOVIL: 8827 3627
-    Cédula jurídica 3-101-796857`
+    <br>Número de cuenta IBAN: CR86010200009445951318
+    <br>SINPE MOVIL: 8827 3627
+    <br>Cédula jurídica 3-101-796857`
     bandShow = false
   }else{
     element[0].innerHTML = ''

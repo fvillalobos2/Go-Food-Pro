@@ -313,7 +313,9 @@ font-size: 2rem;
 
 .div-buttons {
     display: flex;
+    flex-direction: column;
     justify-content: flex-end;
+    align-items: flex-end;
 }
 
 .delete-table {
@@ -740,6 +742,7 @@ background-color: red;
     }
     .btn-success {
         font-size: 1.2rem!important;
+        padding: 0.25rem 0.6rem!important;
     }
     .add-cart{
         font-size: 1.1rem!important;
@@ -824,6 +827,19 @@ background-color: red;
 }
 .container-image img{
     margin-right: 5px;
+}
+
+.formdelivery{
+    margin-right: 3rem;
+}
+
+#total-cart{
+    margin-right: 3rem;
+}
+
+#button-comprar-2{
+    margin-bottom: 3rem;
+    height: 2.5rem;
 }
 .more_info {
     border-bottom: 1px dotted;

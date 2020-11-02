@@ -812,6 +812,18 @@ background-color: red;
 .container-image img{
     margin-right: 5px;
 }
+
+.formdelivery{
+    margin-right: 3rem;
+}
+
+#total-cart{
+    margin-right: 3rem;
+}
+
+#button-comprar-2{
+    margin-bottom: 3rem;
+}
 .more_info {
     border-bottom: 1px dotted;
     position: relative;

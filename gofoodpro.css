@@ -439,7 +439,12 @@ background-color: red;
   background-size: cover;
 }
 }
-
+.col-desktop{
+    display: block;
+}
+.col-mobile{
+    display: none!important;
+}
 @media (max-width:350px) {
 
     .display-4 {
@@ -482,20 +487,17 @@ background-color: red;
         display: none;
     } 
 }
-@media (min-width:768){
-    .col-desktop{
-        display: block;
-    }
-    .col-mobile{
-        display: none;
-    }
-}
+  
 @media (max-width:768px){
+    #paypal-button-container{
+        margin-right: 2rem;
+    }
     .col-desktop{
         display: none;
     }
     .col-mobile{
-        display: block;
+        display: block!important;
+        margin-left: 1rem;
     }
     #img-carrouse-mobile{
         display: block;

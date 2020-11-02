@@ -170,7 +170,7 @@ function alertDelivery() {
   } else {
     payPal()
     cartInitPage()
-    document.getElementById('button-comprar').innerHTML = ''
+    //document.getElementById('button-comprar').innerHTML = ''
     document.getElementById('whatsapp').innerHTML = ``;
     if (!band2) {
       document.getElementById('whatsapp').innerHTML = `

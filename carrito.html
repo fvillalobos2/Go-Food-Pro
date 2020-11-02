@@ -144,7 +144,7 @@
             </div>
             <div class="container">
             <div class="row formdelivery">
-                <div class="col-3 mr-auto">
+                <div class="col-3 mr-auto col-desktop">
                     <button onclick="bankFunction()" class="btn btn-primary">Datos bancarios</button>
                     <div id="banco" class="mt-3 ">
 
@@ -160,6 +160,7 @@
                     <input onchange="changeDevilery(this.value)" type="radio" id="no" name="select" value="no">
                     <label for="no">No</label><br>
                 </form>
+                
                 <form id="form-delivery">
 
                 </form>
@@ -169,7 +170,12 @@
             <div id='total-cart' class="col-12"></div></div>
             <div class="div-buttons">
                 <div id='button-comprar'><button id="button-comprar-2" class="btn btn-success">Comprar</button></div>
-                
+                <div class=" mr-3 ml-3 col-mobile">
+                    <button onclick="bankFunction()" class="btn btn-primary">Datos bancarios</button>
+                    <div id="banco" class="mt-3 ">
+
+                    </div>
+                </div>
                 <div id="whatsapp"></div>
                 <div id="paypal-button-container"></div>
             </div>

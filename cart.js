@@ -268,9 +268,15 @@ function lessItems(id) {
   cartInitPage();
 }
 function bankFunction(){
-  let element = document.getElementById('banco')
+  let element = document.querySelectorAll('#banco')
   if(bandShow){
-    element.innerHTML = `CUENTA COLONES
+    element[0].innerHTML = `CUENTA COLONES
+    GO FOOD PRO GROUP SOCIEDAD ANO 
+    Número de cuenta BAC: 944595131 
+    Número de cuenta IBAN: CR86010200009445951318
+    SINPE MOVIL: 8827 3627
+    Cédula jurídica 3-101-796857`
+    element[1].innerHTML = `CUENTA COLONES
     GO FOOD PRO GROUP SOCIEDAD ANO 
     Número de cuenta BAC: 944595131 
     Número de cuenta IBAN: CR86010200009445951318
@@ -278,7 +284,8 @@ function bankFunction(){
     Cédula jurídica 3-101-796857`
     bandShow = false
   }else{
-    element.innerHTML = ''
+    element[0].innerHTML = ''
+    element[1].innerHTML = ''
     bandShow = true
   }
  
@@ -296,6 +303,7 @@ function deleteProduct(id) {
 function onCheckoutCart(url) {
   let data = JSON.parse(localStorage.getItem('cart'))
   let products = []
+  let total = 0
   data.map(item => {
     let product = {
       name : item.name,
@@ -306,21 +314,24 @@ function onCheckoutCart(url) {
       variant : "Variant",
       quantity : item.quantity
     }
+    total += item.price * item.quantity
     products.push(product)
   })
-  console.log('hola')
+  if(localStorage.getItem("delivery")){
+    total += localStorage.getItem("delivery")
+  }
   dataLayer.push({
-    'event': 'iComprar',
     'ecommerce': {
-      'checkout': {
-        'actionField': {'step': 2, 'option': 'Pagar'},
-        'products': products
-     }
-   },
-  //  'eventCallback': function() {
-  //     window.open(url,"_blank");
-  //     //window.location.href = url;
-  //  }
+      'purchase': {
+        'actionField': {
+          'id': Math.floor(Math.random() * 999999),                         
+          'affiliation': 'Online Store',
+          'revenue': total,                     
+          'shipping': localStorage.getItem('delivery') ,
+        },
+        'products':products
+      }
+    }
   });
 }
 document.getElementById("button-comprar-2").addEventListener("click", alertDelivery);

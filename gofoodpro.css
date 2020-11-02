@@ -480,8 +480,21 @@ background-color: red;
         display: none;
     } 
 }
-
+@media (min-width:768){
+    .col-desktop{
+        display: block;
+    }
+    .col-mobile{
+        display: none;
+    }
+}
 @media (max-width:768px){
+    .col-desktop{
+        display: none;
+    }
+    .col-mobile{
+        display: block;
+    }
     #img-carrouse-mobile{
         display: block;
         height: 15rem;
@@ -873,4 +886,5 @@ display: block;
     margin-left: auto;
     min-height: 6rem;
 }
+
 

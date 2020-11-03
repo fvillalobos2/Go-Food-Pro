@@ -262,6 +262,27 @@ function displayLayer(productObj) {
      }
   });
 }
+(function(){ 
+  let data = products
+  let layer = []
+  data.map((item,index) => {
+    let product = {
+      name : item.name,
+      id : item.idProduct,
+      price : item.price,
+      brand : "Go Food Pro",
+      category : item.idCategory,
+      position:index
+    }
+    layer.push(product)
+  })
+  dataLayer.push({
+    'ecommerce': {
+      'currencyCode': 'USD',                       
+      'impressions': layer
+    }
+  });
+ })();
 function onCheckout() {
   let data = JSON.parse(localStorage.getItem('cart'))
   let products = []

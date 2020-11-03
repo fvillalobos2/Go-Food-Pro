@@ -154,7 +154,7 @@ let products = [
         name: "Donas",
         description: "<p>Donitas a base de camote como primer ingrediente con chocolate semiamargo y cremosa mantequilla de maní.</p> <p> Paquete de <b> 6 unidades</b></p><p><b>Intercambio nutricional:</b> 1 dona = <br> ½ carbohidrato y 1 grasa</p><p><b>Ingredientes:</b> Camote, chocolate semiamargo, leche de coco, avena, mantequilla de maní (sin azúcares o aceites añadidos). Contiene: maní. Puede contener trazas de gluten, semillas o nueces.</p>",
         idProduct: 13,
-        image: ["gfpimg/donas-min.jpg","gfpimg/Crunchbars-1-min.jpg"],
+        image: ["gfpimg/donas-min.jpg"],
         idCategory: 1,
         idSubCategories:[0,2,4,5],
         price: 3900,

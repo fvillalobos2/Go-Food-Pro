@@ -42,11 +42,11 @@ function getData() {
             <div id="b${item.idProduct}" class="carousel slide" data-ride="carousel">
               <div class="carousel-inner products-carrousel">
               </div>
-              <a class="carousel-control-prev" href="#b${item.idProduct}" role="button" data-slide="prev">
+              <a onclick="displayLayer(${item.idProduct})" class="carousel-control-prev" href="#b${item.idProduct}" role="button" data-slide="prev">
                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                 <span class="sr-only">Previous</span>
               </a>
-              <a class="carousel-control-next" href="#b${item.idProduct}" role="button" data-slide="next">
+              <a onclick="displayLayer(${item.idProduct})" class="carousel-control-next" href="#b${item.idProduct}" role="button" data-slide="next">
                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
                 <span class="sr-only">Next</span>
               </a>
@@ -56,7 +56,7 @@ function getData() {
                 <p><span>${item.unit}</span><p>
                 <h5 id ='price-card' class="card-title">&#8353; ${item.price}</h5>
                 <p>
-                  <a class="btn btn-info" data-toggle="collapse" href="#a${item.idProduct}" role="button" aria-expanded="false" aria-controls="collapseExample">
+                  <a onclick="displayLayer(${item.idProduct})" class="btn btn-info" data-toggle="collapse" href="#a${item.idProduct}" role="button" aria-expanded="false" aria-controls="collapseExample">
                     Descripción del Producto
                   </a>
                 </p>
@@ -242,6 +242,25 @@ function cartInit() {
       }
     }
   }
+}
+function displayLayer(productObj) {
+  let item = products.filter(item => item.idProduct === productObj)
+  dataLayer.push({
+    'event': 'productClick',
+    'ecommerce': {
+      'click': {
+        'actionField': {'list': 'Search Results'},      // Optional list property.
+        'products': [{
+          'name': item[0].name,                      // Name or ID is required.
+          'id': item[0].idProduct,
+          'price': item[0].price,
+          'brand': item[0].brand,
+          'category': item[0].idCategory,
+          'variant': item[0].unit,
+         }]
+       }
+     }
+  });
 }
 function onCheckout() {
   let data = JSON.parse(localStorage.getItem('cart'))

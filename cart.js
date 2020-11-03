@@ -321,6 +321,7 @@ function onCheckoutCart(url) {
     total += localStorage.getItem("delivery")
   }
   dataLayer.push({
+    'event': 'transaction',
     'ecommerce': {
       'purchase': {
         'actionField': {

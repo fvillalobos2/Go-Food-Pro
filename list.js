@@ -30,61 +30,7 @@ let subcategories=[
         image:'gfpimg/sinlacteos-32px-min.png'
     },
 ]
-let products = [{
-        name: "Galletas de Almendra",
-        description: "<p>Galletas a base de nuestra cremosa mantequilla de almendras con crujientes nibs de cacao.</p> <p> Paquete de <b> 6 unidades</b></p><p><b>Intercambio nutricional:</b> 1 galleta =<br> 2 grasas, 1 proteína y 1 carbohidrato</p><p><b>Ingredientes:</b>  Almendras, cacao nibs recubiertos de chocolate al 70%, claras de huevo, azúcar de coco, almidón de yuca, bicarbonato de sodio. Contiene: Almendras y claras de huevo. Puede contener trazas de gluten, semillas o nueces.</p>",
-        idProduct: 1,
-        image: ["gfpimg/galletas-almendra-1-min.jpg"],
-        idCategory: 1,
-        idSubCategories:[0,4,5],
-        price: 5500,
-        unit:'Paquete de 6 unidades',
-        quantity: 1
-    },
-    {
-        name: "Galletas de Cacao",
-        description: "<p>Galletas de cacao intenso sin harinas.</p> <p> Paquete de <b> 6 unidades</b></p><p><b>Intercambio nutricional:</b> 1 galleta =<br> 1 ½ grasas, ½ proteína y ½ carbohidrato</p><p><b>Ingredientes:</b>  Cacao nibs recubiertos de chocolate al 70%, mantequilla de almendras, mantequilla de maní, azúcar de coco, claras de huevo, cocoa en polvo, bicarbonato de sodio. Contiene: Almendras, maní y huevo. Puede contener trazas de gluten, semillas o nueces.</p>",
-        idProduct: 2,
-        image: ["gfpimg/galletas-cacao-min.jpg"],
-        idCategory: 1,
-        idSubCategories:[0,4,5],
-        price: 5000,
-        unit:'Paquete de 6 unidades',
-        quantity: 1
-    },
-    {
-        name: "Galletas Choco-Chips",
-        description: "<p>Deliciosas y chiclosas galletas veganas con chispas de chocolate.</p><p> Paquete de <b> 5 unidades</b></p><p><b>Intercambio nutricional:</b> 1 galleta =<br> 2,5 grasas | 1 carbohidrato</p><p><b>Ingredientes:</b>Mantequilla de almendras, azúcar cruda, chips de chocolate oscuro, agua, harina de yuca, nibs de chocolate, chía, vainilla, stevia, bicarbonato de sodio. Contiene: Almendras.</p>",
-        idProduct: 17,
-        image: ["gfpimg/galletas-veganas-choco-chips-min.jpg"],
-        idCategory: 1,
-        idSubCategories:[0,2,4,5],
-        price: 5500,
-        unit:'Paquete de 5 unidades',
-        quantity: 1
-    },
-    {
-        name: "ZanaBana Muffin",
-        description: "<p>Muffins a base de zanahoria con banano y sin azúcar.</p> <p> Paquete de <b> 6 unidades</b></p><p><b>Intercambio nutricional:</b> 1 muffin = <br> 1 carbohidrato y ½ grasa</p><p><b>Ingredientes:</b> Bananos, avena, claras de huevo, zanahorias, aceite de coco, sucralosa, sal, especias (menos del 2%) y bicarbonato de sodio. Contiene huevo. Puede contener trazas de gluten, semillas o nueces.</p>",
-        idProduct: 3,
-        image: ["gfpimg/zanabana-muffin-min.jpg"],
-        idCategory: 1,
-        idSubCategories:[0,3,4,5],
-        price: 5500,
-        unit:'Paquete de 6 unidades',
-        quantity: 1
-    },
-    {
-        name: "Choco ZanaBana Muffin",
-        description: "<p>Muffins a base de zanahoria con banano, sin azúcar y con chips de chocolate oscuro</p> <p> Paquete de <b> 6 unidades</b></p><p><b>Intercambio nutricional:</b> 1 muffin =<br> 1 carbohidrato, 1 grasa y ½ proteína</p><p><b>Ingredientes:</b> Bananos, avena, claras de huevo, zanahorias, chocolate semiamargo, aceite de  coco, sucralosa, sal, especias (menos del 2%) y bicarbonato de sodio. Contiene: huevo. Puede contener trazas de gluten, semillas o nueces.</p>",
-        idProduct: 4,
-        image: ["gfpimg/choco-muffin-min.jpg"],
-        idCategory: 1,
-        idSubCategories:[0,4,5],
-        price: 5500,
-        unit:'Paquete de 6 unidades',
-        quantity: 1
-    },
+let products = [
     {
         name: "Mantequilla de Maní Sabor a Leche Condensada",
         description: "<p>Sin Lácteos y Sin Azúcar</p><p>Frasco de vidrio de <b>265g</b></p><p><b>Intercambio nutricional:</b> 1 cucharada = 1,5 grasas</p><p><b>Ingredientes:</b> Maní, extracto de stevia como endulzante, sabor a leche condensada. Contiene maní. Puede contener trazas de semillas o nueces.</p>",
@@ -129,15 +75,6 @@ let products = [{
         unit:'Frasco de vidrio de 265g',
         quantity: 1
     },
-    // {
-    //     name: "Mantequilla de Marañon con Vainilla y Coco",
-    //     description: "<p>Frasco de vidrio de <b>265g</b></p><p><b>Intercambio nutricional:</b> 1 cucharada = 1,5 grasas</p><p><b>Ingredientes:</b> Contiene Marañon, Coco y Vainilla.</p>",
-    //     idProduct: 14,
-    //     image: "gfpimg/mantequillamaranon-1-min.jpg",
-    //     idCategory: 0,
-    //     price: 7500,
-    //     quantity: 1
-    // },
     {
         name: "Cajetas KETO Veganas",
         description: "<p>Cajetas a base de mantequilla de mani y coco crocante con notas a dulce de leche.</p><p> Bolsita de <b> 6 unidades</b></p><p><b>Intercambio nutricional:</b> 1 bolita = 1/2 grasa</p><p><b>Ingredientes:</b> Mantequilla de maní natural (sin aceites ni azúcares añadidos), coco rallado, sabor a dulce de leche y estevia (rebiana) como endulzante natural.</p>",
@@ -225,6 +162,73 @@ let products = [{
         quantity: 1
     },
     {
+
+        name: "Galletas de Almendra",
+        description: "<p>Galletas a base de nuestra cremosa mantequilla de almendras con crujientes nibs de cacao.</p> <p> Paquete de <b> 6 unidades</b></p><p><b>Intercambio nutricional:</b> 1 galleta =<br> 2 grasas, 1 proteína y 1 carbohidrato</p><p><b>Ingredientes:</b>  Almendras, cacao nibs recubiertos de chocolate al 70%, claras de huevo, azúcar de coco, almidón de yuca, bicarbonato de sodio. Contiene: Almendras y claras de huevo. Puede contener trazas de gluten, semillas o nueces.</p>",
+        idProduct: 1,
+        image: ["gfpimg/galletas-almendra-1-min.jpg"],
+        idCategory: 1,
+        idSubCategories:[0,4,5],
+        price: 5500,
+        unit:'Paquete de 6 unidades',
+        quantity: 1
+    },
+    {
+        name: "Galletas de Cacao",
+        description: "<p>Galletas de cacao intenso sin harinas.</p> <p> Paquete de <b> 6 unidades</b></p><p><b>Intercambio nutricional:</b> 1 galleta =<br> 1 ½ grasas, ½ proteína y ½ carbohidrato</p><p><b>Ingredientes:</b>  Cacao nibs recubiertos de chocolate al 70%, mantequilla de almendras, mantequilla de maní, azúcar de coco, claras de huevo, cocoa en polvo, bicarbonato de sodio. Contiene: Almendras, maní y huevo. Puede contener trazas de gluten, semillas o nueces.</p>",
+        idProduct: 2,
+        image: ["gfpimg/galletas-cacao-min.jpg"],
+        idCategory: 1,
+        idSubCategories:[0,4,5],
+        price: 5000,
+        unit:'Paquete de 6 unidades',
+        quantity: 1
+    },
+    {
+        name: "Galletas Choco-Chips",
+        description: "<p>Deliciosas y chiclosas galletas veganas con chispas de chocolate.</p><p> Paquete de <b> 5 unidades</b></p><p><b>Intercambio nutricional:</b> 1 galleta =<br> 2,5 grasas | 1 carbohidrato</p><p><b>Ingredientes:</b>Mantequilla de almendras, azúcar cruda, chips de chocolate oscuro, agua, harina de yuca, nibs de chocolate, chía, vainilla, stevia, bicarbonato de sodio. Contiene: Almendras.</p>",
+        idProduct: 17,
+        image: ["gfpimg/galletas-veganas-choco-chips-min.jpg"],
+        idCategory: 1,
+        idSubCategories:[0,2,4,5],
+        price: 5500,
+        unit:'Paquete de 5 unidades',
+        quantity: 1
+    },
+    {
+        name: "ZanaBana Muffin",
+        description: "<p>Muffins a base de zanahoria con banano y sin azúcar.</p> <p> Paquete de <b> 6 unidades</b></p><p><b>Intercambio nutricional:</b> 1 muffin = <br> 1 carbohidrato y ½ grasa</p><p><b>Ingredientes:</b> Bananos, avena, claras de huevo, zanahorias, aceite de coco, sucralosa, sal, especias (menos del 2%) y bicarbonato de sodio. Contiene huevo. Puede contener trazas de gluten, semillas o nueces.</p>",
+        idProduct: 3,
+        image: ["gfpimg/zanabana-muffin-min.jpg"],
+        idCategory: 1,
+        idSubCategories:[0,3,4,5],
+        price: 5500,
+        unit:'Paquete de 6 unidades',
+        quantity: 1
+    },
+    {
+        name: "Choco ZanaBana Muffin",
+        description: "<p>Muffins a base de zanahoria con banano, sin azúcar y con chips de chocolate oscuro</p> <p> Paquete de <b> 6 unidades</b></p><p><b>Intercambio nutricional:</b> 1 muffin =<br> 1 carbohidrato, 1 grasa y ½ proteína</p><p><b>Ingredientes:</b> Bananos, avena, claras de huevo, zanahorias, chocolate semiamargo, aceite de  coco, sucralosa, sal, especias (menos del 2%) y bicarbonato de sodio. Contiene: huevo. Puede contener trazas de gluten, semillas o nueces.</p>",
+        idProduct: 4,
+        image: ["gfpimg/choco-muffin-min.jpg"],
+        idCategory: 1,
+        idSubCategories:[0,4,5],
+        price: 5500,
+        unit:'Paquete de 6 unidades',
+        quantity: 1
+    },
+
+    // {
+    //     name: "Mantequilla de Marañon con Vainilla y Coco",
+    //     description: "<p>Frasco de vidrio de <b>265g</b></p><p><b>Intercambio nutricional:</b> 1 cucharada = 1,5 grasas</p><p><b>Ingredientes:</b> Contiene Marañon, Coco y Vainilla.</p>",
+    //     idProduct: 14,
+    //     image: "gfpimg/mantequillamaranon-1-min.jpg",
+    //     idCategory: 0,
+    //     price: 7500,
+    //     quantity: 1
+    // },
+  
+    {
         name: "Go-Bucha Manzana Canela",
         description: "<p>Bebida fermentada abase de té, agua y frutas</p> <p> Envase de <b>500 ml</b></p><p><b>Ingredientes:</b> Agua, té, manzana, canela, cultivo vivo de kombucha(scoby).<br><p> Mantener en refrigeración.</p></p>",
         idProduct: 18,
@@ -284,6 +288,8 @@ let categories = [
         description: 'prueba',
         id: 1
     },
+   
+  
     {
         name: 'Kombuchas',
         htmlId: 'kombuchas',

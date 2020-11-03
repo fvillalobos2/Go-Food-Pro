@@ -249,7 +249,7 @@ function displayLayer(productObj) {
     'event': 'productClick',
     'ecommerce': {
       'click': {
-        'actionField': {'list': 'Search Results'},      // Optional list property.
+        'actionField': {'list': 'Index GFP'},      // Optional list property.
         'products': [{
           'name': item[0].name,                      // Name or ID is required.
           'id': item[0].idProduct,

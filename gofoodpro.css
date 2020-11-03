@@ -875,6 +875,9 @@ background-color: red;
         white-space: nowrap;
         border: 1px solid black;
       }
+      #banco{
+          margin-bottom: 2rem;
+      }
 }
 @media (max-width:630px){
   

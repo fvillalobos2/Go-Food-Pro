@@ -492,6 +492,9 @@ background-color: red;
     #paypal-button-container{
         margin-right: 2rem;
     }
+    .table-responsive.table-modal{
+        display: none;
+    }
     .col-desktop{
         display: none;
     }
@@ -866,6 +869,12 @@ background-color: red;
     }
 }
 @media (max-width:768px){
+    .formdelivery{
+        margin-right: 0rem!important;
+    }
+    .carousel-item img{
+        width: 22rem;
+    }
     .more-info .title {
         position: absolute;
         top: 35px;

@@ -270,7 +270,7 @@ function lessItems(id) {
 function bankFunction(){
   let element = document.querySelectorAll('#banco')
   if(bandShow){
-    element[0].innerHTML = `CUENTA COLONES<br>
+    element[0].innerHTML = `Cuenta Colones<br>
     GO FOOD PRO GROUP SOCIEDAD ANO<br> 
     Número de cuenta BAC: 944595131 
     <br>Número de cuenta IBAN: CR86010200009445951318

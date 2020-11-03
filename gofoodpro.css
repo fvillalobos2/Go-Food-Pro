@@ -618,6 +618,10 @@ background-color: red;
         width: 100%
     }
 
+    #banco{
+        margin-bottom: 2rem;
+    }
+
     .paypal-buttons {
         margin-top: 1rem;
     }
@@ -883,7 +887,7 @@ background-color: red;
         left: 0rem;
         white-space: nowrap;
         border: 1px solid black;
-      }
+      
 }
 @media (max-width:630px){
   
@@ -910,5 +914,3 @@ display: block;
     margin-left: auto;
     min-height: 6rem;
 }
-
-

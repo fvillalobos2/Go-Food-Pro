@@ -830,6 +830,7 @@ background-color: red;
     top: 2rem;
     margin-left: auto;
     display: flex;
+    z-index: 999;
 }
 .container-image img{
     margin-right: 5px;
@@ -889,6 +890,7 @@ background-color: red;
         border: 1px solid black;
       
 }
+}
 @media (max-width:630px){
   
     #img-carrouse-mobile{
@@ -909,6 +911,7 @@ display: block;
       
     }
 }
+
 .another-headerpic{
     width: 4.5rem;
     margin-left: auto;

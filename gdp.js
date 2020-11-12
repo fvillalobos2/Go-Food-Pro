@@ -38,15 +38,15 @@ function getData() {
           cards.innerHTML += `
           <div id=${item.name.replace(/ /g, "").toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g,"")} class="col-lg-4 col-md-6 col-sm-12 mt-lg-2 mt-2 card-products ${item.idSubCategories}">
             <div id = 'card-id' class="card">
-            <div class="container-image ${item.idSubCategories}"></div>
+            <div class="container-image cat-${item.idSubCategories}"></div>
             <div id="b${item.idProduct}" class="carousel slide" data-ride="carousel">
               <div class="carousel-inner products-carrousel">
               </div>
-              <a onclick="displayLayer(${item.idProduct})" class="carousel-control-prev" href="#b${item.idProduct}" role="button" data-slide="prev">
+              <a onclick="displayLayer(${item.idProduct})"  class="carousel-control-prev controls" href="#b${item.idProduct}" role="button" data-slide="prev">
                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                 <span class="sr-only">Previous</span>
               </a>
-              <a onclick="displayLayer(${item.idProduct})" class="carousel-control-next" href="#b${item.idProduct}" role="button" data-slide="next">
+              <a onclick="displayLayer(${item.idProduct})" class="carousel-control-next controls" href="#b${item.idProduct}" role="button" data-slide="next">
                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
                 <span class="sr-only">Next</span>
               </a>
@@ -104,6 +104,10 @@ addImageToCarrousel=()=>{
           itemCarrousel.src = item
           div.classList.add('carousel-item')
           if(index === 0){
+            let arrows = document.querySelectorAll('.controls')
+            for(let i in arrows){
+              arrows[i].innerHTML = ''
+            }
             div.classList.add('active')
           }
           div.appendChild(itemCarrousel)

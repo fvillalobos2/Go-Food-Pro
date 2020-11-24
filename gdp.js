@@ -274,6 +274,7 @@ function displayLayer(productObj) {
       name : item.name,
       id : item.idProduct,
       price : item.price,
+      list: "Index GFP",
       brand : "Go Food Pro",
       category : item.idCategory,
       position:index
@@ -296,6 +297,7 @@ function onCheckout() {
       id : item.idProduct,
       price : item.price,
       brand : "Go Food Pro",
+      list: "Index GFP",
       category : item.idCategory,
       quantity : item.quantity
     }
@@ -377,6 +379,7 @@ function addCart(id) {
               'id': item.idProduct,
               'price': item.price,
               'brand': 'Go Food Pro',
+              'list': 'Index GFP',
               'category': category[0].name,
               'variant': 'Gray',
               'quantity': item.quantity

@@ -310,6 +310,7 @@ function onCheckoutCart(url) {
       id : item.idProduct,
       price : item.price,
       brand : "Go Food Pro",
+      list: "Index GFP",
       category : item.idCategory,
       variant : "Variant",
       quantity : item.quantity

@@ -250,6 +250,28 @@ let products = [
         unit:'500 ml',
         quantity: 1
     },
+    {
+        name: "Keto Pack",
+        description: "<p>Mantequilla de almendras + Dos galletas de cacao y coco endulzadas con eritritol y monkfruit (endulzante keto, cero indice glicémico, cero calorías) <br><br><b>ENVÍO GRATIS</b></p>",
+        idProduct: 20,
+        image: ["gfpimg/ketopromo1.jpg"],
+        idCategory: 3,
+        idSubCategories:[1,1],
+        price: 8500,
+        unit:'',
+        quantity: 1
+    },
+    {
+        name: "Keto Pack 2",
+        description: "<p> 2 Galletas de Coco y Chocolate endulzadas con eritritol y monkfruit (endulzante keto, cero indice glicémico, cero calorías) + Nutcracker KETO + Mantequilla de almendras con sabor a leche condensada o 100% natural.<br><br><b>ENVÍO GRATIS</b></p>",
+        idProduct: 21,
+        image: ["gfpimg/ketopromo2.jpg"],
+        idCategory: 3,
+        idSubCategories:[1,1],
+        price: 13500,
+        unit:'',
+        quantity: 1
+    },
     // {
     //     name: "Queque de Camote y Cacao",
     //     description: "6 unidades de galletas Gluten free.",
@@ -295,6 +317,12 @@ let categories = [
         htmlId: 'kombuchas',
         description: 'prueba',
         id: 2
+    },
+    {
+        name: 'Promos',
+        htmlId: 'promos',
+        description: 'prueba',
+        id: 3
     },
     // {
     //     name: 'Cocadas',

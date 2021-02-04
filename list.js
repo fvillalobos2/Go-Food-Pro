@@ -32,47 +32,69 @@ let subcategories=[
 ]
 let products = [
     {
-        name: "Mantequilla de Maní Sabor a Leche Condensada",
-        description: "<p>Sin Lácteos y Sin Azúcar</p><p>Frasco de vidrio de <b>265g</b></p><p><b>Intercambio nutricional:</b> 1 cucharada = 1,5 grasas</p><p><b>Ingredientes:</b> Maní, extracto de stevia como endulzante, sabor a leche condensada. Contiene maní. Puede contener trazas de semillas o nueces.</p>",
+        name: "Maní Sabor a Leche Condensada",
+        description: "<p>Sin Lácteos y Sin Azúcar</p><p>Frasco de vidrio de <b>240g</b></p><p><b>Intercambio nutricional:</b> 1 cucharada = 1,5 grasas</p><p><b>Ingredientes:</b> Maní, extracto de stevia como endulzante, sabor a leche condensada. Contiene maní. Puede contener trazas de semillas o nueces.</p>",
         idProduct: 7,
         image: ["gfpimg/mantequillam-min11.jpg"],
         idCategory: 0,
         idSubCategories:[0,2,3,4,5],
         price: 5500,
-        unit:'Frasco de vidrio de 265g',
+        unit:'Frasco de vidrio de 240g',
         quantity: 1
     },
     {
         name: "Mantequilla de Maní 100% Natural",
-        description: "<p>Frasco de vidrio de <b>265g</b></p><p><b>Intercambio nutricional:</b> 1 cucharada = 1,5 grasas</p><p><b>Ingredientes:</b> Maní. Puede contener trazas de semillas o nueces.</p>",
+        description: "<p>Frasco de vidrio de <b>240g</b></p><p><b>Intercambio nutricional:</b> 1 cucharada = 1,5 grasas</p><p><b>Ingredientes:</b> Maní. Puede contener trazas de semillas o nueces.</p>",
         idProduct: 6,
         image: ["gfpimg/mantequillam-1-min.jpg"],
         idCategory: 0,
         idSubCategories:[0,2,3,4,5],
         price: 5500,
-        unit:'Frasco de vidrio de 265g',
+        unit:'Frasco de vidrio de 240g',
         quantity: 1
     },
     {
         name: "Mantequilla de Almendras 100% Natural",
-        description: "<p>Frasco de vidrio de <b>265g</b></p><p><b>Intercambio nutricional:</b> 1 cucharada = 1,5 grasas</p><p><b>Ingredientes:</b>Almendras. Puede contener trazas de gluten, semillas o nueces.</p>",
+        description: "<p>Frasco de vidrio de <b>240g</b></p><p><b>Intercambio nutricional:</b> 1 cucharada = 1,5 grasas</p><p><b>Ingredientes:</b>Almendras. Puede contener trazas de gluten, semillas o nueces.</p>",
         idProduct: 5,
         image: ["gfpimg/mantequillaalmedras-1-min.jpg"],
         idCategory: 0,
         idSubCategories:[0,1,2,3,4,5],
         price: 6500,
-        unit:'Frasco de vidrio de 265g',
+        unit:'Frasco de vidrio de 240g',
         quantity: 1
     },
     {
         name: "Mantequilla de Almendras Sabor a Leche Condensada",
-        description: "<p>Sin Lácteos y Sin Azúcar</p><p>Frasco de vidrio de <b>265g</b></p><p><b>Intercambio nutricional:</b> 1 cucharada = 1,5 grasas</p><p><b>Ingredientes:</b> Almendras, extracto de stevia como endulzante, sabor a leche condensada. Contiene almendras. Puede contener trazas de semillas o nueces.</p>",
+        description: "<p>Sin Lácteos y Sin Azúcar</p><p>Frasco de vidrio de <b>240g</b></p><p><b>Intercambio nutricional:</b> 1 cucharada = 1,5 grasas</p><p><b>Ingredientes:</b> Almendras, extracto de stevia como endulzante, sabor a leche condensada. Contiene almendras. Puede contener trazas de semillas o nueces.</p>",
         idProduct: 8,
         image: ["gfpimg/mantequillam-11-min.jpg"],
         idCategory: 0,
         idSubCategories:[0,1,2,3,4,5],
         price: 7500,
-        unit:'Frasco de vidrio de 265g',
+        unit:'Frasco de vidrio de 240g',
+        quantity: 1
+    },
+    {
+        name: "Mantequilla de Maní con Proteína y Vainilla",
+        description: "<p>Sin Lácteos y Sin Azúcar</p><p>Frasco de vidrio de <b>240g</b></p><p><b>Intercambio nutricional:</b> 1 cucharada de 16g = 1 proteína y 1.5 grasas</p><p><b>Ingredientes:</b>Maní, proteína hidrolizada de suero de leche, vainilla.<br><b>Contiene: Maní y Suero de Leche.</b></p>",
+        idProduct: 20,
+        image: ["gfpimg/mantequillamani-proteina.jpg"],
+        idCategory: 0,
+        idSubCategories:[0,3,4],
+        price: 6500,
+        unit:'Frasco de vidrio de 240g',
+        quantity: 1
+    },
+    {
+        name: "Mantequilla de Maní Crunchy con Proteína & Chocolate",
+        description: "<p>Sin Lácteos y Sin Azúcar</p><p>Frasco de vidrio de <b>240g</b></p><p><b>Intercambio nutricional:</b> 1 cucharada de 16g = 1 proteína y 1.5 grasas</p><p><b>Ingredientes:</b> Maní, proteína hidrolizada de suero de leche, vainilla y chocolate al 70%.<br><b>Contiene: Maní y Suero de Leche.</b></p>",
+        idProduct: 21,
+        image: ["gfpimg/mantequillamani-crunchy.jpg"],
+        idCategory: 0,
+        idSubCategories:[0,3,4],
+        price: 6500,
+        unit:'Frasco de vidrio de 240g',
         quantity: 1
     },
     {
@@ -97,39 +119,39 @@ let products = [
         unit:'Paquete de 6 unidades',
         quantity: 1
     },
-    {
-        name: "Keto Cocadas",
-        description: "<p>Galletas a base de coco y cacao puro.</p> <p> Paquete de <b> 200 gramos</b></p><p><b>Intercambio nutricional:</b> 1 cocadas =<br> 2 ½ grasas</p><p><b>Ingredientes:</b> Coco, claras de huevo, eritritol, mantequilla de almendras, aceite de coco, cocoa pura, y bicarbonato de sodio. Contiene: almendras y huevo. Puede contener trazas de gluten, semillas o nueces.</p>",
-        idProduct: 9,
-        image: ["gfpimg/chocococadas-1-min.jpg"],
-        idCategory: 1,
-        idSubCategories:[0,1,3,4,5],
-        price: 5500,
-        unit:'Paquete de 200 gramos',
-        quantity: 1
-    },
-    {
-        name: "Nutcracker Bread",
-        description: "<p>Pan a base de semillas mixtas con fibra natural.</p> <p> Unidad de <b> 750 gramos</b><br>(de 10 a 15 tajadas)</p><p><b>Intercambio nutricional:</b> 1 rebanada de 50g = 2 grasas</p><p><b>Ingredientes:</b> Agua, semillas mixtas (girasol, linaza, chía, almendras, ajonjolí, calabaza) avena, ƒibra, aceite de coco, agave azul orgánico, sal. Contiene: almendras y ajonjolí. Puede contener trazas de gluten.</p>",
-        idProduct: 10,
-        image: ["gfpimg/nutcrackerbread-min.jpg"],
-        idCategory: 1,
-        idSubCategories:[0,2,4,5],
-        price: 6000,
-        unit:'Unidad de 750 gramos',
-        quantity: 1
-    },
-    {
-        name: "Keto Nutcracker Bread",
-        description: "<p>Pan a base de semillas mixtas con fibra natural, sin avena ni azúcares añadidos.</p> <p> Unidad de <b> 750 gramos</b><br>(de 10 a 15 tajadas)</p><p><b>Intercambio nutricional:</b> 1 rebanada de 50g = Carbohidratos totales: 3g Carbohidratos netos : 0g  Grasas: 2</p><p><b>Ingredientes:</b> Agua, semillas mixtas (girasol, linaza, chía, almendras, ajonjolí, calabaza), ƒibra, aceite de coco, sal. Contiene: almendras y ajonjolí. Puede contener trazas de gluten.</p>",
-        idProduct: 11,
-        image: ["gfpimg/ketonutcracker-min.jpg"],
-        idCategory: 1,
-        idSubCategories:[0,1,2,3,4,5],
-        price: 6000,
-        unit:'Unidad de 750 gramos',
-        quantity: 1
-    },
+    // {
+    //     name: "Keto Cocadas",
+    //     description: "<p>Galletas a base de coco y cacao puro.</p> <p> Paquete de <b> 200 gramos</b></p><p><b>Intercambio nutricional:</b> 1 cocadas =<br> 2 ½ grasas</p><p><b>Ingredientes:</b> Coco, claras de huevo, eritritol, mantequilla de almendras, aceite de coco, cocoa pura, y bicarbonato de sodio. Contiene: almendras y huevo. Puede contener trazas de gluten, semillas o nueces.</p>",
+    //     idProduct: 9,
+    //     image: ["gfpimg/chocococadas-1-min.jpg"],
+    //     idCategory: 1,
+    //     idSubCategories:[0,1,3,4,5],
+    //     price: 5500,
+    //     unit:'Paquete de 200 gramos',
+    //     quantity: 1
+    // },
+    // {
+    //     name: "Nutcracker Bread",
+    //     description: "<p>Pan a base de semillas mixtas con fibra natural.</p> <p> Unidad de <b> 750 gramos</b><br>(de 10 a 15 tajadas)</p><p><b>Intercambio nutricional:</b> 1 rebanada de 50g = 2 grasas</p><p><b>Ingredientes:</b> Agua, semillas mixtas (girasol, linaza, chía, almendras, ajonjolí, calabaza) avena, ƒibra, aceite de coco, agave azul orgánico, sal. Contiene: almendras y ajonjolí. Puede contener trazas de gluten.</p>",
+    //     idProduct: 10,
+    //     image: ["gfpimg/nutcrackerbread-min.jpg"],
+    //     idCategory: 1,
+    //     idSubCategories:[0,2,4,5],
+    //     price: 6000,
+    //     unit:'Unidad de 750 gramos',
+    //     quantity: 1
+    // },
+    // {
+    //     name: "Keto Nutcracker Bread",
+    //     description: "<p>Pan a base de semillas mixtas con fibra natural, sin avena ni azúcares añadidos.</p> <p> Unidad de <b> 750 gramos</b><br>(de 10 a 15 tajadas)</p><p><b>Intercambio nutricional:</b> 1 rebanada de 50g = Carbohidratos totales: 3g Carbohidratos netos : 0g  Grasas: 2</p><p><b>Ingredientes:</b> Agua, semillas mixtas (girasol, linaza, chía, almendras, ajonjolí, calabaza), ƒibra, aceite de coco, sal. Contiene: almendras y ajonjolí. Puede contener trazas de gluten.</p>",
+    //     idProduct: 11,
+    //     image: ["gfpimg/ketonutcracker-min.jpg"],
+    //     idCategory: 1,
+    //     idSubCategories:[0,1,2,3,4,5],
+    //     price: 6000,
+    //     unit:'Unidad de 750 gramos',
+    //     quantity: 1
+    // },
     // {
     //     name: "Proballs",
     //     description: "6 unidades de galletas Gluten free.",
@@ -184,17 +206,17 @@ let products = [
         unit:'Paquete de 6 unidades',
         quantity: 1
     },
-    {
-        name: "Galletas Choco-Chips",
-        description: "<p>Deliciosas y chiclosas galletas veganas con chispas de chocolate.</p><p> Paquete de <b> 5 unidades</b></p><p><b>Intercambio nutricional:</b> 1 galleta =<br> 2,5 grasas | 1 carbohidrato</p><p><b>Ingredientes:</b>Mantequilla de almendras, azúcar cruda, chips de chocolate oscuro, agua, harina de yuca, nibs de chocolate, chía, vainilla, stevia, bicarbonato de sodio. Contiene: Almendras.</p>",
-        idProduct: 17,
-        image: ["gfpimg/galletas-veganas-choco-chips-min.jpg"],
-        idCategory: 1,
-        idSubCategories:[0,2,4,5],
-        price: 5500,
-        unit:'Paquete de 5 unidades',
-        quantity: 1
-    },
+    // {
+    //     name: "Galletas Choco-Chips",
+    //     description: "<p>Deliciosas y chiclosas galletas veganas con chispas de chocolate.</p><p> Paquete de <b> 5 unidades</b></p><p><b>Intercambio nutricional:</b> 1 galleta =<br> 2,5 grasas | 1 carbohidrato</p><p><b>Ingredientes:</b>Mantequilla de almendras, azúcar cruda, chips de chocolate oscuro, agua, harina de yuca, nibs de chocolate, chía, vainilla, stevia, bicarbonato de sodio. Contiene: Almendras.</p>",
+    //     idProduct: 17,
+    //     image: ["gfpimg/galletas-veganas-choco-chips-min.jpg"],
+    //     idCategory: 1,
+    //     idSubCategories:[0,2,4,5],
+    //     price: 5500,
+    //     unit:'Paquete de 5 unidades',
+    //     quantity: 1
+    // },
     {
         name: "ZanaBana Muffin",
         description: "<p>Muffins a base de zanahoria con banano y sin azúcar.</p> <p> Paquete de <b> 6 unidades</b></p><p><b>Intercambio nutricional:</b> 1 muffin = <br> 1 carbohidrato y ½ grasa</p><p><b>Ingredientes:</b> Bananos, avena, claras de huevo, zanahorias, aceite de coco, sucralosa, sal, especias (menos del 2%) y bicarbonato de sodio. Contiene huevo. Puede contener trazas de gluten, semillas o nueces.</p>",
@@ -220,7 +242,7 @@ let products = [
 
     // {
     //     name: "Mantequilla de Marañon con Vainilla y Coco",
-    //     description: "<p>Frasco de vidrio de <b>265g</b></p><p><b>Intercambio nutricional:</b> 1 cucharada = 1,5 grasas</p><p><b>Ingredientes:</b> Contiene Marañon, Coco y Vainilla.</p>",
+    //     description: "<p>Frasco de vidrio de <b>240g</b></p><p><b>Intercambio nutricional:</b> 1 cucharada = 1,5 grasas</p><p><b>Ingredientes:</b> Contiene Marañon, Coco y Vainilla.</p>",
     //     idProduct: 14,
     //     image: "gfpimg/mantequillamaranon-1-min.jpg",
     //     idCategory: 0,
@@ -228,50 +250,50 @@ let products = [
     //     quantity: 1
     // },
   
-    {
-        name: "Go-Bucha Manzana Canela",
-        description: "<p>Bebida fermentada abase de té, agua y frutas</p> <p> Envase de <b>500 ml</b></p><p><b>Ingredientes:</b> Agua, té, manzana, canela, cultivo vivo de kombucha(scoby).<br><p> Mantener en refrigeración.</p></p>",
-        idProduct: 18,
-        image: ["gfpimg/go-bucha-manzana-min.jpg"],
-        idCategory: 2,
-        idSubCategories:[0,2,4,5],
-        price: `1600`,
-        unit:'500 ml',
-        quantity: 1
-    },
-    {
-        name: "Go-Bucha Piña",
-        description: "<p>Bebida fermentada abase de té, agua y frutas</p> <p> Envase de <b>500 ml</b></p><p><b>Ingredientes:</b>Agua, té, piña, jengibre fresco, cúrcuma fresca.cultivo vivo de kombucha (scoby).</p><br><p> Mantener en refrigeración.</p>",
-        idProduct: 19,
-        image: ["gfpimg/go-bumcha-pina-min.jpg"],
-        idCategory: 2,
-        idSubCategories:[0,2,4,5],
-        price: 1600,
-        unit:'500 ml',
-        quantity: 1
-    },
-    {
-        name: "Keto Pack",
-        description: "<p>Mantequilla de almendras + Dos galletas de cacao y coco endulzadas con eritritol y monkfruit (endulzante keto, cero indice glicémico, cero calorías) <br><br><b>ENVÍO GRATIS</b></p>",
-        idProduct: 20,
-        image: ["gfpimg/ketopromo1.jpg"],
-        idCategory: 3,
-        idSubCategories:[1,1],
-        price: 8500,
-        unit:'',
-        quantity: 1
-    },
-    {
-        name: "Keto Pack 2",
-        description: "<p> 2 Galletas de Coco y Chocolate endulzadas con eritritol y monkfruit (endulzante keto, cero indice glicémico, cero calorías) + Nutcracker KETO + Mantequilla de almendras con sabor a leche condensada o 100% natural.<br><br><b>ENVÍO GRATIS</b></p>",
-        idProduct: 21,
-        image: ["gfpimg/ketopromo2.jpg"],
-        idCategory: 3,
-        idSubCategories:[1,1],
-        price: 13500,
-        unit:'',
-        quantity: 1
-    },
+    // {
+    //     name: "Go-Bucha Manzana Canela",
+    //     description: "<p>Bebida fermentada abase de té, agua y frutas</p> <p> Envase de <b>500 ml</b></p><p><b>Ingredientes:</b> Agua, té, manzana, canela, cultivo vivo de kombucha(scoby).<br><p> Mantener en refrigeración.</p></p>",
+    //     idProduct: 18,
+    //     image: ["gfpimg/go-bucha-manzana-min.jpg"],
+    //     idCategory: 2,
+    //     idSubCategories:[0,2,4,5],
+    //     price: `1600`,
+    //     unit:'500 ml',
+    //     quantity: 1
+    // },
+    // {
+    //     name: "Go-Bucha Piña",
+    //     description: "<p>Bebida fermentada abase de té, agua y frutas</p> <p> Envase de <b>500 ml</b></p><p><b>Ingredientes:</b>Agua, té, piña, jengibre fresco, cúrcuma fresca.cultivo vivo de kombucha (scoby).</p><br><p> Mantener en refrigeración.</p>",
+    //     idProduct: 19,
+    //     image: ["gfpimg/go-bumcha-pina-min.jpg"],
+    //     idCategory: 2,
+    //     idSubCategories:[0,2,4,5],
+    //     price: 1600,
+    //     unit:'500 ml',
+    //     quantity: 1
+    // },
+    // {
+    //     name: "Keto Pack",
+    //     description: "<p>Mantequilla de almendras + Dos galletas de cacao y coco endulzadas con eritritol y monkfruit (endulzante keto, cero indice glicémico, cero calorías) <br><br><b>ENVÍO GRATIS</b></p>",
+    //     idProduct: 20,
+    //     image: ["gfpimg/ketopromo1.jpg"],
+    //     idCategory: 3,
+    //     idSubCategories:[1,1],
+    //     price: 8500,
+    //     unit:'',
+    //     quantity: 1
+    // },
+    // {
+    //     name: "Keto Pack 2",
+    //     description: "<p> 2 Galletas de Coco y Chocolate endulzadas con eritritol y monkfruit (endulzante keto, cero indice glicémico, cero calorías) + Nutcracker KETO + Mantequilla de almendras con sabor a leche condensada o 100% natural.<br><br><b>ENVÍO GRATIS</b></p>",
+    //     idProduct: 21,
+    //     image: ["gfpimg/ketopromo2.jpg"],
+    //     idCategory: 3,
+    //     idSubCategories:[1,1],
+    //     price: 13500,
+    //     unit:'',
+    //     quantity: 1
+    // },
     // {
     //     name: "Queque de Camote y Cacao",
     //     description: "6 unidades de galletas Gluten free.",
@@ -312,18 +334,18 @@ let categories = [
     },
    
   
-    {
-        name: 'Kombuchas',
-        htmlId: 'kombuchas',
-        description: 'prueba',
-        id: 2
-    },
-    {
-        name: 'Promos',
-        htmlId: 'promos',
-        description: 'prueba',
-        id: 3
-    },
+    // {
+    //     name: 'Kombuchas',
+    //     htmlId: 'kombuchas',
+    //     description: 'prueba',
+    //     id: 2
+    // },
+    // {
+    //     name: 'Promos',
+    //     htmlId: 'promos',
+    //     description: 'prueba',
+    //     id: 3
+    // },
     // {
     //     name: 'Cocadas',
     //     htmlId: 'cocadas',

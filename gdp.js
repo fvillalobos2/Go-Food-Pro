@@ -38,7 +38,7 @@ function getData() {
           cards.innerHTML += `
           <div id=${item.name.replace(/ /g, "").toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g,"")} class="col-lg-4 col-md-6 col-sm-12 mt-lg-2 mt-2 card-products ${item.idSubCategories}">
             <div id = 'card-id' class="card">
-            <div class="container-image cat-${item.idSubCategories}"></div>
+            <div class="container-image ${item.idSubCategories}"></div>
             <div id="b${item.idProduct}" class="carousel slide" data-ride="carousel">
               <div class="carousel-inner products-carrousel">
               </div>
@@ -82,6 +82,7 @@ displaySubCategories=()=>{
   subcategories.forEach(item => {
     products.forEach(elem => {
       if(elem.classList.contains(`cat-${item.id}`)){
+        console.log(item.id)
         const div = document.createElement('div')
         const img = document.createElement('img');
         img.classList.add('subcat-item');

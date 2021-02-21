@@ -24,8 +24,15 @@ function payPal() {
     dataSend.tax = {currency_code: "USD",value:0}
     result.push(dataSend)
   }
-  
   let totalItems = parseFloat(total / 600).toFixed(2) - parseFloat(totalSendTax / 600).toFixed(2)
+  let totalTax = parseFloat(totalSendTax / 600).toFixed(2)
+  let totalResult = 0
+  if(totalSendTax != 0){
+    totalResult = parseFloat(totalItems) + parseFloat(totalTax)
+  }else{
+    totalResult = totalItems
+  }
+  
   paypal.Buttons({
     createOrder: function (data, actions) {
       return actions.order.create({
@@ -33,12 +40,12 @@ function payPal() {
           "description": "Compra en go-food-pro",
           "amount": {
             "currency_code": "USD",
-            "value": totalDolars,
+            "value": totalResult.toFixed(2),
             "breakdown": {
               "item_total": { "currency_code":"USD", "value":totalItems.toFixed(2)},
               "shipping": { "currency_code":"USD", "value":parseFloat(totalSendTax / 600).toFixed(2)},
               "tax_total": { "currency_code":"USD", "value":0},
-              "discount": { "currency_code":"USD", "value":"0"}
+              "discount": { "currency_code":"USD", "value":0}
             }
           },
           "items": result

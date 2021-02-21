@@ -902,7 +902,13 @@ background-color: red;
 display: block;
     }
 }
-
+.card-body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
 @media (max-width:450px){
     .carousel-caption p {
         font-size: .6rem;

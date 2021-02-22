@@ -274,6 +274,8 @@ align-items: center;
 
 div .card-body .d-flex{
         font-size: 2rem;
+        justify-content: center;
+        align-items: center;
     }
 
 div .card-body .lessProduct {

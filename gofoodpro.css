@@ -296,6 +296,11 @@ div .card-body .moreProduct {
 
 .card-body {
     margin-bottom: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
 }
 
 .fa-shopping-cart {

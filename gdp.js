@@ -9,7 +9,7 @@ function getData() {
   for (let category of categories) {
     if(section != null){
       section.innerHTML += `
-      <h1 id=${category.htmlId} class="display-4 d-flex justify-content-center">-${category.name}-</h1>
+      <h1 id=${category.htmlId} class="display-4 text-center">-${category.name}-</h1>
       `;
       var scroll = new SmoothScroll(`a[href*="#${category.htmlId}"]`);
     }

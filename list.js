@@ -33,9 +33,9 @@ let subcategories=[
 let products = [
     {
         name: "Maní Sabor a Leche Condensada",
-        description: "<p>Sin Lácteos y Sin Azúcar</p><p>Frasco de vidrio de <b>240g</b></p><p><b>Intercambio nutricional:</b> 1 cucharada = 1,5 grasas</p><p><b>Ingredientes:</b> Maní, extracto de stevia como endulzante, sabor a leche condensada. Contiene maní. Puede contener trazas de semillas o nueces.</p>",
+        description: "<p>Sin Lácteos, Sin Azúcar y Libre de sodio </p><p>Frasco de vidrio de <b>240g</b></p><p><b>Intercambio nutricional:</b> 1 cucharada = 1 grasa</p><p><b>Ingredientes:</b> Maní, extracto de stevia como endulzante, sabor a leche condensada. Contiene maní. Puede contener trazas de semillas o nueces.</p>",
         idProduct: 7,
-        image: ["gfpimg/peanut-saboraleche.png"],
+        image: ["gfpimg/peanut-saboraleche.png","gfpimg/manilechetabla.jpg"],
         idCategory: 0,
         idSubCategories:[0,2,3,4,5],
         price: 5500,

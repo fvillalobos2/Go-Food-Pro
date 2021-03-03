@@ -930,3 +930,14 @@ display: block;
     margin-left: auto;
     min-height: 6rem;
 }
+.carousel-products .carousel-control-next, .carousel-products .carousel-control-prev{
+    width: 10%;
+    height: fit-content;
+    background: black;
+    border-radius: 1rem;
+    margin: auto;
+}
+.carousel-products .carousel-control-next-icon, .carousel-products .carousel-control-prev-icon{
+    height: 34px;
+    width: 18px;
+}

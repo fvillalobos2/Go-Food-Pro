@@ -46,7 +46,7 @@ let products = [
         name: "Mantequilla de Maní 100% Natural",
         description: "<p>Frasco de vidrio de <b>240g</b></p><p><b>Intercambio nutricional:</b> 1 cucharada = 1,5 grasas</p><p><b>Ingredientes:</b> Maní. Puede contener trazas de semillas o nueces.</p>",
         idProduct: 6,
-        image: ["gfpimg/peanut-butter.png"],
+        image: ["gfpimg/peanut-butter.png","gfpimg/almond-butter.png"],
         idCategory: 0,
         idSubCategories:[0,2,3,4,5],
         price: 5500,

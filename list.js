@@ -33,9 +33,9 @@ let subcategories=[
 let products = [
     {
         name: "Maní Sabor a Leche Condensada",
-        description: "<p>Sin Lácteos, Sin Azúcar y Libre de sodio </p><p>Frasco de vidrio de <b>240g</b></p><p><b>Intercambio nutricional:</b> 1 cucharada = 1 grasa</p><p><b>Ingredientes:</b> Maní, extracto de stevia como endulzante, sabor a leche condensada. Contiene maní. Puede contener trazas de semillas o nueces.</p>",
+        description: "<p>Sin Lácteos, Sin Azúcar y Libre de Sodio </p><p>Frasco de vidrio de <b>240g</b></p><p><b>Intercambio nutricional:</b> 1 cucharada = 1 grasa</p><p><b>Ingredientes:</b> Maní, extracto de stevia como endulzante, sabor a leche condensada. Contiene maní. Puede contener trazas de semillas o nueces.</p>",
         idProduct: 7,
-        image: ["gfpimg/peanut-saboraleche.png","gfpimg/manilechetabla.jpg"],
+        image: ["gfpimg/peanut-saboraleche.png","gfpimg/tabla-mani-sabor.jpg"],
         idCategory: 0,
         idSubCategories:[0,2,3,4,5],
         price: 5500,
@@ -44,9 +44,9 @@ let products = [
     },
     {
         name: "Mantequilla de Maní 100% Natural",
-        description: "<p>Frasco de vidrio de <b>240g</b></p><p><b>Intercambio nutricional:</b> 1 cucharada = 1,5 grasas</p><p><b>Ingredientes:</b> Maní. Puede contener trazas de semillas o nueces.</p>",
+        description: "<p>Frasco de vidrio de <b>240g</b></p><p><b>Intercambio nutricional:</b> 1 cucharada = 1 grasa</p><p><b>Ingredientes:</b> Maní. Puede contener trazas de semillas o nueces.</p>",
         idProduct: 6,
-        image: ["gfpimg/peanut-butter.png","gfpimg/almond-butter.png"],
+        image: ["gfpimg/peanut-butter.png","gfpimg/tabla-mantequilla-mani.jpg"],
         idCategory: 0,
         idSubCategories:[0,2,3,4,5],
         price: 5500,
@@ -55,9 +55,9 @@ let products = [
     },
     {
         name: "Mantequilla de Almendras 100% Natural",
-        description: "<p>Frasco de vidrio de <b>240g</b></p><p><b>Intercambio nutricional:</b> 1 cucharada = 1,5 grasas</p><p><b>Ingredientes:</b>Almendras. Puede contener trazas de gluten, semillas o nueces.</p>",
+        description: "<p>Frasco de vidrio de <b>240g</b></p><p><b>Intercambio nutricional:</b> 1 cucharada = 1 grasa</p><p><b>Ingredientes:</b>Almendras. Puede contener trazas de gluten, semillas o nueces.</p>",
         idProduct: 5,
-        image: ["gfpimg/almond-butter.png"],
+        image: ["gfpimg/almond-butter.png","gfpimg/tabla-mantequilla-almendras.jpg"],
         idCategory: 0,
         idSubCategories:[0,1,2,3,4,5],
         price: 6500,
@@ -66,9 +66,9 @@ let products = [
     },
     {
         name: "Mantequilla de Almendras Sabor a Leche Condensada",
-        description: "<p>Sin Lácteos y Sin Azúcar</p><p>Frasco de vidrio de <b>240g</b></p><p><b>Intercambio nutricional:</b> 1 cucharada = 1,5 grasas</p><p><b>Ingredientes:</b> Almendras, extracto de stevia como endulzante, sabor a leche condensada. Contiene almendras. Puede contener trazas de semillas o nueces.</p>",
+        description: "<p>Sin Lácteos y Sin Azúcar</p><p>Frasco de vidrio de <b>240g</b></p><p><b>Intercambio nutricional:</b> 1 cucharada = 1 grasas</p><p><b>Ingredientes:</b> Almendras, extracto de stevia como endulzante, sabor a leche condensada. Contiene almendras. Puede contener trazas de semillas o nueces.</p>",
         idProduct: 8,
-        image: ["gfpimg/almond-butter.png"],
+        image: ["gfpimg/almond-butter.png","gfpimg/tabla-almendras-sabor.jpg"],
         idCategory: 0,
         idSubCategories:[0,1,2,3,4,5],
         price: 7500,
@@ -79,7 +79,7 @@ let products = [
         name: "Mantequilla de Maní con Proteína y Vainilla",
         description: "<p>Sin Lácteos y Sin Azúcar</p><p>Frasco de vidrio de <b>240g</b></p><p><b>Intercambio nutricional:</b> 1 cucharada de 16g = 1 proteína y 1.5 grasas</p><p><b>Ingredientes:</b>Maní, proteína hidrolizada de suero de leche, vainilla.<br><b>Contiene: Maní y Suero de Leche.</b></p>",
         idProduct: 20,
-        image: ["gfpimg/vainilla-protein-peanut.png"],
+        image: ["gfpimg/vainilla-protein-peanut.png","gfpimg/tabla-vainilla-proteina.jpg"],
         idCategory: 0,
         idSubCategories:[0,3,4],
         price: 6500,
@@ -90,7 +90,7 @@ let products = [
         name: "Mantequilla de Maní Crunchy con Proteína & Chocolate",
         description: "<p>Sin Lácteos y Sin Azúcar</p><p>Frasco de vidrio de <b>240g</b></p><p><b>Intercambio nutricional:</b> 1 cucharada de 16g = 1 proteína y 1.5 grasas</p><p><b>Ingredientes:</b> Maní, proteína hidrolizada de suero de leche, vainilla y chocolate al 70%.<br><b>Contiene: Maní y Suero de Leche.</b></p>",
         idProduct: 21,
-        image: ["gfpimg/choco-protein.png"],
+        image: ["gfpimg/choco-protein.png","gfpimg/tabla-choco-mani.jpg"],
         idCategory: 0,
         idSubCategories:[0,3,4],
         price: 6500,
@@ -99,9 +99,9 @@ let products = [
     },
     {
         name: "Cajetas KETO Veganas",
-        description: "<p>Cajetas a base de mantequilla de mani y coco crocante con notas a dulce de leche.</p><p> Bolsita de <b> 6 unidades</b></p><p><b>Intercambio nutricional:</b> 1 bolita = 1/2 grasa</p><p><b>Ingredientes:</b> Mantequilla de maní natural (sin aceites ni azúcares añadidos), coco rallado, sabor a dulce de leche y estevia (rebiana) como endulzante natural.</p>",
+        description: "<p>Cajetas a base de mantequilla de mani y coco crocante con notas a dulce de leche.</p><p> Bolsita de <b> 6 unidades</b></p><p><b>Intercambio nutricional:</b> 1.5 grasas + ½ proteína magra </p><p><b>Ingredientes:</b> Mantequilla de maní natural (sin aceites ni azúcares añadidos), coco rallado, sabor a dulce de leche y estevia (rebiana) como endulzante natural.</p>",
         idProduct: 16,
-        image: ["gfpimg/cajetas-keto-veganas-min.jpg"],
+        image: ["gfpimg/cajetas-keto-veganas-min.jpg","gfpimg/tabla-cajeta-keto.jpg"],
         idCategory: 1,
         idSubCategories:[0,1,2,3,4,5], 
         price: 3000,
@@ -110,9 +110,9 @@ let products = [
     },
     {
         name: "Peanut Butter Cups",
-        description: "<p>Tacitas de mantequilla de maní con sabor a leche condensada.</p> <p> Caja de <b> 6 unidades</b></p><p><b>Intercambio nutricional:</b> 2,5 grasas / 1 carbohidrato</p><p><b>Ingredientes:</b> Chocolate al 70%, vainilla, cacao en polvo, mantequilla de maní con sabor a leche condensada sin lácteos ni azúcar. Puede contener trazas de soya.</p>",
+        description: "<p>Tacitas de mantequilla de maní con sabor a leche condensada.</p> <p> Caja de <b> 6 unidades</b></p><p><b>Intercambio nutricional:</b> 1 proteína magra + 2 grasas + 2.5 cdtas de azúcar</p><p><b>Ingredientes:</b> Chocolate al 70%, vainilla, cacao en polvo, mantequilla de maní con sabor a leche condensada sin lácteos ni azúcar. Puede contener trazas de soya.</p>",
         idProduct: 15,
-        image: ["gfpimg/peanutbuttercups-min.jpg"],
+        image: ["gfpimg/peanutbuttercups-min.jpg","gfpimg/tabla-peanut-buttercups.jpg"],
         idCategory: 1,
         idSubCategories:[0,2,4,5], 
         price: 5700,
@@ -163,9 +163,9 @@ let products = [
     // },
     {
         name: "Crunch Bars",
-        description: "<p>Barritas a base de arroz tostado y mantequilla de almendras 100% natural.</p> <p> Paquete de <b> 6 unidades</b><br></p><p><b>Intercambio nutricional:</b> 1 barrita =<br> 1 grasa, ½ proteína y 1 carbohidrato</p><p><b>Ingredientes:</b> Arroz tostado, agave azul orgánico, mantequilla de almendras (sin azúcar o aceites añadidos), chocolate semiamargo, proteína aislada de suero de leche. Contiene: almendras y suero de leche. Puede contener trazas de gluten, semillas o nueces.</p>",
+        description: "<p>Barritas a base de arroz tostado y mantequilla de almendras 100% natural.</p> <p> Paquete de <b> 6 unidades</b><br></p><p><b>Intercambio nutricional:</b> 1/2 harina + 1/2 proteína magra + ½ grasa + 1.5 cdtas de azúcar</p><p><b>Ingredientes:</b> Arroz tostado, agave azul orgánico, mantequilla de almendras (sin azúcar o aceites añadidos), chocolate semiamargo, proteína aislada de suero de leche. Contiene: almendras y suero de leche. Puede contener trazas de gluten, semillas o nueces.</p>",
         idProduct: 12,
-        image: ["gfpimg/Crunchbars-1-min.jpg"],
+        image: ["gfpimg/Crunchbars-1-min.jpg","gfpimg/tabla-crunch-bars.jpg"],
         idCategory: 1,
         idSubCategories:[0,4],
         price: 4500,
@@ -176,7 +176,7 @@ let products = [
         name: "Donas",
         description: "<p>Donitas a base de camote como primer ingrediente con chocolate semiamargo y cremosa mantequilla de maní.</p> <p> Paquete de <b> 6 unidades</b></p><p><b>Intercambio nutricional:</b> 1 dona = <br> ½ carbohidrato y 1 grasa</p><p><b>Ingredientes:</b> Camote, chocolate semiamargo, leche de coco, avena, mantequilla de maní (sin azúcares o aceites añadidos). Contiene: maní. Puede contener trazas de gluten, semillas o nueces.</p>",
         idProduct: 13,
-        image: ["gfpimg/donas-min.jpg"],
+        image: ["gfpimg/donas-min.jpg",],
         idCategory: 1,
         idSubCategories:[0,2,4,5],
         price: 3900,
@@ -186,9 +186,9 @@ let products = [
     {
 
         name: "Galletas de Almendra",
-        description: "<p>Galletas a base de nuestra cremosa mantequilla de almendras con crujientes nibs de cacao.</p> <p> Paquete de <b> 6 unidades</b></p><p><b>Intercambio nutricional:</b> 1 galleta =<br> 2 grasas, 1 proteína y 1 carbohidrato</p><p><b>Ingredientes:</b>  Almendras, cacao nibs recubiertos de chocolate al 70%, claras de huevo, azúcar de coco, almidón de yuca, bicarbonato de sodio. Contiene: Almendras y claras de huevo. Puede contener trazas de gluten, semillas o nueces.</p>",
+        description: "<p>Galletas a base de nuestra cremosa mantequilla de almendras con crujientes nibs de cacao.</p> <p> Paquete de <b> 6 unidades</b></p><p><b>Intercambio nutricional:</b> 1 galleta =<br>2 grasas + ½ proteína magra + ½ harina + 1 cdta de azúcar </p><p><b>Ingredientes:</b>  Almendras, cacao nibs recubiertos de chocolate al 70%, claras de huevo, azúcar de coco, almidón de yuca, bicarbonato de sodio. Contiene: Almendras y claras de huevo. Puede contener trazas de gluten, semillas o nueces.</p>",
         idProduct: 1,
-        image: ["gfpimg/galletas-almendra-1-min.jpg"],
+        image: ["gfpimg/galletas-almendra-1-min.jpg","gfpimg/tabla-galleta-almendras.jpg"],
         idCategory: 1,
         idSubCategories:[0,4,5],
         price: 5500,
@@ -197,9 +197,9 @@ let products = [
     },
     {
         name: "Galletas de Cacao",
-        description: "<p>Galletas de cacao intenso sin harinas.</p> <p> Paquete de <b> 6 unidades</b></p><p><b>Intercambio nutricional:</b> 1 galleta =<br> 1 ½ grasas, ½ proteína y ½ carbohidrato</p><p><b>Ingredientes:</b>  Cacao nibs recubiertos de chocolate al 70%, mantequilla de almendras, mantequilla de maní, azúcar de coco, claras de huevo, cocoa en polvo, bicarbonato de sodio. Contiene: Almendras, maní y huevo. Puede contener trazas de gluten, semillas o nueces.</p>",
+        description: "<p>Galletas de cacao intenso sin harinas.</p> <p> Paquete de <b> 6 unidades</b></p><p><b>Intercambio nutricional:</b> 1 galleta =<br> 1.5 g de grasa + 1 proteína magra + 1 cdta de azúcar</p><p><b>Ingredientes:</b>  Cacao nibs recubiertos de chocolate al 70%, mantequilla de almendras, mantequilla de maní, azúcar de coco, claras de huevo, cocoa en polvo, bicarbonato de sodio. Contiene: Almendras, maní y huevo. Puede contener trazas de gluten, semillas o nueces.</p>",
         idProduct: 2,
-        image: ["gfpimg/galletas-cacao-min.jpg"],
+        image: ["gfpimg/galletas-cacao-min.jpg","gfpimg/tabla-galleta-cacao.jpg"],
         idCategory: 1,
         idSubCategories:[0,4,5],
         price: 5000,
@@ -239,7 +239,50 @@ let products = [
         unit:'Paquete de 6 unidades',
         quantity: 1
     },
-
+    {
+        name: "Pack Fit Choco-Original",
+        description: "<p>Mantequilla de maní con chocoproteina y leche condensada sabor original</p>",
+        idProduct: 22,
+        image: ["gfpimg/pack-chocolate.jpg"],
+        idCategory: 3,
+        idSubCategories:[],
+        price: 10500,
+        unit:'Mantequilla de maní con chocoproteina y leche condensada sabor original</p>',
+        quantity: 1
+    },
+    {
+        name: "Pack fit Pure Vanilla",
+        description: "<p>Mantequilla de maní sabor vainilla con proteína y leche condensada sabor original</p>",
+        idProduct: 23,
+        image: ["gfpimg/pack-vainilla.jpg"],
+        idCategory: 3,
+        idSubCategories:[],
+        price: 10500,
+        unit:'Mantequilla de maní sabor vainilla con proteína y leche condensada sabor original</p>',
+        quantity: 1
+    },
+    {
+        name: "Pack Fit Pure Chocolate",
+        description: "<p>Mantequilla de maní con chocoproteína y leche condensada sabor a chocolate</p>",
+        idProduct: 23,
+        image: ["gfpimg/pack-purechoco.jpg"],
+        idCategory: 3,
+        idSubCategories:[],
+        price: 10500,
+        unit:'Mantequilla de maní con chocoproteína y leche condensada sabor a chocolate</p>',
+        quantity: 1
+    },
+    {
+        name: "Pack Vainilla - Choco",
+        description: "<p>Mantequilla de maní sabor vainilla con proteína y leche condensada sabor chocolate</p>",
+        idProduct: 24,
+        image: ["gfpimg/pack-chocovainilla.jpg"],
+        idCategory: 3,
+        idSubCategories:[],
+        price: 10500,
+        unit:'Mantequilla de maní sabor vainilla con proteína y leche condensada sabor chocolate</p>',
+        quantity: 1
+    },
     // {
     //     name: "Mantequilla de Marañon con Vainilla y Coco",
     //     description: "<p>Frasco de vidrio de <b>240g</b></p><p><b>Intercambio nutricional:</b> 1 cucharada = 1,5 grasas</p><p><b>Ingredientes:</b> Contiene Marañon, Coco y Vainilla.</p>",
@@ -312,6 +355,7 @@ let products = [
     //     price: 2000,
     //     quantity: 1
     // },
+    
 ];
 let categories = [
     // {
@@ -340,12 +384,12 @@ let categories = [
     //     description: 'prueba',
     //     id: 2
     // },
-    // {
-    //     name: 'Promos',
-    //     htmlId: 'promos',
-    //     description: 'prueba',
-    //     id: 3
-    // },
+    {
+        name: 'Promos',
+        htmlId: 'promos',
+        description: 'prueba',
+        id: 3
+    },
     // {
     //     name: 'Cocadas',
     //     htmlId: 'cocadas',

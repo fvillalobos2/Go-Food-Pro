@@ -114,6 +114,17 @@ addImageToCarrousel=()=>{
           elem.appendChild(div)
     })
   })
+  let divsCarrousel = document.querySelectorAll('.carousel-products')
+  for(let i in divsCarrousel){
+    if(typeof items[i] === 'object'){
+      if(items[i].querySelectorAll('div').length <= 1){
+        divsCarrousel[i].querySelectorAll('a').forEach(item =>{
+          item.innerHTML = ''
+        })
+      }
+    }
+   
+  }
 }
 getData();
 addImageToCarrousel()

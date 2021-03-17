@@ -57,7 +57,7 @@ let products = [
         name: "Mantequilla de Almendras 100% Natural",
         description: "<p>Frasco de vidrio de <b>240g</b></p><p><b>Intercambio nutricional:</b> 1 cucharada = 1 grasa</p><p><b>Ingredientes:</b>Almendras. Puede contener trazas de gluten, semillas o nueces.</p>",
         idProduct: 5,
-        image: ["gfpimg/almond-butter.png","gfpimg/tabla-mantequilla-almendras.jpg"],
+        image: ["gfpimg/almond-butter-1.png","gfpimg/tabla-mantequilla-almendras.jpg"],
         idCategory: 0,
         idSubCategories:[0,1,2,3,4,5],
         price: 6500,

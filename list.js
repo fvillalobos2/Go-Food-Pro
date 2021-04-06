@@ -82,7 +82,7 @@ let products = [
         image: ["gfpimg/vainilla-protein-peanut.png","gfpimg/tabla-vainilla-proteina.jpg"],
         idCategory: 0,
         idSubCategories:[0,3,4],
-        price: 6500,
+        price: 7000,
         unit:'Frasco de vidrio de 240g',
         quantity: 1
     },
@@ -217,28 +217,28 @@ let products = [
     //     unit:'Paquete de 5 unidades',
     //     quantity: 1
     // },
-    {
-        name: "ZanaBana Muffin",
-        description: "<p>Muffins a base de zanahoria con banano y sin azúcar.</p> <p> Paquete de <b> 6 unidades</b></p><p><b>Intercambio nutricional:</b> 1 muffin = <br> 1 carbohidrato y ½ grasa</p><p><b>Ingredientes:</b> Bananos, avena, claras de huevo, zanahorias, aceite de coco, sucralosa, sal, especias (menos del 2%) y bicarbonato de sodio. Contiene huevo. Puede contener trazas de gluten, semillas o nueces.</p>",
-        idProduct: 3,
-        image: ["gfpimg/zanabana-muffin-min.jpg"],
-        idCategory: 1,
-        idSubCategories:[0,3,4,5],
-        price: 5500,
-        unit:'Paquete de 6 unidades',
-        quantity: 1
-    },
-    {
-        name: "Choco ZanaBana Muffin",
-        description: "<p>Muffins a base de zanahoria con banano, sin azúcar y con chips de chocolate oscuro</p> <p> Paquete de <b> 6 unidades</b></p><p><b>Intercambio nutricional:</b> 1 muffin =<br> 1 carbohidrato, 1 grasa y ½ proteína</p><p><b>Ingredientes:</b> Bananos, avena, claras de huevo, zanahorias, chocolate semiamargo, aceite de  coco, sucralosa, sal, especias (menos del 2%) y bicarbonato de sodio. Contiene: huevo. Puede contener trazas de gluten, semillas o nueces.</p>",
-        idProduct: 4,
-        image: ["gfpimg/choco-muffin-min.jpg"],
-        idCategory: 1,
-        idSubCategories:[0,4,5],
-        price: 5500,
-        unit:'Paquete de 6 unidades',
-        quantity: 1
-    },
+    // {
+    //     name: "ZanaBana Muffin",
+    //     description: "<p>Muffins a base de zanahoria con banano y sin azúcar.</p> <p> Paquete de <b> 6 unidades</b></p><p><b>Intercambio nutricional:</b> 1 muffin = <br> 1 carbohidrato y ½ grasa</p><p><b>Ingredientes:</b> Bananos, avena, claras de huevo, zanahorias, aceite de coco, sucralosa, sal, especias (menos del 2%) y bicarbonato de sodio. Contiene huevo. Puede contener trazas de gluten, semillas o nueces.</p>",
+    //     idProduct: 3,
+    //     image: ["gfpimg/zanabana-muffin-min.jpg"],
+    //     idCategory: 1,
+    //     idSubCategories:[0,3,4,5],
+    //     price: 5500,
+    //     unit:'Paquete de 6 unidades',
+    //     quantity: 1
+    // },
+    // {
+    //     name: "Choco ZanaBana Muffin",
+    //     description: "<p>Muffins a base de zanahoria con banano, sin azúcar y con chips de chocolate oscuro</p> <p> Paquete de <b> 6 unidades</b></p><p><b>Intercambio nutricional:</b> 1 muffin =<br> 1 carbohidrato, 1 grasa y ½ proteína</p><p><b>Ingredientes:</b> Bananos, avena, claras de huevo, zanahorias, chocolate semiamargo, aceite de  coco, sucralosa, sal, especias (menos del 2%) y bicarbonato de sodio. Contiene: huevo. Puede contener trazas de gluten, semillas o nueces.</p>",
+    //     idProduct: 4,
+    //     image: ["gfpimg/choco-muffin-min.jpg"],
+    //     idCategory: 1,
+    //     idSubCategories:[0,4,5],
+    //     price: 5500,
+    //     unit:'Paquete de 6 unidades',
+    //     quantity: 1
+    // },
     {
         name: "Pack Fit Choco-Original",
         description: "<p>Mantequilla de maní con chocoproteina y leche condensada sabor original</p>",

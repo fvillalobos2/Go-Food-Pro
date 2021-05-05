@@ -16,23 +16,27 @@ function payPal() {
     totalSendTax = 0
   }
   let result = []
+  let totalProducts = 0
   for(var i in dataCart){
     let dataSend = {}
+    totalProducts += dataCart[i].price * dataCart[i].quantity
     dataSend.name = dataCart[i].name
     dataSend.quantity = dataCart[i].quantity
     dataSend.unit_amount = {currency_code:'USD',value:parseFloat(dataCart[i].price / 600).toFixed(2)}
     dataSend.tax = {currency_code: "USD",value:0}
     result.push(dataSend)
   }
+  let totalTemp = parseFloat(totalProducts/ 600).toFixed(2)
   let totalItems = parseFloat(total / 600).toFixed(2) - parseFloat(totalSendTax / 600).toFixed(2)
   let totalTax = parseFloat(totalSendTax / 600).toFixed(2)
   let totalResult = 0
   if(totalSendTax != 0){
-    totalResult = parseFloat(totalItems) + parseFloat(totalTax)
+    totalResult = parseFloat(totalTemp) + parseFloat(totalTax)
   }else{
-    totalResult = totalItems
+    totalResult = totalTemp
   }
-  
+  console.log(totalTemp)
+  console.log(parseFloat(totalSendTax / 600).toFixed(2))
   paypal.Buttons({
     createOrder: function (data, actions) {
       return actions.order.create({
@@ -42,7 +46,7 @@ function payPal() {
             "currency_code": "USD",
             "value": totalResult.toFixed(2),
             "breakdown": {
-              "item_total": { "currency_code":"USD", "value":totalItems.toFixed(2)},
+              "item_total": { "currency_code":"USD", "value":parseFloat(totalProducts / 600).toFixed(2)},
               "shipping": { "currency_code":"USD", "value":parseFloat(totalSendTax / 600).toFixed(2)},
               "tax_total": { "currency_code":"USD", "value":0},
               "discount": { "currency_code":"USD", "value":0}
@@ -176,7 +180,7 @@ function alertDelivery() {
     alert('Por favor elija si requiere envío o no')
   } else {
     payPal()
-    cartInitPage()
+    // cartInitPage()
     //document.getElementById('button-comprar').innerHTML = ''
     document.getElementById('whatsapp').innerHTML = ``;
     if (!band2) {

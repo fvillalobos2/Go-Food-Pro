@@ -93,7 +93,7 @@ let products = [
         image: ["gfpimg/choco-protein.png","gfpimg/tabla-choco-mani.jpg"],
         idCategory: 0,
         idSubCategories:[0,3,4],
-        price: 6500,
+        price: 7000,
         unit:'Frasco de vidrio de 240g',
         quantity: 1
     },
